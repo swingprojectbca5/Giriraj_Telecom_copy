@@ -1,42 +1,59 @@
 
 import java.awt.geom.RoundRectangle2D;
+import javax.swing.JOptionPane;
 
-public class frm_splashscreen extends javax.swing.JFrame {
-
-    public frm_splashscreen() {
+public class frm_splashscreen extends javax.swing.JFrame
+{
+    
+    public frm_splashscreen()
+    {
         initComponents();
         setShape(new RoundRectangle2D.Double(0, 0, getWidth(), getHeight(), 30, 30));
     }
-
-    public void splash() {
-
-        try {
+    
+    public void splash()
+    {
+        
+        try
+        {
             Thread.sleep(1000);
-            for (int i = 0; i <= 4; i++) {
-                if (i == 0) {
+            for (int i = 0; i <= 4; i++)
+            {
+                if (i == 0)
+                {
                     lblProcess.setText("Connecting to Database...");
                     Thread.sleep(1500);
-                } else if (i == 1) {
+                }
+                else if (i == 1)
+                {
                     lblProcess.setText("Importing Files...");
                     Thread.sleep(1500);
-                } else if (i == 2) {
+                }
+                else if (i == 2)
+                {
                     lblProcess.setText("Almost there...");
                     Thread.sleep(1500);
-                } else if (i == 3) {
+                }
+                else if (i == 3)
+                {
                     lblProcess.setText("Opening Application..");
                     Thread.sleep(1500);
-                } else {
+                }
+                else
+                {
                     this.dispose();
-                    frm_dashboard dashboard = new frm_dashboard();
-                    dashboard.setVisible(true);
+                    frm_login login = new frm_login();
+                    login.setVisible(true);
                 }
             }
-        } catch (Exception e) {
-
         }
-
+        catch (Exception e)
+        {
+            JOptionPane.showMessageDialog(rootPane, e.getMessage());
+        }
+        
     }
-
+    
     @SuppressWarnings("unchecked")
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
@@ -112,17 +129,20 @@ public class frm_splashscreen extends javax.swing.JFrame {
     {//GEN-HEADEREND:event_jLabel3MouseClicked
         System.exit(0);
     }//GEN-LAST:event_jLabel3MouseClicked
-
+    
     private void formWindowOpened(java.awt.event.WindowEvent evt)//GEN-FIRST:event_formWindowOpened
     {//GEN-HEADEREND:event_formWindowOpened
-
+        
     }//GEN-LAST:event_formWindowOpened
-
-    public static void main(String args[]) {
-
+    
+    public static void main(String args[])
+    {
+        
         frm_splashscreen s = new frm_splashscreen();
-        java.awt.EventQueue.invokeLater(new Runnable() {
-            public void run() {
+        java.awt.EventQueue.invokeLater(new Runnable()
+        {
+            public void run()
+            {
                 s.setVisible(true);
             }
         });
