@@ -1,48 +1,37 @@
 
 import java.awt.geom.RoundRectangle2D;
 
-public class frm_splashscreen extends javax.swing.JFrame
-{
+public class frm_splashscreen extends javax.swing.JFrame {
 
-    public frm_splashscreen()
-    {
+    public frm_splashscreen() {
         initComponents();
         setShape(new RoundRectangle2D.Double(0, 0, getWidth(), getHeight(), 30, 30));
     }
 
-    public void splash()
-    {
+    public void splash() {
 
-        try
-        {
+        try {
             Thread.sleep(1000);
-            for (int i = 0; i <= 3; i++)
-            {
-                if (i == 0)
-                {
+            for (int i = 0; i <= 4; i++) {
+                if (i == 0) {
                     lblProcess.setText("Connecting to Database...");
                     Thread.sleep(1500);
-                }
-                else if (i == 1)
-                {
+                } else if (i == 1) {
                     lblProcess.setText("Importing Files...");
                     Thread.sleep(1500);
-                }
-                else if (i == 2)
-                {
+                } else if (i == 2) {
+                    lblProcess.setText("Almost there...");
+                    Thread.sleep(1500);
+                } else if (i == 3) {
                     lblProcess.setText("Opening Application..");
                     Thread.sleep(1500);
-                }
-                else
-                {
+                } else {
                     this.dispose();
                     frm_dashboard dashboard = new frm_dashboard();
-                    dashboard.show();
+                    dashboard.setVisible(true);
                 }
             }
-        }
-        catch (Exception e)
-        {
+        } catch (Exception e) {
 
         }
 
@@ -50,8 +39,7 @@ public class frm_splashscreen extends javax.swing.JFrame
 
     @SuppressWarnings("unchecked")
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
-    private void initComponents()
-    {
+    private void initComponents() {
 
         jPanel1 = new javax.swing.JPanel();
         jLabel3 = new javax.swing.JLabel();
@@ -60,10 +48,8 @@ public class frm_splashscreen extends javax.swing.JFrame
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setUndecorated(true);
-        addWindowListener(new java.awt.event.WindowAdapter()
-        {
-            public void windowOpened(java.awt.event.WindowEvent evt)
-            {
+        addWindowListener(new java.awt.event.WindowAdapter() {
+            public void windowOpened(java.awt.event.WindowEvent evt) {
                 formWindowOpened(evt);
             }
         });
@@ -72,10 +58,8 @@ public class frm_splashscreen extends javax.swing.JFrame
 
         jLabel3.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabel3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icons/splash_screen.png"))); // NOI18N
-        jLabel3.addMouseListener(new java.awt.event.MouseAdapter()
-        {
-            public void mouseClicked(java.awt.event.MouseEvent evt)
-            {
+        jLabel3.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
                 jLabel3MouseClicked(evt);
             }
         });
@@ -104,9 +88,9 @@ public class frm_splashscreen extends javax.swing.JFrame
                 .addComponent(jLabel3)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(lblProcess)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 22, Short.MAX_VALUE)
                 .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 35, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(20, 20, 20))
+                .addContainerGap())
         );
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
@@ -134,15 +118,11 @@ public class frm_splashscreen extends javax.swing.JFrame
 
     }//GEN-LAST:event_formWindowOpened
 
-    public static void main(String args[])
-    {
+    public static void main(String args[]) {
 
         frm_splashscreen s = new frm_splashscreen();
-
-        java.awt.EventQueue.invokeLater(new Runnable()
-        {
-            public void run()
-            {
+        java.awt.EventQueue.invokeLater(new Runnable() {
+            public void run() {
                 s.setVisible(true);
             }
         });
@@ -153,6 +133,6 @@ public class frm_splashscreen extends javax.swing.JFrame
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel3;
     private javax.swing.JPanel jPanel1;
-    private javax.swing.JLabel lblProcess;
+    private static javax.swing.JLabel lblProcess;
     // End of variables declaration//GEN-END:variables
 }
