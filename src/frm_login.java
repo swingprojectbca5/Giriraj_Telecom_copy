@@ -101,6 +101,9 @@ public class frm_login extends javax.swing.JFrame
         kButton1.setFont(new java.awt.Font("Segoe UI", 0, 24)); // NOI18N
         kButton1.setkBorderRadius(30);
         kButton1.setkEndColor(new java.awt.Color(68, 82, 121));
+        kButton1.setkHoverEndColor(new java.awt.Color(228, 235, 246));
+        kButton1.setkHoverForeGround(new java.awt.Color(68, 82, 121));
+        kButton1.setkHoverStartColor(new java.awt.Color(228, 235, 246));
         kButton1.setkStartColor(new java.awt.Color(68, 82, 121));
 
         javax.swing.GroupLayout jPanel3Layout = new javax.swing.GroupLayout(jPanel3);
