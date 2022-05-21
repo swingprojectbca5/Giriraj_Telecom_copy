@@ -149,8 +149,16 @@ public class frm_login2 extends javax.swing.JFrame {
 
         jPasswordField1.setBackground(new java.awt.Color(178, 199, 231));
         jPasswordField1.setFont(new java.awt.Font("Segoe UI", 0, 24)); // NOI18N
-        jPasswordField1.setText("jPasswordField1");
+        jPasswordField1.setText("Password");
         jPasswordField1.setBorder(javax.swing.BorderFactory.createMatteBorder(0, 0, 2, 0, new java.awt.Color(68, 82, 121)));
+        jPasswordField1.addFocusListener(new java.awt.event.FocusAdapter() {
+            public void focusGained(java.awt.event.FocusEvent evt) {
+                jPasswordField1FocusGained(evt);
+            }
+            public void focusLost(java.awt.event.FocusEvent evt) {
+                jPasswordField1FocusLost(evt);
+            }
+        });
 
         javax.swing.GroupLayout jPanel6Layout = new javax.swing.GroupLayout(jPanel6);
         jPanel6.setLayout(jPanel6Layout);
@@ -286,6 +294,18 @@ public class frm_login2 extends javax.swing.JFrame {
 
         this.setLocation(x - xMouse, y - yMouse);
     }//GEN-LAST:event_formMouseDragged
+
+    private void jPasswordField1FocusGained(java.awt.event.FocusEvent evt) {//GEN-FIRST:event_jPasswordField1FocusGained
+        if (jPasswordField1.getText().equals("Password")) {
+            jPasswordField1.setText("");
+        }
+    }//GEN-LAST:event_jPasswordField1FocusGained
+
+    private void jPasswordField1FocusLost(java.awt.event.FocusEvent evt) {//GEN-FIRST:event_jPasswordField1FocusLost
+        if (jPasswordField1.getText().equals("Password") || jPasswordField1.getText().equals("")) {
+            jPasswordField1.setText("Password");
+        }
+    }//GEN-LAST:event_jPasswordField1FocusLost
 
     public static void main(String args[]) {
         java.awt.EventQueue.invokeLater(new Runnable() {
