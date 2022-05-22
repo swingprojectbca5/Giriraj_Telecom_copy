@@ -4,16 +4,16 @@ import javax.swing.JOptionPane;
 
 public class frm_splashscreen extends javax.swing.JFrame
 {
-    
+
     public frm_splashscreen()
     {
         initComponents();
         setShape(new RoundRectangle2D.Double(0, 0, getWidth(), getHeight(), 30, 30));
     }
-    
+
     public void splash()
     {
-        
+
         try
         {
             Thread.sleep(1000);
@@ -42,8 +42,8 @@ public class frm_splashscreen extends javax.swing.JFrame
                 else
                 {
                     this.dispose();
-                    frm_login login = new frm_login();
-                    login.setVisible(true);
+                    frm_login2 login2 = new frm_login2();
+                    login2.setVisible(true);
                 }
             }
         }
@@ -51,9 +51,9 @@ public class frm_splashscreen extends javax.swing.JFrame
         {
             JOptionPane.showMessageDialog(rootPane, e.getMessage());
         }
-        
+
     }
-    
+
     @SuppressWarnings("unchecked")
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
@@ -129,15 +129,15 @@ public class frm_splashscreen extends javax.swing.JFrame
     {//GEN-HEADEREND:event_jLabel3MouseClicked
         System.exit(0);
     }//GEN-LAST:event_jLabel3MouseClicked
-    
+
     private void formWindowOpened(java.awt.event.WindowEvent evt)//GEN-FIRST:event_formWindowOpened
     {//GEN-HEADEREND:event_formWindowOpened
-        
+
     }//GEN-LAST:event_formWindowOpened
-    
+
     public static void main(String args[])
     {
-        
+
         frm_splashscreen s = new frm_splashscreen();
         java.awt.EventQueue.invokeLater(new Runnable()
         {
