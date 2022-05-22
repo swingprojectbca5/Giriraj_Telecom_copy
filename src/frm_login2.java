@@ -466,12 +466,16 @@ public class frm_login2 extends javax.swing.JFrame
 
     private void jLabel10MouseEntered(java.awt.event.MouseEvent evt)//GEN-FIRST:event_jLabel10MouseEntered
     {//GEN-HEADEREND:event_jLabel10MouseEntered
-
+        jLabel10.setFont(new Font("Cascadia Monocai", Font.PLAIN, 20));
+        jLabel10.setForeground(Color.WHITE);
+        jLabel10.setText("<html><u>CLICK HERE</u></html>");
     }//GEN-LAST:event_jLabel10MouseEntered
 
     private void jLabel10MouseExited(java.awt.event.MouseEvent evt)//GEN-FIRST:event_jLabel10MouseExited
     {//GEN-HEADEREND:event_jLabel10MouseExited
-        // TODO add your handling code here:
+        jLabel10.setFont(new Font("Cascadia Monocai", Font.PLAIN, 20));
+        jLabel10.setForeground(Color.BLACK);
+        jLabel10.setText("CLICK HERE");
     }//GEN-LAST:event_jLabel10MouseExited
 
     public static void main(String args[])
