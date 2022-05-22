@@ -35,11 +35,11 @@ public class frm_login2 extends javax.swing.JFrame
         jPanel11 = new javax.swing.JPanel();
         jLabel6 = new javax.swing.JLabel();
         jPanel6 = new javax.swing.JPanel();
-        jPasswordField1 = new javax.swing.JPasswordField();
+        txt_pswd = new javax.swing.JPasswordField();
         jPanel9 = new javax.swing.JPanel();
         jLabel3 = new javax.swing.JLabel();
         jPanel10 = new javax.swing.JPanel();
-        jCheckBox1 = new javax.swing.JCheckBox();
+        chk_show = new javax.swing.JCheckBox();
         jPanel7 = new javax.swing.JPanel();
         loginBtn = new com.k33ptoo.components.KButton();
 
@@ -144,6 +144,7 @@ public class frm_login2 extends javax.swing.JFrame
         jComboBox1.setFont(new java.awt.Font("Cascadia Mono", 0, 24)); // NOI18N
         jComboBox1.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "ADMIN", "EMPLOYEE" }));
         jComboBox1.setBorder(javax.swing.BorderFactory.createMatteBorder(0, 0, 2, 0, new java.awt.Color(178, 199, 231)));
+        jComboBox1.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
 
         jPanel11.setBackground(new java.awt.Color(178, 199, 231));
         jPanel11.setPreferredSize(new java.awt.Dimension(64, 64));
@@ -187,19 +188,20 @@ public class frm_login2 extends javax.swing.JFrame
         jPanel6.setBackground(new java.awt.Color(178, 199, 231));
         jPanel6.setFont(new java.awt.Font("Segoe UI", 0, 24)); // NOI18N
 
-        jPasswordField1.setBackground(new java.awt.Color(178, 199, 231));
-        jPasswordField1.setFont(new java.awt.Font("Cascadia Mono", 0, 24)); // NOI18N
-        jPasswordField1.setText("Password");
-        jPasswordField1.setBorder(javax.swing.BorderFactory.createMatteBorder(0, 0, 2, 0, new java.awt.Color(68, 82, 121)));
-        jPasswordField1.addFocusListener(new java.awt.event.FocusAdapter()
+        txt_pswd.setBackground(new java.awt.Color(178, 199, 231));
+        txt_pswd.setFont(new java.awt.Font("Cascadia Mono", 0, 24)); // NOI18N
+        txt_pswd.setText("Password");
+        txt_pswd.setBorder(javax.swing.BorderFactory.createMatteBorder(0, 0, 2, 0, new java.awt.Color(68, 82, 121)));
+        txt_pswd.setEchoChar('*');
+        txt_pswd.addFocusListener(new java.awt.event.FocusAdapter()
         {
             public void focusGained(java.awt.event.FocusEvent evt)
             {
-                jPasswordField1FocusGained(evt);
+                txt_pswdFocusGained(evt);
             }
             public void focusLost(java.awt.event.FocusEvent evt)
             {
-                jPasswordField1FocusLost(evt);
+                txt_pswdFocusLost(evt);
             }
         });
 
@@ -222,13 +224,14 @@ public class frm_login2 extends javax.swing.JFrame
         jPanel10.setBackground(new java.awt.Color(178, 199, 231));
         jPanel10.setPreferredSize(new java.awt.Dimension(64, 64));
 
-        jCheckBox1.setBorder(javax.swing.BorderFactory.createMatteBorder(0, 0, 0, 0, new java.awt.Color(0, 0, 0)));
-        jCheckBox1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icons/visibility.png"))); // NOI18N
-        jCheckBox1.addActionListener(new java.awt.event.ActionListener()
+        chk_show.setBorder(javax.swing.BorderFactory.createMatteBorder(0, 0, 0, 0, new java.awt.Color(0, 0, 0)));
+        chk_show.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        chk_show.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icons/visibility.png"))); // NOI18N
+        chk_show.addItemListener(new java.awt.event.ItemListener()
         {
-            public void actionPerformed(java.awt.event.ActionEvent evt)
+            public void itemStateChanged(java.awt.event.ItemEvent evt)
             {
-                jCheckBox1ActionPerformed(evt);
+                chk_showItemStateChanged(evt);
             }
         });
 
@@ -236,11 +239,11 @@ public class frm_login2 extends javax.swing.JFrame
         jPanel10.setLayout(jPanel10Layout);
         jPanel10Layout.setHorizontalGroup(
             jPanel10Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jCheckBox1, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+            .addComponent(chk_show, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
         );
         jPanel10Layout.setVerticalGroup(
             jPanel10Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jCheckBox1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+            .addComponent(chk_show, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
         );
 
         javax.swing.GroupLayout jPanel6Layout = new javax.swing.GroupLayout(jPanel6);
@@ -251,7 +254,7 @@ public class frm_login2 extends javax.swing.JFrame
                 .addGap(50, 50, 50)
                 .addComponent(jPanel9, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(18, 18, 18)
-                .addComponent(jPasswordField1, javax.swing.GroupLayout.PREFERRED_SIZE, 328, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(txt_pswd, javax.swing.GroupLayout.PREFERRED_SIZE, 328, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(jPanel10, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addContainerGap())
@@ -259,7 +262,7 @@ public class frm_login2 extends javax.swing.JFrame
         jPanel6Layout.setVerticalGroup(
             jPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addComponent(jPanel9, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, 50, Short.MAX_VALUE)
-            .addComponent(jPasswordField1)
+            .addComponent(txt_pswd)
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel6Layout.createSequentialGroup()
                 .addGap(0, 0, Short.MAX_VALUE)
                 .addComponent(jPanel10, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE))
@@ -388,24 +391,33 @@ public class frm_login2 extends javax.swing.JFrame
         this.setLocation(x - xMouse, y - yMouse);
     }//GEN-LAST:event_formMouseDragged
 
-    private void jPasswordField1FocusGained(java.awt.event.FocusEvent evt) {//GEN-FIRST:event_jPasswordField1FocusGained
-        if (jPasswordField1.getText().equals("Password"))
+    private void txt_pswdFocusGained(java.awt.event.FocusEvent evt) {//GEN-FIRST:event_txt_pswdFocusGained
+        if (txt_pswd.getText().equals("Password"))
         {
-            jPasswordField1.setText("");
+            txt_pswd.setText("");
         }
-    }//GEN-LAST:event_jPasswordField1FocusGained
+    }//GEN-LAST:event_txt_pswdFocusGained
 
-    private void jPasswordField1FocusLost(java.awt.event.FocusEvent evt) {//GEN-FIRST:event_jPasswordField1FocusLost
-        if (jPasswordField1.getText().equals("Password") || jPasswordField1.getText().equals(""))
+    private void txt_pswdFocusLost(java.awt.event.FocusEvent evt) {//GEN-FIRST:event_txt_pswdFocusLost
+        if (txt_pswd.getText().equals("Password") || txt_pswd.getText().equals(""))
         {
-            jPasswordField1.setText("Password");
+            txt_pswd.setText("Password");
         }
-    }//GEN-LAST:event_jPasswordField1FocusLost
+    }//GEN-LAST:event_txt_pswdFocusLost
 
-    private void jCheckBox1ActionPerformed(java.awt.event.ActionEvent evt)//GEN-FIRST:event_jCheckBox1ActionPerformed
-    {//GEN-HEADEREND:event_jCheckBox1ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_jCheckBox1ActionPerformed
+    private void chk_showItemStateChanged(java.awt.event.ItemEvent evt)//GEN-FIRST:event_chk_showItemStateChanged
+    {//GEN-HEADEREND:event_chk_showItemStateChanged
+        if (evt.getStateChange() == 1)
+        {
+            txt_pswd.setEchoChar((char) 0);
+            chk_show.setIcon(new ImageIcon("src\\icons\\eye.png"));
+        }
+        else
+        {
+            chk_show.setIcon(new ImageIcon("src\\icons\\visibility.png"));
+            txt_pswd.setEchoChar('*');
+        }
+    }//GEN-LAST:event_chk_showItemStateChanged
 
     public static void main(String args[])
     {
@@ -419,7 +431,7 @@ public class frm_login2 extends javax.swing.JFrame
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JCheckBox jCheckBox1;
+    private javax.swing.JCheckBox chk_show;
     private javax.swing.JComboBox<String> jComboBox1;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
@@ -435,10 +447,10 @@ public class frm_login2 extends javax.swing.JFrame
     private javax.swing.JPanel jPanel6;
     private javax.swing.JPanel jPanel7;
     private javax.swing.JPanel jPanel9;
-    private javax.swing.JPasswordField jPasswordField1;
     private com.k33ptoo.components.KGradientPanel kGradientPanel1;
     private com.k33ptoo.components.KGradientPanel kGradientPanel2;
     private com.k33ptoo.components.KGradientPanel kGradientPanel3;
     private com.k33ptoo.components.KButton loginBtn;
+    private javax.swing.JPasswordField txt_pswd;
     // End of variables declaration//GEN-END:variables
 }

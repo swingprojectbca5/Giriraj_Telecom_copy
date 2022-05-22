@@ -302,6 +302,9 @@
                             </MatteColorBorder>
                           </Border>
                         </Property>
+                        <Property name="cursor" type="java.awt.Cursor" editor="org.netbeans.modules.form.editors2.CursorEditor">
+                          <Color id="Hand Cursor"/>
+                        </Property>
                       </Properties>
                       <AuxValues>
                         <AuxValue name="JavaCodeGenerator_TypeParameters" type="java.lang.String" value="&lt;String&gt;"/>
@@ -364,7 +367,7 @@
                               <EmptySpace min="-2" pref="50" max="-2" attributes="0"/>
                               <Component id="jPanel9" min="-2" pref="50" max="-2" attributes="0"/>
                               <EmptySpace type="separate" max="-2" attributes="0"/>
-                              <Component id="jPasswordField1" min="-2" pref="328" max="-2" attributes="0"/>
+                              <Component id="txt_pswd" min="-2" pref="328" max="-2" attributes="0"/>
                               <EmptySpace max="-2" attributes="0"/>
                               <Component id="jPanel10" min="-2" pref="50" max="-2" attributes="0"/>
                               <EmptySpace max="-2" attributes="0"/>
@@ -374,7 +377,7 @@
                     <DimensionLayout dim="1">
                       <Group type="103" groupAlignment="0" attributes="0">
                           <Component id="jPanel9" alignment="1" pref="50" max="32767" attributes="0"/>
-                          <Component id="jPasswordField1" alignment="0" max="32767" attributes="0"/>
+                          <Component id="txt_pswd" alignment="0" max="32767" attributes="0"/>
                           <Group type="102" alignment="1" attributes="0">
                               <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
                               <Component id="jPanel10" min="-2" pref="50" max="-2" attributes="0"/>
@@ -383,7 +386,7 @@
                     </DimensionLayout>
                   </Layout>
                   <SubComponents>
-                    <Component class="javax.swing.JPasswordField" name="jPasswordField1">
+                    <Component class="javax.swing.JPasswordField" name="txt_pswd">
                       <Properties>
                         <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
                           <Color blue="e7" green="c7" red="b2" type="rgb"/>
@@ -399,10 +402,11 @@
                             </MatteColorBorder>
                           </Border>
                         </Property>
+                        <Property name="echoChar" type="char" value="*"/>
                       </Properties>
                       <Events>
-                        <EventHandler event="focusGained" listener="java.awt.event.FocusListener" parameters="java.awt.event.FocusEvent" handler="jPasswordField1FocusGained"/>
-                        <EventHandler event="focusLost" listener="java.awt.event.FocusListener" parameters="java.awt.event.FocusEvent" handler="jPasswordField1FocusLost"/>
+                        <EventHandler event="focusGained" listener="java.awt.event.FocusListener" parameters="java.awt.event.FocusEvent" handler="txt_pswdFocusGained"/>
+                        <EventHandler event="focusLost" listener="java.awt.event.FocusListener" parameters="java.awt.event.FocusEvent" handler="txt_pswdFocusLost"/>
                       </Events>
                     </Component>
                     <Container class="javax.swing.JPanel" name="jPanel9">
@@ -450,29 +454,32 @@
                       <Layout>
                         <DimensionLayout dim="0">
                           <Group type="103" groupAlignment="0" attributes="0">
-                              <Component id="jCheckBox1" alignment="1" max="32767" attributes="0"/>
+                              <Component id="chk_show" alignment="1" max="32767" attributes="0"/>
                           </Group>
                         </DimensionLayout>
                         <DimensionLayout dim="1">
                           <Group type="103" groupAlignment="0" attributes="0">
-                              <Component id="jCheckBox1" alignment="0" max="32767" attributes="0"/>
+                              <Component id="chk_show" alignment="0" max="32767" attributes="0"/>
                           </Group>
                         </DimensionLayout>
                       </Layout>
                       <SubComponents>
-                        <Component class="javax.swing.JCheckBox" name="jCheckBox1">
+                        <Component class="javax.swing.JCheckBox" name="chk_show">
                           <Properties>
                             <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
                               <Border info="org.netbeans.modules.form.compat2.border.MatteColorBorderInfo">
                                 <MatteColorBorder bottom="0" left="0" right="0" top="0"/>
                               </Border>
                             </Property>
+                            <Property name="cursor" type="java.awt.Cursor" editor="org.netbeans.modules.form.editors2.CursorEditor">
+                              <Color id="Hand Cursor"/>
+                            </Property>
                             <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
                               <Image iconType="3" name="/icons/visibility.png"/>
                             </Property>
                           </Properties>
                           <Events>
-                            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jCheckBox1ActionPerformed"/>
+                            <EventHandler event="itemStateChanged" listener="java.awt.event.ItemListener" parameters="java.awt.event.ItemEvent" handler="chk_showItemStateChanged"/>
                           </Events>
                         </Component>
                       </SubComponents>
