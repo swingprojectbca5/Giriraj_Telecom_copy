@@ -464,20 +464,6 @@ public class frm_login2 extends javax.swing.JFrame
         }
     }//GEN-LAST:event_chk_showItemStateChanged
 
-    private void jLabel5MouseEntered(java.awt.event.MouseEvent evt)//GEN-FIRST:event_jLabel5MouseEntered
-    {//GEN-HEADEREND:event_jLabel5MouseEntered
-        jLabel5.setFont(new Font("Monocai Mono", Font.PLAIN, 20));
-        jLabel5.setForeground(Color.WHITE);
-        jLabel5.setText("<html><u>CLICK HERE<u></html>");
-    }//GEN-LAST:event_jLabel5MouseEntered
-
-    private void jLabel5MouseExited(java.awt.event.MouseEvent evt)//GEN-FIRST:event_jLabel5MouseExited
-    {//GEN-HEADEREND:event_jLabel5MouseExited
-        jLabel5.setFont(new Font("Monocai Mono", Font.PLAIN, 20));
-        jLabel5.setForeground(Color.BLACK);
-        jLabel5.setText("CLICK HERE");
-    }//GEN-LAST:event_jLabel5MouseExited
-
     public static void main(String args[])
     {
         java.awt.EventQueue.invokeLater(new Runnable()
