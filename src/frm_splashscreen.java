@@ -42,7 +42,7 @@ public class frm_splashscreen extends javax.swing.JFrame
                 else
                 {
                     this.dispose();
-                    frm_login2 login2 = new frm_login2();
+                    frm_login login2 = new frm_login();
                     login2.setVisible(true);
                 }
             }
