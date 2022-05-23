@@ -51,6 +51,7 @@ public class frm_login extends javax.swing.JFrame
         jLabel9 = new javax.swing.JLabel();
         jLabel10 = new javax.swing.JLabel();
         jLabel1 = new javax.swing.JLabel();
+        jLabel11 = new javax.swing.JLabel();
         jPanel14 = new javax.swing.JPanel();
         jPanel13 = new javax.swing.JPanel();
         jLabel5 = new javax.swing.JLabel();
@@ -111,7 +112,6 @@ public class frm_login extends javax.swing.JFrame
         jPanel3.setBackground(new java.awt.Color(68, 82, 121));
 
         jLabel7.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icons/logo.png"))); // NOI18N
-        jLabel7.setPreferredSize(new java.awt.Dimension(50, 40));
 
         javax.swing.GroupLayout jPanel3Layout = new javax.swing.GroupLayout(jPanel3);
         jPanel3.setLayout(jPanel3Layout);
@@ -119,7 +119,7 @@ public class frm_login extends javax.swing.JFrame
             jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel3Layout.createSequentialGroup()
                 .addGap(4, 4, 4)
-                .addComponent(jLabel7, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(jLabel7)
                 .addContainerGap(356, Short.MAX_VALUE))
         );
         jPanel3Layout.setVerticalGroup(
@@ -396,6 +396,8 @@ public class frm_login extends javax.swing.JFrame
         jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icons/minimize.png"))); // NOI18N
         jLabel1.setPreferredSize(new java.awt.Dimension(50, 40));
 
+        jLabel11.setText("hello");
+
         javax.swing.GroupLayout kGradientPanel3Layout = new javax.swing.GroupLayout(kGradientPanel3);
         kGradientPanel3.setLayout(kGradientPanel3Layout);
         kGradientPanel3Layout.setHorizontalGroup(
@@ -405,6 +407,10 @@ public class frm_login extends javax.swing.JFrame
             .addComponent(jPanel6, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
             .addComponent(jPanel7, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
             .addComponent(jPanel12, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+            .addGroup(kGradientPanel3Layout.createSequentialGroup()
+                .addGap(206, 206, 206)
+                .addComponent(jLabel11)
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
             .addGroup(kGradientPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                 .addGroup(kGradientPanel3Layout.createSequentialGroup()
                     .addGap(0, 0, Short.MAX_VALUE)
@@ -424,7 +430,9 @@ public class frm_login extends javax.swing.JFrame
                 .addComponent(jPanel7, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(18, 18, 18)
                 .addComponent(jPanel12, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(57, Short.MAX_VALUE))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addComponent(jLabel11)
+                .addContainerGap(20, Short.MAX_VALUE))
             .addGroup(kGradientPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                 .addGroup(kGradientPanel3Layout.createSequentialGroup()
                     .addGap(0, 0, Short.MAX_VALUE)
@@ -677,6 +685,7 @@ public class frm_login extends javax.swing.JFrame
     private javax.swing.JComboBox<String> jComboBox1;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel10;
+    private javax.swing.JLabel jLabel11;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
     private javax.swing.JLabel jLabel4;
@@ -692,8 +701,6 @@ public class frm_login extends javax.swing.JFrame
     private javax.swing.JPanel jPanel13;
     private javax.swing.JPanel jPanel14;
     private javax.swing.JPanel jPanel15;
-    private javax.swing.JPanel jPanel16;
-    private javax.swing.JPanel jPanel17;
     private javax.swing.JPanel jPanel2;
     private javax.swing.JPanel jPanel3;
     private javax.swing.JPanel jPanel4;
