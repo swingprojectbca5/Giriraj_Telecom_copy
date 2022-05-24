@@ -2,6 +2,7 @@
 import java.awt.Color;
 import java.awt.Cursor;
 import java.awt.Font;
+import java.awt.event.KeyEvent;
 import java.awt.geom.RoundRectangle2D;
 import javax.swing.ImageIcon;
 
@@ -192,6 +193,7 @@ public class frm_login extends javax.swing.JFrame
         jComboBox1.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "ADMIN", "EMPLOYEE" }));
         jComboBox1.setBorder(javax.swing.BorderFactory.createMatteBorder(0, 0, 2, 0, new java.awt.Color(178, 199, 231)));
         jComboBox1.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        jComboBox1.setNextFocusableComponent(txt_pswd);
 
         jPanel11.setBackground(new java.awt.Color(178, 199, 231));
         jPanel11.setPreferredSize(new java.awt.Dimension(64, 64));
@@ -240,6 +242,7 @@ public class frm_login extends javax.swing.JFrame
         txt_pswd.setText("Password");
         txt_pswd.setBorder(javax.swing.BorderFactory.createMatteBorder(0, 0, 2, 0, new java.awt.Color(68, 82, 121)));
         txt_pswd.setEchoChar('*');
+        txt_pswd.setNextFocusableComponent(loginBtn);
         txt_pswd.addFocusListener(new java.awt.event.FocusAdapter()
         {
             public void focusGained(java.awt.event.FocusEvent evt)
@@ -249,6 +252,13 @@ public class frm_login extends javax.swing.JFrame
             public void focusLost(java.awt.event.FocusEvent evt)
             {
                 txt_pswdFocusLost(evt);
+            }
+        });
+        txt_pswd.addKeyListener(new java.awt.event.KeyAdapter()
+        {
+            public void keyPressed(java.awt.event.KeyEvent evt)
+            {
+                txt_pswdKeyPressed(evt);
             }
         });
 
@@ -327,11 +337,30 @@ public class frm_login extends javax.swing.JFrame
         loginBtn.setkHoverForeGround(new java.awt.Color(68, 82, 121));
         loginBtn.setkHoverStartColor(new java.awt.Color(228, 235, 246));
         loginBtn.setkStartColor(new java.awt.Color(68, 82, 121));
+        loginBtn.setNextFocusableComponent(jComboBox1);
+        loginBtn.addFocusListener(new java.awt.event.FocusAdapter()
+        {
+            public void focusGained(java.awt.event.FocusEvent evt)
+            {
+                loginBtnFocusGained(evt);
+            }
+            public void focusLost(java.awt.event.FocusEvent evt)
+            {
+                loginBtnFocusLost(evt);
+            }
+        });
         loginBtn.addMouseListener(new java.awt.event.MouseAdapter()
         {
             public void mouseEntered(java.awt.event.MouseEvent evt)
             {
                 loginBtnMouseEntered(evt);
+            }
+        });
+        loginBtn.addActionListener(new java.awt.event.ActionListener()
+        {
+            public void actionPerformed(java.awt.event.ActionEvent evt)
+            {
+                loginBtnActionPerformed(evt);
             }
         });
 
@@ -659,6 +688,36 @@ public class frm_login extends javax.swing.JFrame
     {//GEN-HEADEREND:event_jPanel15MouseExited
         jPanel15.setBackground(new Color(68, 82, 121));
     }//GEN-LAST:event_jPanel15MouseExited
+
+    private void txt_pswdKeyPressed(java.awt.event.KeyEvent evt)//GEN-FIRST:event_txt_pswdKeyPressed
+    {//GEN-HEADEREND:event_txt_pswdKeyPressed
+        if (evt.getKeyCode() == KeyEvent.VK_ENTER)
+        {
+            frm_dashboard dashboard = new frm_dashboard();
+            dashboard.setVisible(true);
+        }
+    }//GEN-LAST:event_txt_pswdKeyPressed
+
+    private void loginBtnFocusGained(java.awt.event.FocusEvent evt)//GEN-FIRST:event_loginBtnFocusGained
+    {//GEN-HEADEREND:event_loginBtnFocusGained
+        loginBtn.setkStartColor(new Color(228, 235, 246));
+        loginBtn.setkEndColor(new Color(228, 235, 246));
+        loginBtn.setkForeGround(new Color(68, 82, 121));
+    }//GEN-LAST:event_loginBtnFocusGained
+
+    private void loginBtnFocusLost(java.awt.event.FocusEvent evt)//GEN-FIRST:event_loginBtnFocusLost
+    {//GEN-HEADEREND:event_loginBtnFocusLost
+        loginBtn.setkStartColor(new Color(68, 82, 121));
+        loginBtn.setkEndColor(new Color(68, 82, 121));
+        loginBtn.setkForeGround(Color.WHITE);
+    }//GEN-LAST:event_loginBtnFocusLost
+
+    private void loginBtnActionPerformed(java.awt.event.ActionEvent evt)//GEN-FIRST:event_loginBtnActionPerformed
+    {//GEN-HEADEREND:event_loginBtnActionPerformed
+
+        frm_dashboard dashboard = new frm_dashboard();
+        dashboard.setVisible(true);
+    }//GEN-LAST:event_loginBtnActionPerformed
 
     public static void main(String args[])
     {
