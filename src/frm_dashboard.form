@@ -87,9 +87,10 @@
               <Group type="103" groupAlignment="0" attributes="0">
                   <Group type="102" attributes="0">
                       <EmptySpace min="-2" pref="25" max="-2" attributes="0"/>
-                      <Component id="kGradientPanel3" min="-2" max="-2" attributes="0"/>
+                      <Component id="pnl_sidepane" min="-2" max="-2" attributes="0"/>
+                      <EmptySpace pref="25" max="32767" attributes="0"/>
+                      <Component id="pnl_main" min="-2" max="-2" attributes="0"/>
                       <EmptySpace min="-2" pref="25" max="-2" attributes="0"/>
-                      <Component id="pnl_main" max="32767" attributes="0"/>
                   </Group>
                   <Component id="pnl_header" alignment="1" max="32767" attributes="0"/>
               </Group>
@@ -100,7 +101,7 @@
                       <Component id="pnl_header" min="-2" max="-2" attributes="0"/>
                       <EmptySpace min="-2" pref="25" max="-2" attributes="0"/>
                       <Group type="103" groupAlignment="0" max="-2" attributes="0">
-                          <Component id="kGradientPanel3" max="32767" attributes="0"/>
+                          <Component id="pnl_sidepane" max="32767" attributes="0"/>
                           <Component id="pnl_main" max="32767" attributes="0"/>
                       </Group>
                       <EmptySpace pref="25" max="32767" attributes="0"/>
@@ -109,7 +110,7 @@
             </DimensionLayout>
           </Layout>
           <SubComponents>
-            <Container class="com.k33ptoo.components.KGradientPanel" name="kGradientPanel3">
+            <Container class="com.k33ptoo.components.KGradientPanel" name="pnl_sidepane">
               <Properties>
                 <Property name="kBorderRadius" type="int" value="40"/>
                 <Property name="kEndColor" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
@@ -510,27 +511,27 @@
               <Layout>
                 <DimensionLayout dim="0">
                   <Group type="103" groupAlignment="0" attributes="0">
-                      <EmptySpace min="0" pref="1086" max="32767" attributes="0"/>
+                      <EmptySpace min="0" pref="1061" max="32767" attributes="0"/>
                       <Group type="103" rootIndex="1" groupAlignment="0" attributes="0">
                           <Component id="panel_help" alignment="0" max="32767" attributes="0"/>
                       </Group>
                       <Group type="103" rootIndex="2" groupAlignment="0" attributes="0">
-                          <Component id="panel_customer" alignment="1" max="32767" attributes="0"/>
+                          <Component id="panel_customer" alignment="1" pref="1061" max="32767" attributes="0"/>
                       </Group>
                       <Group type="103" rootIndex="3" groupAlignment="0" attributes="0">
-                          <Component id="panel_employee" alignment="0" max="32767" attributes="0"/>
+                          <Component id="panel_employee" alignment="0" pref="1061" max="32767" attributes="0"/>
                       </Group>
                       <Group type="103" rootIndex="4" groupAlignment="0" attributes="0">
                           <Component id="panel_product" alignment="1" max="32767" attributes="0"/>
                       </Group>
                       <Group type="103" rootIndex="5" groupAlignment="0" attributes="0">
-                          <Component id="panel_bill" alignment="1" max="32767" attributes="0"/>
+                          <Component id="panel_bill" alignment="1" pref="1061" max="32767" attributes="0"/>
                       </Group>
                       <Group type="103" rootIndex="6" groupAlignment="0" attributes="0">
-                          <Component id="panel_account" alignment="0" max="32767" attributes="0"/>
+                          <Component id="panel_account" alignment="0" pref="1061" max="32767" attributes="0"/>
                       </Group>
                       <Group type="103" rootIndex="7" groupAlignment="0" attributes="0">
-                          <Component id="panel_about" alignment="0" max="32767" attributes="0"/>
+                          <Component id="panel_about" alignment="0" pref="1061" max="32767" attributes="0"/>
                       </Group>
                   </Group>
                 </DimensionLayout>
@@ -580,7 +581,7 @@
                   <Layout>
                     <DimensionLayout dim="0">
                       <Group type="103" groupAlignment="0" attributes="0">
-                          <EmptySpace min="0" pref="1086" max="32767" attributes="0"/>
+                          <EmptySpace min="0" pref="1061" max="32767" attributes="0"/>
                       </Group>
                     </DimensionLayout>
                     <DimensionLayout dim="1">
@@ -608,7 +609,7 @@
                   <Layout>
                     <DimensionLayout dim="0">
                       <Group type="103" groupAlignment="0" attributes="0">
-                          <EmptySpace min="0" pref="1086" max="32767" attributes="0"/>
+                          <EmptySpace min="0" pref="1061" max="32767" attributes="0"/>
                       </Group>
                     </DimensionLayout>
                     <DimensionLayout dim="1">
@@ -633,7 +634,7 @@
                   <Layout>
                     <DimensionLayout dim="0">
                       <Group type="103" groupAlignment="0" attributes="0">
-                          <EmptySpace min="0" pref="1086" max="32767" attributes="0"/>
+                          <EmptySpace min="0" pref="1061" max="32767" attributes="0"/>
                       </Group>
                     </DimensionLayout>
                     <DimensionLayout dim="1">
@@ -661,7 +662,7 @@
                   <Layout>
                     <DimensionLayout dim="0">
                       <Group type="103" groupAlignment="0" attributes="0">
-                          <EmptySpace min="0" pref="1086" max="32767" attributes="0"/>
+                          <EmptySpace min="0" pref="1061" max="32767" attributes="0"/>
                       </Group>
                     </DimensionLayout>
                     <DimensionLayout dim="1">
@@ -689,7 +690,7 @@
                   <Layout>
                     <DimensionLayout dim="0">
                       <Group type="103" groupAlignment="0" attributes="0">
-                          <EmptySpace min="0" pref="1086" max="32767" attributes="0"/>
+                          <EmptySpace min="0" pref="1061" max="32767" attributes="0"/>
                       </Group>
                     </DimensionLayout>
                     <DimensionLayout dim="1">
@@ -717,7 +718,7 @@
                   <Layout>
                     <DimensionLayout dim="0">
                       <Group type="103" groupAlignment="0" attributes="0">
-                          <EmptySpace min="0" pref="1086" max="32767" attributes="0"/>
+                          <EmptySpace min="0" pref="1061" max="32767" attributes="0"/>
                       </Group>
                     </DimensionLayout>
                     <DimensionLayout dim="1">
@@ -742,7 +743,7 @@
                   <Layout>
                     <DimensionLayout dim="0">
                       <Group type="103" groupAlignment="0" attributes="0">
-                          <EmptySpace min="0" pref="1086" max="32767" attributes="0"/>
+                          <EmptySpace min="0" pref="1061" max="32767" attributes="0"/>
                       </Group>
                     </DimensionLayout>
                     <DimensionLayout dim="1">

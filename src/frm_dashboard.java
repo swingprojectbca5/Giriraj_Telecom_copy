@@ -47,7 +47,7 @@ public class frm_dashboard extends javax.swing.JFrame
         }
         ;
         kGradientPanel2 = new com.k33ptoo.components.KGradientPanel();
-        kGradientPanel3 = new com.k33ptoo.components.KGradientPanel();
+        pnl_sidepane = new com.k33ptoo.components.KGradientPanel();
         pnl_customer = new com.k33ptoo.components.KGradientPanel();
         lbl_customer = new javax.swing.JLabel();
         pnl_employee = new com.k33ptoo.components.KGradientPanel();
@@ -93,10 +93,10 @@ public class frm_dashboard extends javax.swing.JFrame
         kGradientPanel2.setOpaque(false);
         kGradientPanel2.setPreferredSize(new java.awt.Dimension(1650, 800));
 
-        kGradientPanel3.setkBorderRadius(40);
-        kGradientPanel3.setkEndColor(new java.awt.Color(178, 199, 231));
-        kGradientPanel3.setkStartColor(new java.awt.Color(178, 199, 231));
-        kGradientPanel3.setOpaque(false);
+        pnl_sidepane.setkBorderRadius(40);
+        pnl_sidepane.setkEndColor(new java.awt.Color(178, 199, 231));
+        pnl_sidepane.setkStartColor(new java.awt.Color(178, 199, 231));
+        pnl_sidepane.setOpaque(false);
 
         pnl_customer.setkBorderRadius(40);
         pnl_customer.setkEndColor(new java.awt.Color(228, 235, 246));
@@ -351,13 +351,13 @@ public class frm_dashboard extends javax.swing.JFrame
             .addComponent(lbl_help, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, 51, Short.MAX_VALUE)
         );
 
-        javax.swing.GroupLayout kGradientPanel3Layout = new javax.swing.GroupLayout(kGradientPanel3);
-        kGradientPanel3.setLayout(kGradientPanel3Layout);
-        kGradientPanel3Layout.setHorizontalGroup(
-            kGradientPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(kGradientPanel3Layout.createSequentialGroup()
+        javax.swing.GroupLayout pnl_sidepaneLayout = new javax.swing.GroupLayout(pnl_sidepane);
+        pnl_sidepane.setLayout(pnl_sidepaneLayout);
+        pnl_sidepaneLayout.setHorizontalGroup(
+            pnl_sidepaneLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(pnl_sidepaneLayout.createSequentialGroup()
                 .addGap(50, 50, 50)
-                .addGroup(kGradientPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                .addGroup(pnl_sidepaneLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addComponent(pnl_help, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(pnl_about, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(pnl_account, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
@@ -367,9 +367,9 @@ public class frm_dashboard extends javax.swing.JFrame
                     .addComponent(pnl_customer, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addContainerGap(50, Short.MAX_VALUE))
         );
-        kGradientPanel3Layout.setVerticalGroup(
-            kGradientPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(kGradientPanel3Layout.createSequentialGroup()
+        pnl_sidepaneLayout.setVerticalGroup(
+            pnl_sidepaneLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(pnl_sidepaneLayout.createSequentialGroup()
                 .addGap(25, 25, 25)
                 .addComponent(pnl_customer, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(50, 50, 50)
@@ -402,7 +402,7 @@ public class frm_dashboard extends javax.swing.JFrame
         panel_customer.setLayout(panel_customerLayout);
         panel_customerLayout.setHorizontalGroup(
             panel_customerLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 1086, Short.MAX_VALUE)
+            .addGap(0, 1061, Short.MAX_VALUE)
         );
         panel_customerLayout.setVerticalGroup(
             panel_customerLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -419,7 +419,7 @@ public class frm_dashboard extends javax.swing.JFrame
         panel_employee.setLayout(panel_employeeLayout);
         panel_employeeLayout.setHorizontalGroup(
             panel_employeeLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 1086, Short.MAX_VALUE)
+            .addGap(0, 1061, Short.MAX_VALUE)
         );
         panel_employeeLayout.setVerticalGroup(
             panel_employeeLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -435,7 +435,7 @@ public class frm_dashboard extends javax.swing.JFrame
         panel_product.setLayout(panel_productLayout);
         panel_productLayout.setHorizontalGroup(
             panel_productLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 1086, Short.MAX_VALUE)
+            .addGap(0, 1061, Short.MAX_VALUE)
         );
         panel_productLayout.setVerticalGroup(
             panel_productLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -452,7 +452,7 @@ public class frm_dashboard extends javax.swing.JFrame
         panel_bill.setLayout(panel_billLayout);
         panel_billLayout.setHorizontalGroup(
             panel_billLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 1086, Short.MAX_VALUE)
+            .addGap(0, 1061, Short.MAX_VALUE)
         );
         panel_billLayout.setVerticalGroup(
             panel_billLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -469,7 +469,7 @@ public class frm_dashboard extends javax.swing.JFrame
         panel_account.setLayout(panel_accountLayout);
         panel_accountLayout.setHorizontalGroup(
             panel_accountLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 1086, Short.MAX_VALUE)
+            .addGap(0, 1061, Short.MAX_VALUE)
         );
         panel_accountLayout.setVerticalGroup(
             panel_accountLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -486,7 +486,7 @@ public class frm_dashboard extends javax.swing.JFrame
         panel_about.setLayout(panel_aboutLayout);
         panel_aboutLayout.setHorizontalGroup(
             panel_aboutLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 1086, Short.MAX_VALUE)
+            .addGap(0, 1061, Short.MAX_VALUE)
         );
         panel_aboutLayout.setVerticalGroup(
             panel_aboutLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -502,7 +502,7 @@ public class frm_dashboard extends javax.swing.JFrame
         panel_help.setLayout(panel_helpLayout);
         panel_helpLayout.setHorizontalGroup(
             panel_helpLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 1086, Short.MAX_VALUE)
+            .addGap(0, 1061, Short.MAX_VALUE)
         );
         panel_helpLayout.setVerticalGroup(
             panel_helpLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -513,21 +513,21 @@ public class frm_dashboard extends javax.swing.JFrame
         pnl_main.setLayout(pnl_mainLayout);
         pnl_mainLayout.setHorizontalGroup(
             pnl_mainLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 1086, Short.MAX_VALUE)
+            .addGap(0, 1061, Short.MAX_VALUE)
             .addGroup(pnl_mainLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                 .addComponent(panel_help, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
             .addGroup(pnl_mainLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                .addComponent(panel_customer, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                .addComponent(panel_customer, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, 1061, Short.MAX_VALUE))
             .addGroup(pnl_mainLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                .addComponent(panel_employee, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                .addComponent(panel_employee, javax.swing.GroupLayout.DEFAULT_SIZE, 1061, Short.MAX_VALUE))
             .addGroup(pnl_mainLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                 .addComponent(panel_product, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
             .addGroup(pnl_mainLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                .addComponent(panel_bill, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                .addComponent(panel_bill, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, 1061, Short.MAX_VALUE))
             .addGroup(pnl_mainLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                .addComponent(panel_account, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                .addComponent(panel_account, javax.swing.GroupLayout.DEFAULT_SIZE, 1061, Short.MAX_VALUE))
             .addGroup(pnl_mainLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                .addComponent(panel_about, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                .addComponent(panel_about, javax.swing.GroupLayout.DEFAULT_SIZE, 1061, Short.MAX_VALUE))
         );
         pnl_mainLayout.setVerticalGroup(
             pnl_mainLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -659,9 +659,10 @@ public class frm_dashboard extends javax.swing.JFrame
             kGradientPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(kGradientPanel2Layout.createSequentialGroup()
                 .addGap(25, 25, 25)
-                .addComponent(kGradientPanel3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(25, 25, 25)
-                .addComponent(pnl_main, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                .addComponent(pnl_sidepane, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 25, Short.MAX_VALUE)
+                .addComponent(pnl_main, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(25, 25, 25))
             .addComponent(pnl_header, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
         );
         kGradientPanel2Layout.setVerticalGroup(
@@ -670,7 +671,7 @@ public class frm_dashboard extends javax.swing.JFrame
                 .addComponent(pnl_header, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(25, 25, 25)
                 .addGroup(kGradientPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                    .addComponent(kGradientPanel3, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(pnl_sidepane, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                     .addComponent(pnl_main, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
                 .addContainerGap(25, Short.MAX_VALUE))
         );
@@ -876,7 +877,6 @@ public class frm_dashboard extends javax.swing.JFrame
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private com.k33ptoo.components.KGradientPanel kGradientPanel1;
     private com.k33ptoo.components.KGradientPanel kGradientPanel2;
-    private com.k33ptoo.components.KGradientPanel kGradientPanel3;
     private javax.swing.JLabel lbl_about;
     private javax.swing.JLabel lbl_account;
     private javax.swing.JLabel lbl_bill;
@@ -905,5 +905,6 @@ public class frm_dashboard extends javax.swing.JFrame
     private com.k33ptoo.components.KGradientPanel pnl_main;
     private javax.swing.JPanel pnl_min;
     private com.k33ptoo.components.KGradientPanel pnl_product;
+    private com.k33ptoo.components.KGradientPanel pnl_sidepane;
     // End of variables declaration//GEN-END:variables
 }
