@@ -26,6 +26,14 @@ public class frm_dashboard extends javax.swing.JFrame
 
         this.setSize(x, y - taskbar);
 
+        panel_customer.setVisible(false);
+        panel_employee.setVisible(false);
+        panel_bill.setVisible(false);
+        panel_product.setVisible(false);
+        panel_account.setVisible(false);
+        panel_about.setVisible(false);
+        panel_help.setVisible(false);
+
         // this.setExtendedState(JFrame.MAXIMIZED_BOTH);
     }
 
@@ -70,6 +78,10 @@ public class frm_dashboard extends javax.swing.JFrame
         lbl_gt = new javax.swing.JLabel();
         panel_main = new com.k33ptoo.components.KGradientPanel();
         panel_customer = new com.k33ptoo.components.KGradientPanel();
+        jTabbedPane1 = new javax.swing.JTabbedPane();
+        jPanel1 = new javax.swing.JPanel();
+        jPanel2 = new javax.swing.JPanel();
+        jPanel3 = new javax.swing.JPanel();
         panel_employee = new com.k33ptoo.components.KGradientPanel();
         panel_product = new com.k33ptoo.components.KGradientPanel();
         panel_bill = new com.k33ptoo.components.KGradientPanel();
@@ -513,19 +525,64 @@ public class frm_dashboard extends javax.swing.JFrame
             .addComponent(lbl_gt, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
         );
 
+        panel_main.setkEndColor(new java.awt.Color(228, 235, 246));
+        panel_main.setkStartColor(new java.awt.Color(228, 235, 246));
         panel_main.setPreferredSize(new java.awt.Dimension(1061, 710));
 
+        panel_customer.setkEndColor(new java.awt.Color(228, 235, 246));
+        panel_customer.setkStartColor(new java.awt.Color(228, 235, 246));
         panel_customer.setPreferredSize(new java.awt.Dimension(1061, 710));
+
+        jTabbedPane1.setFont(new java.awt.Font("Cascadia Mono", 0, 24)); // NOI18N
+
+        javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
+        jPanel1.setLayout(jPanel1Layout);
+        jPanel1Layout.setHorizontalGroup(
+            jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 1061, Short.MAX_VALUE)
+        );
+        jPanel1Layout.setVerticalGroup(
+            jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 660, Short.MAX_VALUE)
+        );
+
+        jTabbedPane1.addTab("ADD CUSTOMER", jPanel1);
+
+        javax.swing.GroupLayout jPanel2Layout = new javax.swing.GroupLayout(jPanel2);
+        jPanel2.setLayout(jPanel2Layout);
+        jPanel2Layout.setHorizontalGroup(
+            jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 1061, Short.MAX_VALUE)
+        );
+        jPanel2Layout.setVerticalGroup(
+            jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 660, Short.MAX_VALUE)
+        );
+
+        jTabbedPane1.addTab("REMOVE CUSTOMER", jPanel2);
+
+        javax.swing.GroupLayout jPanel3Layout = new javax.swing.GroupLayout(jPanel3);
+        jPanel3.setLayout(jPanel3Layout);
+        jPanel3Layout.setHorizontalGroup(
+            jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 1061, Short.MAX_VALUE)
+        );
+        jPanel3Layout.setVerticalGroup(
+            jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 660, Short.MAX_VALUE)
+        );
+
+        jTabbedPane1.addTab("CUSTOMER DETAIL", jPanel3);
 
         javax.swing.GroupLayout panel_customerLayout = new javax.swing.GroupLayout(panel_customer);
         panel_customer.setLayout(panel_customerLayout);
         panel_customerLayout.setHorizontalGroup(
             panel_customerLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 1061, Short.MAX_VALUE)
+            .addComponent(jTabbedPane1)
         );
         panel_customerLayout.setVerticalGroup(
             panel_customerLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 710, Short.MAX_VALUE)
+            .addComponent(jTabbedPane1, javax.swing.GroupLayout.Alignment.TRAILING)
         );
 
         panel_employee.setPreferredSize(new java.awt.Dimension(1061, 710));
@@ -606,6 +663,8 @@ public class frm_dashboard extends javax.swing.JFrame
             .addGap(0, 710, Short.MAX_VALUE)
         );
 
+        panel_main9.setkEndColor(new java.awt.Color(228, 235, 246));
+        panel_main9.setkStartColor(new java.awt.Color(228, 235, 246));
         panel_main9.setPreferredSize(new java.awt.Dimension(1061, 710));
 
         javax.swing.GroupLayout panel_main9Layout = new javax.swing.GroupLayout(panel_main9);
@@ -869,6 +928,12 @@ public class frm_dashboard extends javax.swing.JFrame
         panel_account.setVisible(false);
         panel_about.setVisible(false);
         panel_help.setVisible(false);
+        panel_main9.setVisible(false);
+        pnl_customer.setkStartColor(Color.WHITE);
+        pnl_customer.setkEndColor(Color.WHITE);
+        pnl_customer.setBackground(Color.WHITE);
+        lbl_customer.setForeground(Color.BLACK);
+
     }//GEN-LAST:event_lbl_customerMouseClicked
 
     private void lbl_employeeMouseClicked(java.awt.event.MouseEvent evt)//GEN-FIRST:event_lbl_employeeMouseClicked
@@ -879,7 +944,12 @@ public class frm_dashboard extends javax.swing.JFrame
         panel_product.setVisible(false);
         panel_account.setVisible(false);
         panel_about.setVisible(false);
+        panel_main9.setVisible(false);
         panel_help.setVisible(false);
+        pnl_employee.setkStartColor(Color.WHITE);
+        pnl_employee.setkEndColor(Color.WHITE);
+        pnl_employee.setBackground(Color.WHITE);
+        lbl_employee.setForeground(Color.BLACK);
     }//GEN-LAST:event_lbl_employeeMouseClicked
 
     private void lbl_productMouseClicked(java.awt.event.MouseEvent evt)//GEN-FIRST:event_lbl_productMouseClicked
@@ -891,6 +961,11 @@ public class frm_dashboard extends javax.swing.JFrame
         panel_account.setVisible(false);
         panel_about.setVisible(false);
         panel_help.setVisible(false);
+        panel_main9.setVisible(false);
+        pnl_product.setkStartColor(Color.WHITE);
+        pnl_product.setkEndColor(Color.WHITE);
+        pnl_product.setBackground(Color.WHITE);
+        lbl_product.setForeground(Color.BLACK);
     }//GEN-LAST:event_lbl_productMouseClicked
 
     private void lbl_billMouseClicked(java.awt.event.MouseEvent evt)//GEN-FIRST:event_lbl_billMouseClicked
@@ -902,6 +977,11 @@ public class frm_dashboard extends javax.swing.JFrame
         panel_account.setVisible(false);
         panel_about.setVisible(false);
         panel_help.setVisible(false);
+        panel_main9.setVisible(false);
+        pnl_bill.setkStartColor(Color.WHITE);
+        pnl_bill.setkEndColor(Color.WHITE);
+        pnl_bill.setBackground(Color.WHITE);
+        lbl_bill.setForeground(Color.BLACK);
     }//GEN-LAST:event_lbl_billMouseClicked
 
     private void lbl_accountMouseClicked(java.awt.event.MouseEvent evt)//GEN-FIRST:event_lbl_accountMouseClicked
@@ -913,6 +993,11 @@ public class frm_dashboard extends javax.swing.JFrame
         panel_account.setVisible(true);
         panel_about.setVisible(false);
         panel_help.setVisible(false);
+        panel_main9.setVisible(false);
+        pnl_account.setkStartColor(Color.WHITE);
+        pnl_account.setkEndColor(Color.WHITE);
+        pnl_account.setBackground(Color.WHITE);
+        lbl_account.setForeground(Color.BLACK);
     }//GEN-LAST:event_lbl_accountMouseClicked
 
     private void lbl_aboutMouseClicked(java.awt.event.MouseEvent evt)//GEN-FIRST:event_lbl_aboutMouseClicked
@@ -924,6 +1009,11 @@ public class frm_dashboard extends javax.swing.JFrame
         panel_account.setVisible(false);
         panel_about.setVisible(true);
         panel_help.setVisible(false);
+        panel_main9.setVisible(false);
+        pnl_about.setkStartColor(Color.WHITE);
+        pnl_about.setkEndColor(Color.WHITE);
+        pnl_about.setBackground(Color.WHITE);
+        lbl_about.setForeground(Color.BLACK);
     }//GEN-LAST:event_lbl_aboutMouseClicked
 
     private void lbl_helpMouseClicked(java.awt.event.MouseEvent evt)//GEN-FIRST:event_lbl_helpMouseClicked
@@ -935,6 +1025,11 @@ public class frm_dashboard extends javax.swing.JFrame
         panel_account.setVisible(false);
         panel_about.setVisible(false);
         panel_help.setVisible(true);
+        panel_main9.setVisible(false);
+        pnl_help.setkStartColor(Color.WHITE);
+        pnl_help.setkEndColor(Color.WHITE);
+        pnl_help.setBackground(Color.WHITE);
+        lbl_help.setForeground(Color.BLACK);
     }//GEN-LAST:event_lbl_helpMouseClicked
 
     public static void main(String args[])
@@ -949,6 +1044,10 @@ public class frm_dashboard extends javax.swing.JFrame
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JPanel jPanel1;
+    private javax.swing.JPanel jPanel2;
+    private javax.swing.JPanel jPanel3;
+    private javax.swing.JTabbedPane jTabbedPane1;
     private com.k33ptoo.components.KGradientPanel kGradientPanel1;
     private com.k33ptoo.components.KGradientPanel kGradientPanel2;
     private javax.swing.JLabel lbl_about;
