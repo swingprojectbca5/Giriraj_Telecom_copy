@@ -62,27 +62,21 @@ public class frm_dashboard extends javax.swing.JFrame
         lbl_about = new javax.swing.JLabel();
         pnl_help = new com.k33ptoo.components.KGradientPanel();
         lbl_help = new javax.swing.JLabel();
-        pnl_main = new com.k33ptoo.components.KGradientPanel();
-        panel_customer = new com.k33ptoo.components.KGradientPanel();
-        jLabel2 = new javax.swing.JLabel();
-        panel_employee = new com.k33ptoo.components.KGradientPanel();
-        jLabel3 = new javax.swing.JLabel();
-        panel_product = new com.k33ptoo.components.KGradientPanel();
-        jLabel4 = new javax.swing.JLabel();
-        panel_bill = new com.k33ptoo.components.KGradientPanel();
-        jLabel1 = new javax.swing.JLabel();
-        panel_account = new com.k33ptoo.components.KGradientPanel();
-        jLabel5 = new javax.swing.JLabel();
-        panel_about = new com.k33ptoo.components.KGradientPanel();
-        jLabel6 = new javax.swing.JLabel();
-        panel_help = new com.k33ptoo.components.KGradientPanel();
-        jLabel7 = new javax.swing.JLabel();
         pnl_header = new com.k33ptoo.components.KGradientPanel();
         pnl_close = new com.k33ptoo.components.KGradientPanel();
         lbl_close = new javax.swing.JLabel();
         pnl_min = new javax.swing.JPanel();
         lbl_min = new javax.swing.JLabel();
         lbl_gt = new javax.swing.JLabel();
+        panel_main = new com.k33ptoo.components.KGradientPanel();
+        panel_customer = new com.k33ptoo.components.KGradientPanel();
+        panel_employee = new com.k33ptoo.components.KGradientPanel();
+        panel_product = new com.k33ptoo.components.KGradientPanel();
+        panel_bill = new com.k33ptoo.components.KGradientPanel();
+        panel_account = new com.k33ptoo.components.KGradientPanel();
+        panel_about = new com.k33ptoo.components.KGradientPanel();
+        panel_help = new com.k33ptoo.components.KGradientPanel();
+        panel_main9 = new com.k33ptoo.components.KGradientPanel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setAlwaysOnTop(true);
@@ -414,216 +408,6 @@ public class frm_dashboard extends javax.swing.JFrame
                 .addContainerGap(28, Short.MAX_VALUE))
         );
 
-        pnl_main.setkBorderRadius(30);
-        pnl_main.setkEndColor(new java.awt.Color(228, 235, 246));
-        pnl_main.setkStartColor(new java.awt.Color(228, 235, 246));
-        pnl_main.setOpaque(false);
-
-        panel_customer.setkBorderRadius(30);
-        panel_customer.setkEndColor(new java.awt.Color(228, 235, 246));
-        panel_customer.setkStartColor(new java.awt.Color(228, 235, 246));
-        panel_customer.setOpaque(false);
-        panel_customer.setPreferredSize(new java.awt.Dimension(1086, 710));
-
-        jLabel2.setFont(new java.awt.Font("Segoe UI", 0, 24)); // NOI18N
-        jLabel2.setText("CUSTOMER");
-
-        javax.swing.GroupLayout panel_customerLayout = new javax.swing.GroupLayout(panel_customer);
-        panel_customer.setLayout(panel_customerLayout);
-        panel_customerLayout.setHorizontalGroup(
-            panel_customerLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(panel_customerLayout.createSequentialGroup()
-                .addComponent(jLabel2, javax.swing.GroupLayout.PREFERRED_SIZE, 349, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(0, 712, Short.MAX_VALUE))
-        );
-        panel_customerLayout.setVerticalGroup(
-            panel_customerLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(panel_customerLayout.createSequentialGroup()
-                .addComponent(jLabel2, javax.swing.GroupLayout.PREFERRED_SIZE, 162, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(0, 548, Short.MAX_VALUE))
-        );
-
-        panel_employee.setkBorderRadius(30);
-        panel_employee.setkEndColor(new java.awt.Color(228, 235, 246));
-        panel_employee.setkStartColor(new java.awt.Color(228, 235, 246));
-        panel_employee.setOpaque(false);
-        panel_employee.setPreferredSize(new java.awt.Dimension(1086, 710));
-
-        jLabel3.setFont(new java.awt.Font("Segoe UI", 0, 24)); // NOI18N
-        jLabel3.setText("EMPLOYEE");
-
-        javax.swing.GroupLayout panel_employeeLayout = new javax.swing.GroupLayout(panel_employee);
-        panel_employee.setLayout(panel_employeeLayout);
-        panel_employeeLayout.setHorizontalGroup(
-            panel_employeeLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(panel_employeeLayout.createSequentialGroup()
-                .addComponent(jLabel3, javax.swing.GroupLayout.PREFERRED_SIZE, 349, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(0, 737, Short.MAX_VALUE))
-        );
-        panel_employeeLayout.setVerticalGroup(
-            panel_employeeLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(panel_employeeLayout.createSequentialGroup()
-                .addComponent(jLabel3, javax.swing.GroupLayout.PREFERRED_SIZE, 162, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(0, 548, Short.MAX_VALUE))
-        );
-
-        panel_product.setkBorderRadius(30);
-        panel_product.setkEndColor(new java.awt.Color(228, 235, 246));
-        panel_product.setkStartColor(new java.awt.Color(228, 235, 246));
-        panel_product.setOpaque(false);
-
-        jLabel4.setFont(new java.awt.Font("Segoe UI", 0, 24)); // NOI18N
-        jLabel4.setText("PRODUCT");
-
-        javax.swing.GroupLayout panel_productLayout = new javax.swing.GroupLayout(panel_product);
-        panel_product.setLayout(panel_productLayout);
-        panel_productLayout.setHorizontalGroup(
-            panel_productLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(panel_productLayout.createSequentialGroup()
-                .addComponent(jLabel4, javax.swing.GroupLayout.PREFERRED_SIZE, 349, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(0, 712, Short.MAX_VALUE))
-        );
-        panel_productLayout.setVerticalGroup(
-            panel_productLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(panel_productLayout.createSequentialGroup()
-                .addComponent(jLabel4, javax.swing.GroupLayout.PREFERRED_SIZE, 162, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(0, 548, Short.MAX_VALUE))
-        );
-
-        panel_bill.setkBorderRadius(30);
-        panel_bill.setkEndColor(new java.awt.Color(228, 235, 246));
-        panel_bill.setkStartColor(new java.awt.Color(228, 235, 246));
-        panel_bill.setOpaque(false);
-        panel_bill.setPreferredSize(new java.awt.Dimension(1086, 710));
-
-        jLabel1.setFont(new java.awt.Font("Segoe UI", 0, 24)); // NOI18N
-        jLabel1.setText("BILL");
-
-        javax.swing.GroupLayout panel_billLayout = new javax.swing.GroupLayout(panel_bill);
-        panel_bill.setLayout(panel_billLayout);
-        panel_billLayout.setHorizontalGroup(
-            panel_billLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(panel_billLayout.createSequentialGroup()
-                .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 349, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(0, 712, Short.MAX_VALUE))
-        );
-        panel_billLayout.setVerticalGroup(
-            panel_billLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(panel_billLayout.createSequentialGroup()
-                .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 162, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(0, 548, Short.MAX_VALUE))
-        );
-
-        panel_account.setkBorderRadius(30);
-        panel_account.setkEndColor(new java.awt.Color(228, 235, 246));
-        panel_account.setkStartColor(new java.awt.Color(228, 235, 246));
-        panel_account.setOpaque(false);
-        panel_account.setPreferredSize(new java.awt.Dimension(1086, 710));
-
-        jLabel5.setFont(new java.awt.Font("Segoe UI", 0, 24)); // NOI18N
-        jLabel5.setText("ACCOUNT");
-
-        javax.swing.GroupLayout panel_accountLayout = new javax.swing.GroupLayout(panel_account);
-        panel_account.setLayout(panel_accountLayout);
-        panel_accountLayout.setHorizontalGroup(
-            panel_accountLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(panel_accountLayout.createSequentialGroup()
-                .addComponent(jLabel5, javax.swing.GroupLayout.PREFERRED_SIZE, 349, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(0, 737, Short.MAX_VALUE))
-        );
-        panel_accountLayout.setVerticalGroup(
-            panel_accountLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(panel_accountLayout.createSequentialGroup()
-                .addComponent(jLabel5, javax.swing.GroupLayout.PREFERRED_SIZE, 162, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(0, 548, Short.MAX_VALUE))
-        );
-
-        panel_about.setkBorderRadius(30);
-        panel_about.setkEndColor(new java.awt.Color(228, 235, 246));
-        panel_about.setkStartColor(new java.awt.Color(228, 235, 246));
-        panel_about.setOpaque(false);
-        panel_about.setPreferredSize(new java.awt.Dimension(1086, 710));
-
-        jLabel6.setFont(new java.awt.Font("Segoe UI", 0, 24)); // NOI18N
-        jLabel6.setText("ABOUT");
-
-        javax.swing.GroupLayout panel_aboutLayout = new javax.swing.GroupLayout(panel_about);
-        panel_about.setLayout(panel_aboutLayout);
-        panel_aboutLayout.setHorizontalGroup(
-            panel_aboutLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(panel_aboutLayout.createSequentialGroup()
-                .addComponent(jLabel6, javax.swing.GroupLayout.PREFERRED_SIZE, 349, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(0, 737, Short.MAX_VALUE))
-        );
-        panel_aboutLayout.setVerticalGroup(
-            panel_aboutLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(panel_aboutLayout.createSequentialGroup()
-                .addComponent(jLabel6, javax.swing.GroupLayout.PREFERRED_SIZE, 162, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(0, 548, Short.MAX_VALUE))
-        );
-
-        panel_help.setkBorderRadius(30);
-        panel_help.setkEndColor(new java.awt.Color(228, 235, 246));
-        panel_help.setkStartColor(new java.awt.Color(228, 235, 246));
-        panel_help.setOpaque(false);
-
-        jLabel7.setFont(new java.awt.Font("Segoe UI", 0, 24)); // NOI18N
-        jLabel7.setText("HELP");
-
-        javax.swing.GroupLayout panel_helpLayout = new javax.swing.GroupLayout(panel_help);
-        panel_help.setLayout(panel_helpLayout);
-        panel_helpLayout.setHorizontalGroup(
-            panel_helpLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(panel_helpLayout.createSequentialGroup()
-                .addComponent(jLabel7, javax.swing.GroupLayout.PREFERRED_SIZE, 349, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(0, 712, Short.MAX_VALUE))
-        );
-        panel_helpLayout.setVerticalGroup(
-            panel_helpLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(panel_helpLayout.createSequentialGroup()
-                .addComponent(jLabel7, javax.swing.GroupLayout.PREFERRED_SIZE, 162, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(0, 548, Short.MAX_VALUE))
-        );
-
-        javax.swing.GroupLayout pnl_mainLayout = new javax.swing.GroupLayout(pnl_main);
-        pnl_main.setLayout(pnl_mainLayout);
-        pnl_mainLayout.setHorizontalGroup(
-            pnl_mainLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 1061, Short.MAX_VALUE)
-            .addGroup(pnl_mainLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                .addComponent(panel_help, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-            .addGroup(pnl_mainLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                .addComponent(panel_customer, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, 1061, Short.MAX_VALUE))
-            .addGroup(pnl_mainLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                .addComponent(panel_employee, javax.swing.GroupLayout.DEFAULT_SIZE, 1061, Short.MAX_VALUE))
-            .addGroup(pnl_mainLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                .addComponent(panel_product, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-            .addGroup(pnl_mainLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                .addComponent(panel_bill, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, 1061, Short.MAX_VALUE))
-            .addGroup(pnl_mainLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                .addComponent(panel_account, javax.swing.GroupLayout.DEFAULT_SIZE, 1061, Short.MAX_VALUE))
-            .addGroup(pnl_mainLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                .addComponent(panel_about, javax.swing.GroupLayout.DEFAULT_SIZE, 1061, Short.MAX_VALUE))
-        );
-        pnl_mainLayout.setVerticalGroup(
-            pnl_mainLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 710, Short.MAX_VALUE)
-            .addGroup(pnl_mainLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                .addComponent(panel_help, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-            .addGroup(pnl_mainLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                .addComponent(panel_customer, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-            .addGroup(pnl_mainLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                .addComponent(panel_employee, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-            .addGroup(pnl_mainLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                .addComponent(panel_product, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-            .addGroup(pnl_mainLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                .addComponent(panel_bill, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-            .addGroup(pnl_mainLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                .addComponent(panel_account, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-            .addGroup(pnl_mainLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                .addComponent(panel_about, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-        );
-
         pnl_header.setkBorderRadius(30);
         pnl_header.setkEndColor(new java.awt.Color(68, 82, 121));
         pnl_header.setkStartColor(new java.awt.Color(68, 82, 121));
@@ -729,6 +513,155 @@ public class frm_dashboard extends javax.swing.JFrame
             .addComponent(lbl_gt, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
         );
 
+        panel_main.setPreferredSize(new java.awt.Dimension(1061, 710));
+
+        panel_customer.setPreferredSize(new java.awt.Dimension(1061, 710));
+
+        javax.swing.GroupLayout panel_customerLayout = new javax.swing.GroupLayout(panel_customer);
+        panel_customer.setLayout(panel_customerLayout);
+        panel_customerLayout.setHorizontalGroup(
+            panel_customerLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 1061, Short.MAX_VALUE)
+        );
+        panel_customerLayout.setVerticalGroup(
+            panel_customerLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 710, Short.MAX_VALUE)
+        );
+
+        panel_employee.setPreferredSize(new java.awt.Dimension(1061, 710));
+
+        javax.swing.GroupLayout panel_employeeLayout = new javax.swing.GroupLayout(panel_employee);
+        panel_employee.setLayout(panel_employeeLayout);
+        panel_employeeLayout.setHorizontalGroup(
+            panel_employeeLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 1061, Short.MAX_VALUE)
+        );
+        panel_employeeLayout.setVerticalGroup(
+            panel_employeeLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 710, Short.MAX_VALUE)
+        );
+
+        panel_product.setPreferredSize(new java.awt.Dimension(1061, 710));
+
+        javax.swing.GroupLayout panel_productLayout = new javax.swing.GroupLayout(panel_product);
+        panel_product.setLayout(panel_productLayout);
+        panel_productLayout.setHorizontalGroup(
+            panel_productLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 1061, Short.MAX_VALUE)
+        );
+        panel_productLayout.setVerticalGroup(
+            panel_productLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 710, Short.MAX_VALUE)
+        );
+
+        panel_bill.setPreferredSize(new java.awt.Dimension(1061, 710));
+
+        javax.swing.GroupLayout panel_billLayout = new javax.swing.GroupLayout(panel_bill);
+        panel_bill.setLayout(panel_billLayout);
+        panel_billLayout.setHorizontalGroup(
+            panel_billLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 1061, Short.MAX_VALUE)
+        );
+        panel_billLayout.setVerticalGroup(
+            panel_billLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 710, Short.MAX_VALUE)
+        );
+
+        panel_account.setPreferredSize(new java.awt.Dimension(1061, 710));
+
+        javax.swing.GroupLayout panel_accountLayout = new javax.swing.GroupLayout(panel_account);
+        panel_account.setLayout(panel_accountLayout);
+        panel_accountLayout.setHorizontalGroup(
+            panel_accountLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 1061, Short.MAX_VALUE)
+        );
+        panel_accountLayout.setVerticalGroup(
+            panel_accountLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 710, Short.MAX_VALUE)
+        );
+
+        panel_about.setPreferredSize(new java.awt.Dimension(1061, 710));
+
+        javax.swing.GroupLayout panel_aboutLayout = new javax.swing.GroupLayout(panel_about);
+        panel_about.setLayout(panel_aboutLayout);
+        panel_aboutLayout.setHorizontalGroup(
+            panel_aboutLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 1061, Short.MAX_VALUE)
+        );
+        panel_aboutLayout.setVerticalGroup(
+            panel_aboutLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 710, Short.MAX_VALUE)
+        );
+
+        panel_help.setPreferredSize(new java.awt.Dimension(1061, 710));
+
+        javax.swing.GroupLayout panel_helpLayout = new javax.swing.GroupLayout(panel_help);
+        panel_help.setLayout(panel_helpLayout);
+        panel_helpLayout.setHorizontalGroup(
+            panel_helpLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 1061, Short.MAX_VALUE)
+        );
+        panel_helpLayout.setVerticalGroup(
+            panel_helpLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 710, Short.MAX_VALUE)
+        );
+
+        panel_main9.setPreferredSize(new java.awt.Dimension(1061, 710));
+
+        javax.swing.GroupLayout panel_main9Layout = new javax.swing.GroupLayout(panel_main9);
+        panel_main9.setLayout(panel_main9Layout);
+        panel_main9Layout.setHorizontalGroup(
+            panel_main9Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 1061, Short.MAX_VALUE)
+        );
+        panel_main9Layout.setVerticalGroup(
+            panel_main9Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 710, Short.MAX_VALUE)
+        );
+
+        javax.swing.GroupLayout panel_mainLayout = new javax.swing.GroupLayout(panel_main);
+        panel_main.setLayout(panel_mainLayout);
+        panel_mainLayout.setHorizontalGroup(
+            panel_mainLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 1061, Short.MAX_VALUE)
+            .addGroup(panel_mainLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                .addComponent(panel_help, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+            .addGroup(panel_mainLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                .addComponent(panel_product, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+            .addGroup(panel_mainLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                .addComponent(panel_bill, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+            .addGroup(panel_mainLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                .addComponent(panel_account, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+            .addGroup(panel_mainLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                .addComponent(panel_about, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+            .addGroup(panel_mainLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                .addComponent(panel_employee, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+            .addGroup(panel_mainLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                .addComponent(panel_main9, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+            .addGroup(panel_mainLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                .addComponent(panel_customer, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+        );
+        panel_mainLayout.setVerticalGroup(
+            panel_mainLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 0, Short.MAX_VALUE)
+            .addGroup(panel_mainLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                .addComponent(panel_help, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+            .addGroup(panel_mainLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                .addComponent(panel_product, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+            .addGroup(panel_mainLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                .addComponent(panel_bill, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+            .addGroup(panel_mainLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                .addComponent(panel_account, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+            .addGroup(panel_mainLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                .addComponent(panel_about, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+            .addGroup(panel_mainLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                .addComponent(panel_employee, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+            .addGroup(panel_mainLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                .addComponent(panel_main9, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+            .addGroup(panel_mainLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                .addComponent(panel_customer, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+        );
+
         javax.swing.GroupLayout kGradientPanel2Layout = new javax.swing.GroupLayout(kGradientPanel2);
         kGradientPanel2.setLayout(kGradientPanel2Layout);
         kGradientPanel2Layout.setHorizontalGroup(
@@ -736,9 +669,9 @@ public class frm_dashboard extends javax.swing.JFrame
             .addGroup(kGradientPanel2Layout.createSequentialGroup()
                 .addGap(25, 25, 25)
                 .addComponent(pnl_sidepane, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 25, Short.MAX_VALUE)
-                .addComponent(pnl_main, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(25, 25, 25))
+                .addGap(25, 25, 25)
+                .addComponent(panel_main, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(25, Short.MAX_VALUE))
             .addComponent(pnl_header, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
         );
         kGradientPanel2Layout.setVerticalGroup(
@@ -747,8 +680,8 @@ public class frm_dashboard extends javax.swing.JFrame
                 .addComponent(pnl_header, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(25, 25, 25)
                 .addGroup(kGradientPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                    .addComponent(pnl_sidepane, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addComponent(pnl_main, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                    .addComponent(panel_main, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(pnl_sidepane, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
                 .addContainerGap(25, Short.MAX_VALUE))
         );
 
@@ -1016,13 +949,6 @@ public class frm_dashboard extends javax.swing.JFrame
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JLabel jLabel1;
-    private javax.swing.JLabel jLabel2;
-    private javax.swing.JLabel jLabel3;
-    private javax.swing.JLabel jLabel4;
-    private javax.swing.JLabel jLabel5;
-    private javax.swing.JLabel jLabel6;
-    private javax.swing.JLabel jLabel7;
     private com.k33ptoo.components.KGradientPanel kGradientPanel1;
     private com.k33ptoo.components.KGradientPanel kGradientPanel2;
     private javax.swing.JLabel lbl_about;
@@ -1041,6 +967,8 @@ public class frm_dashboard extends javax.swing.JFrame
     private com.k33ptoo.components.KGradientPanel panel_customer;
     private com.k33ptoo.components.KGradientPanel panel_employee;
     private com.k33ptoo.components.KGradientPanel panel_help;
+    private com.k33ptoo.components.KGradientPanel panel_main;
+    private com.k33ptoo.components.KGradientPanel panel_main9;
     private com.k33ptoo.components.KGradientPanel panel_product;
     private com.k33ptoo.components.KGradientPanel pnl_about;
     private com.k33ptoo.components.KGradientPanel pnl_account;
@@ -1050,7 +978,6 @@ public class frm_dashboard extends javax.swing.JFrame
     private com.k33ptoo.components.KGradientPanel pnl_employee;
     private com.k33ptoo.components.KGradientPanel pnl_header;
     private com.k33ptoo.components.KGradientPanel pnl_help;
-    private com.k33ptoo.components.KGradientPanel pnl_main;
     private javax.swing.JPanel pnl_min;
     private com.k33ptoo.components.KGradientPanel pnl_product;
     private com.k33ptoo.components.KGradientPanel pnl_sidepane;
