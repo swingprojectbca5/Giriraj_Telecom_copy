@@ -38,7 +38,7 @@ public class frm_dashboard extends javax.swing.JFrame
         panel_about.setVisible(false);
         panel_help.setVisible(false);
         panel_extra.setVisible(false);
-        lbl_customer.grabFocus();
+        jLabel2.grabFocus();
 
         // this.setExtendedState(JFrame.MAXIMIZED_BOTH);
     }
@@ -76,6 +76,9 @@ public class frm_dashboard extends javax.swing.JFrame
         lbl_about = new javax.swing.JLabel();
         pnl_help = new com.k33ptoo.components.KGradientPanel();
         lbl_help = new javax.swing.JLabel();
+        jPanel4 = new javax.swing.JPanel();
+        jLabel2 = new javax.swing.JLabel();
+        jSeparator1 = new javax.swing.JSeparator();
         pnl_header = new com.k33ptoo.components.KGradientPanel();
         pnl_close = new com.k33ptoo.components.KGradientPanel();
         lbl_close = new javax.swing.JLabel();
@@ -125,7 +128,8 @@ public class frm_dashboard extends javax.swing.JFrame
 
         lbl_customer.setFont(new java.awt.Font("Cascadia Mono", 0, 24)); // NOI18N
         lbl_customer.setForeground(new java.awt.Color(68, 82, 121));
-        lbl_customer.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        lbl_customer.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
+        lbl_customer.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icons/customer.png"))); // NOI18N
         lbl_customer.setText("CUSTOMER MANAGEMENT");
         lbl_customer.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         lbl_customer.setNextFocusableComponent(lbl_employee);
@@ -167,14 +171,13 @@ public class frm_dashboard extends javax.swing.JFrame
         pnl_customer.setLayout(pnl_customerLayout);
         pnl_customerLayout.setHorizontalGroup(
             pnl_customerLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(pnl_customerLayout.createSequentialGroup()
-                .addGap(50, 50, 50)
-                .addComponent(lbl_customer, javax.swing.GroupLayout.PREFERRED_SIZE, 310, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(44, Short.MAX_VALUE))
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, pnl_customerLayout.createSequentialGroup()
+                .addGap(0, 30, Short.MAX_VALUE)
+                .addComponent(lbl_customer, javax.swing.GroupLayout.PREFERRED_SIZE, 374, javax.swing.GroupLayout.PREFERRED_SIZE))
         );
         pnl_customerLayout.setVerticalGroup(
             pnl_customerLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(lbl_customer, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, 49, Short.MAX_VALUE)
+            .addComponent(lbl_customer, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
         );
 
         pnl_employee.setkBorderRadius(40);
@@ -184,7 +187,8 @@ public class frm_dashboard extends javax.swing.JFrame
 
         lbl_employee.setFont(new java.awt.Font("Cascadia Mono", 0, 24)); // NOI18N
         lbl_employee.setForeground(new java.awt.Color(68, 82, 121));
-        lbl_employee.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        lbl_employee.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
+        lbl_employee.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icons/employee.png"))); // NOI18N
         lbl_employee.setText("EMPLOYEE MANAGEMENT");
         lbl_employee.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         lbl_employee.setNextFocusableComponent(lbl_product);
@@ -226,14 +230,13 @@ public class frm_dashboard extends javax.swing.JFrame
         pnl_employee.setLayout(pnl_employeeLayout);
         pnl_employeeLayout.setHorizontalGroup(
             pnl_employeeLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(pnl_employeeLayout.createSequentialGroup()
-                .addGap(50, 50, 50)
-                .addComponent(lbl_employee, javax.swing.GroupLayout.PREFERRED_SIZE, 309, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, pnl_employeeLayout.createSequentialGroup()
+                .addGap(0, 0, Short.MAX_VALUE)
+                .addComponent(lbl_employee, javax.swing.GroupLayout.PREFERRED_SIZE, 374, javax.swing.GroupLayout.PREFERRED_SIZE))
         );
         pnl_employeeLayout.setVerticalGroup(
             pnl_employeeLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(lbl_employee, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, 51, Short.MAX_VALUE)
+            .addComponent(lbl_employee, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
         );
 
         pnl_product.setkBorderRadius(40);
@@ -243,7 +246,8 @@ public class frm_dashboard extends javax.swing.JFrame
 
         lbl_product.setFont(new java.awt.Font("Cascadia Mono", 0, 24)); // NOI18N
         lbl_product.setForeground(new java.awt.Color(68, 82, 121));
-        lbl_product.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        lbl_product.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
+        lbl_product.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icons/product.png"))); // NOI18N
         lbl_product.setText("PRODUCT MANAGEMENT");
         lbl_product.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         lbl_product.setNextFocusableComponent(lbl_bill);
@@ -285,14 +289,13 @@ public class frm_dashboard extends javax.swing.JFrame
         pnl_product.setLayout(pnl_productLayout);
         pnl_productLayout.setHorizontalGroup(
             pnl_productLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(pnl_productLayout.createSequentialGroup()
-                .addGap(50, 50, 50)
-                .addComponent(lbl_product, javax.swing.GroupLayout.PREFERRED_SIZE, 304, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, pnl_productLayout.createSequentialGroup()
+                .addGap(0, 0, Short.MAX_VALUE)
+                .addComponent(lbl_product, javax.swing.GroupLayout.PREFERRED_SIZE, 374, javax.swing.GroupLayout.PREFERRED_SIZE))
         );
         pnl_productLayout.setVerticalGroup(
             pnl_productLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(lbl_product, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, 51, Short.MAX_VALUE)
+            .addComponent(lbl_product, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
         );
 
         pnl_bill.setkBorderRadius(40);
@@ -302,7 +305,8 @@ public class frm_dashboard extends javax.swing.JFrame
 
         lbl_bill.setFont(new java.awt.Font("Cascadia Mono", 0, 24)); // NOI18N
         lbl_bill.setForeground(new java.awt.Color(68, 82, 121));
-        lbl_bill.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        lbl_bill.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
+        lbl_bill.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icons/bill.png"))); // NOI18N
         lbl_bill.setText("BILL MANAGEMENT");
         lbl_bill.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         lbl_bill.setNextFocusableComponent(lbl_account);
@@ -344,14 +348,13 @@ public class frm_dashboard extends javax.swing.JFrame
         pnl_bill.setLayout(pnl_billLayout);
         pnl_billLayout.setHorizontalGroup(
             pnl_billLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(pnl_billLayout.createSequentialGroup()
-                .addGap(50, 50, 50)
-                .addComponent(lbl_bill, javax.swing.GroupLayout.PREFERRED_SIZE, 304, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, pnl_billLayout.createSequentialGroup()
+                .addGap(0, 0, Short.MAX_VALUE)
+                .addComponent(lbl_bill, javax.swing.GroupLayout.PREFERRED_SIZE, 374, javax.swing.GroupLayout.PREFERRED_SIZE))
         );
         pnl_billLayout.setVerticalGroup(
             pnl_billLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(lbl_bill, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, 51, Short.MAX_VALUE)
+            .addComponent(lbl_bill, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
         );
 
         pnl_account.setkBorderRadius(40);
@@ -361,7 +364,8 @@ public class frm_dashboard extends javax.swing.JFrame
 
         lbl_account.setFont(new java.awt.Font("Cascadia Mono", 0, 24)); // NOI18N
         lbl_account.setForeground(new java.awt.Color(68, 82, 121));
-        lbl_account.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        lbl_account.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
+        lbl_account.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icons/setting.png"))); // NOI18N
         lbl_account.setText("ACCOUNT MANAGEMENT");
         lbl_account.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         lbl_account.setNextFocusableComponent(lbl_about);
@@ -403,14 +407,13 @@ public class frm_dashboard extends javax.swing.JFrame
         pnl_account.setLayout(pnl_accountLayout);
         pnl_accountLayout.setHorizontalGroup(
             pnl_accountLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(pnl_accountLayout.createSequentialGroup()
-                .addGap(50, 50, 50)
-                .addComponent(lbl_account, javax.swing.GroupLayout.PREFERRED_SIZE, 304, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, pnl_accountLayout.createSequentialGroup()
+                .addGap(0, 0, Short.MAX_VALUE)
+                .addComponent(lbl_account, javax.swing.GroupLayout.PREFERRED_SIZE, 374, javax.swing.GroupLayout.PREFERRED_SIZE))
         );
         pnl_accountLayout.setVerticalGroup(
             pnl_accountLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(lbl_account, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, 51, Short.MAX_VALUE)
+            .addComponent(lbl_account, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
         );
 
         pnl_about.setkBorderRadius(40);
@@ -420,7 +423,8 @@ public class frm_dashboard extends javax.swing.JFrame
 
         lbl_about.setFont(new java.awt.Font("Cascadia Mono", 0, 24)); // NOI18N
         lbl_about.setForeground(new java.awt.Color(68, 82, 121));
-        lbl_about.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        lbl_about.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
+        lbl_about.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icons/about.png"))); // NOI18N
         lbl_about.setText("ABOUT US");
         lbl_about.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         lbl_about.setNextFocusableComponent(lbl_help);
@@ -462,14 +466,13 @@ public class frm_dashboard extends javax.swing.JFrame
         pnl_about.setLayout(pnl_aboutLayout);
         pnl_aboutLayout.setHorizontalGroup(
             pnl_aboutLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(pnl_aboutLayout.createSequentialGroup()
-                .addGap(50, 50, 50)
-                .addComponent(lbl_about, javax.swing.GroupLayout.PREFERRED_SIZE, 304, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, pnl_aboutLayout.createSequentialGroup()
+                .addGap(0, 0, Short.MAX_VALUE)
+                .addComponent(lbl_about, javax.swing.GroupLayout.PREFERRED_SIZE, 374, javax.swing.GroupLayout.PREFERRED_SIZE))
         );
         pnl_aboutLayout.setVerticalGroup(
             pnl_aboutLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(lbl_about, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, 51, Short.MAX_VALUE)
+            .addComponent(lbl_about, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
         );
 
         pnl_help.setkBorderRadius(40);
@@ -479,10 +482,11 @@ public class frm_dashboard extends javax.swing.JFrame
 
         lbl_help.setFont(new java.awt.Font("Cascadia Mono", 0, 24)); // NOI18N
         lbl_help.setForeground(new java.awt.Color(68, 82, 121));
-        lbl_help.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        lbl_help.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
+        lbl_help.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icons/help.png"))); // NOI18N
         lbl_help.setText("HELP");
         lbl_help.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
-        lbl_help.setNextFocusableComponent(lbl_customer);
+        lbl_help.setNextFocusableComponent(jLabel2);
         lbl_help.addFocusListener(new java.awt.event.FocusAdapter()
         {
             public void focusGained(java.awt.event.FocusEvent evt)
@@ -521,14 +525,41 @@ public class frm_dashboard extends javax.swing.JFrame
         pnl_help.setLayout(pnl_helpLayout);
         pnl_helpLayout.setHorizontalGroup(
             pnl_helpLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(pnl_helpLayout.createSequentialGroup()
-                .addGap(50, 50, 50)
-                .addComponent(lbl_help, javax.swing.GroupLayout.PREFERRED_SIZE, 304, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, pnl_helpLayout.createSequentialGroup()
+                .addGap(0, 0, Short.MAX_VALUE)
+                .addComponent(lbl_help, javax.swing.GroupLayout.PREFERRED_SIZE, 374, javax.swing.GroupLayout.PREFERRED_SIZE))
         );
         pnl_helpLayout.setVerticalGroup(
             pnl_helpLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(lbl_help, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, 51, Short.MAX_VALUE)
+            .addComponent(lbl_help, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+        );
+
+        jPanel4.setBackground(new java.awt.Color(178, 199, 231));
+
+        jLabel2.setFont(new java.awt.Font("Segoe UI", 0, 40)); // NOI18N
+        jLabel2.setText("GIRIRAJ TELECOM");
+        jLabel2.setNextFocusableComponent(lbl_customer);
+
+        jSeparator1.setForeground(new java.awt.Color(0, 0, 0));
+
+        javax.swing.GroupLayout jPanel4Layout = new javax.swing.GroupLayout(jPanel4);
+        jPanel4.setLayout(jPanel4Layout);
+        jPanel4Layout.setHorizontalGroup(
+            jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanel4Layout.createSequentialGroup()
+                .addGap(43, 43, 43)
+                .addGroup(jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                    .addComponent(jLabel2, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(jSeparator1, javax.swing.GroupLayout.PREFERRED_SIZE, 319, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+        );
+        jPanel4Layout.setVerticalGroup(
+            jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel4Layout.createSequentialGroup()
+                .addGap(0, 25, Short.MAX_VALUE)
+                .addComponent(jLabel2, javax.swing.GroupLayout.PREFERRED_SIZE, 64, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(jSeparator1, javax.swing.GroupLayout.PREFERRED_SIZE, 10, javax.swing.GroupLayout.PREFERRED_SIZE))
         );
 
         javax.swing.GroupLayout pnl_sidepaneLayout = new javax.swing.GroupLayout(pnl_sidepane);
@@ -544,25 +575,28 @@ public class frm_dashboard extends javax.swing.JFrame
                     .addComponent(pnl_bill, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                     .addComponent(pnl_account, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                     .addComponent(pnl_about, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addComponent(pnl_help, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                    .addComponent(pnl_help, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(jPanel4, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
                 .addContainerGap(50, Short.MAX_VALUE))
         );
         pnl_sidepaneLayout.setVerticalGroup(
             pnl_sidepaneLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(pnl_sidepaneLayout.createSequentialGroup()
-                .addGap(173, 173, 173)
+                .addGap(37, 37, 37)
+                .addComponent(jPanel4, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(30, 30, 30)
                 .addComponent(pnl_customer, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(26, 26, 26)
+                .addGap(27, 27, 27)
                 .addComponent(pnl_employee, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(26, 26, 26)
+                .addGap(27, 27, 27)
                 .addComponent(pnl_product, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(26, 26, 26)
+                .addGap(27, 27, 27)
                 .addComponent(pnl_bill, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(26, 26, 26)
+                .addGap(27, 27, 27)
                 .addComponent(pnl_account, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(26, 26, 26)
+                .addGap(27, 27, 27)
                 .addComponent(pnl_about, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(26, 26, 26)
+                .addGap(27, 27, 27)
                 .addComponent(pnl_help, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addContainerGap(26, Short.MAX_VALUE))
         );
@@ -926,7 +960,7 @@ public class frm_dashboard extends javax.swing.JFrame
                 .addContainerGap(104, Short.MAX_VALUE))
         );
 
-        getContentPane().add(kGradientPanel1, java.awt.BorderLayout.CENTER);
+        getContentPane().add(kGradientPanel1, java.awt.BorderLayout.PAGE_END);
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
@@ -998,11 +1032,11 @@ public class frm_dashboard extends javax.swing.JFrame
         pnl_help.setkStartColor(new Color(68, 82, 121));
         pnl_help.setkEndColor(new Color(68, 82, 121));
         pnl_help.setBackground(Color.red);
-        lbl_help.setForeground(Color.WHITE);
 
         lbl_help.setFont(new Font("Cascadia Monocai", Font.PLAIN, 24));
         lbl_help.setForeground(Color.WHITE);
         lbl_help.setText("<html><u>HELP</u></html>");
+        lbl_help.grabFocus();
     }//GEN-LAST:event_lbl_helpMouseEntered
 
     private void lbl_helpMouseClicked(java.awt.event.MouseEvent evt)//GEN-FIRST:event_lbl_helpMouseClicked
@@ -1027,6 +1061,10 @@ public class frm_dashboard extends javax.swing.JFrame
         pnl_help.setkEndColor(new Color(228, 235, 246));
         pnl_help.setBackground(Color.BLACK);
         lbl_help.setForeground(new Color(68, 82, 121));
+
+        lbl_help.setFont(new Font("Cascadia Monocai", Font.PLAIN, 24));
+        lbl_help.setForeground(new Color(68, 82, 121));
+        lbl_help.setText("HELP");
     }//GEN-LAST:event_lbl_helpFocusLost
 
     private void lbl_helpFocusGained(java.awt.event.FocusEvent evt)//GEN-FIRST:event_lbl_helpFocusGained
@@ -1035,6 +1073,9 @@ public class frm_dashboard extends javax.swing.JFrame
         pnl_help.setkEndColor(new Color(68, 82, 121));
         pnl_help.setBackground(Color.red);
         lbl_help.setForeground(Color.WHITE);
+
+        lbl_help.setFont(new Font("Cascadia Monocai", Font.PLAIN, 24));
+        lbl_help.setText("<html><u>HELP</u></html>");
     }//GEN-LAST:event_lbl_helpFocusGained
 
     private void lbl_aboutKeyPressed(java.awt.event.KeyEvent evt)//GEN-FIRST:event_lbl_aboutKeyPressed
@@ -1070,11 +1111,11 @@ public class frm_dashboard extends javax.swing.JFrame
         pnl_about.setkStartColor(new Color(68, 82, 121));
         pnl_about.setkEndColor(new Color(68, 82, 121));
         pnl_about.setBackground(Color.red);
-        lbl_about.setForeground(Color.WHITE);
 
         lbl_about.setFont(new Font("Cascadia Monocai", Font.PLAIN, 24));
         lbl_about.setForeground(Color.WHITE);
         lbl_about.setText("<html><u>ABOUT US</u></html>");
+        lbl_about.grabFocus();
     }//GEN-LAST:event_lbl_aboutMouseEntered
 
     private void lbl_aboutMouseClicked(java.awt.event.MouseEvent evt)//GEN-FIRST:event_lbl_aboutMouseClicked
@@ -1099,6 +1140,11 @@ public class frm_dashboard extends javax.swing.JFrame
         pnl_about.setkEndColor(new Color(228, 235, 246));
         pnl_about.setBackground(Color.BLACK);
         lbl_about.setForeground(new Color(68, 82, 121));
+
+        lbl_about.setFont(new Font("Cascadia Monocai", Font.PLAIN, 24));
+        lbl_about.setForeground(new Color(68, 82, 121));
+        lbl_about.setText("ABOUT US");
+
     }//GEN-LAST:event_lbl_aboutFocusLost
 
     private void lbl_aboutFocusGained(java.awt.event.FocusEvent evt)//GEN-FIRST:event_lbl_aboutFocusGained
@@ -1107,6 +1153,9 @@ public class frm_dashboard extends javax.swing.JFrame
         pnl_about.setkEndColor(new Color(68, 82, 121));
         pnl_about.setBackground(Color.red);
         lbl_about.setForeground(Color.WHITE);
+
+        lbl_about.setFont(new Font("Cascadia Monocai", Font.PLAIN, 24));
+        lbl_about.setText("<html><u>ABOUT US</u></html>");
     }//GEN-LAST:event_lbl_aboutFocusGained
 
     private void lbl_accountKeyPressed(java.awt.event.KeyEvent evt)//GEN-FIRST:event_lbl_accountKeyPressed
@@ -1142,11 +1191,12 @@ public class frm_dashboard extends javax.swing.JFrame
         pnl_account.setkStartColor(new Color(68, 82, 121));
         pnl_account.setkEndColor(new Color(68, 82, 121));
         pnl_account.setBackground(Color.red);
-        lbl_account.setForeground(Color.WHITE);
 
         lbl_account.setFont(new Font("Cascadia Monocai", Font.PLAIN, 24));
         lbl_account.setForeground(Color.WHITE);
         lbl_account.setText("<html><u>ACCOUNT MANAGEMENT</u></html>");
+
+        lbl_account.grabFocus();
     }//GEN-LAST:event_lbl_accountMouseEntered
 
     private void lbl_accountMouseClicked(java.awt.event.MouseEvent evt)//GEN-FIRST:event_lbl_accountMouseClicked
@@ -1171,6 +1221,10 @@ public class frm_dashboard extends javax.swing.JFrame
         pnl_account.setkEndColor(new Color(228, 235, 246));
         pnl_account.setBackground(Color.BLACK);
         lbl_account.setForeground(new Color(68, 82, 121));
+
+        lbl_account.setFont(new Font("Cascadia Monocai", Font.PLAIN, 24));
+        lbl_account.setForeground(new Color(68, 82, 121));
+        lbl_account.setText("ACCOUNT MANAGEMENT");
     }//GEN-LAST:event_lbl_accountFocusLost
 
     private void lbl_accountFocusGained(java.awt.event.FocusEvent evt)//GEN-FIRST:event_lbl_accountFocusGained
@@ -1179,6 +1233,9 @@ public class frm_dashboard extends javax.swing.JFrame
         pnl_account.setkEndColor(new Color(68, 82, 121));
         pnl_account.setBackground(Color.red);
         lbl_account.setForeground(Color.WHITE);
+
+        lbl_account.setFont(new Font("Cascadia Monocai", Font.PLAIN, 24));
+        lbl_account.setText("<html><u>ACCOUNT MANAGEMENT</u></html>");
     }//GEN-LAST:event_lbl_accountFocusGained
 
     private void lbl_billKeyPressed(java.awt.event.KeyEvent evt)//GEN-FIRST:event_lbl_billKeyPressed
@@ -1214,11 +1271,11 @@ public class frm_dashboard extends javax.swing.JFrame
         pnl_bill.setkStartColor(new Color(68, 82, 121));
         pnl_bill.setkEndColor(new Color(68, 82, 121));
         pnl_bill.setBackground(Color.red);
-        lbl_bill.setForeground(Color.WHITE);
 
         lbl_bill.setFont(new Font("Cascadia Monocai", Font.PLAIN, 24));
         lbl_bill.setForeground(Color.WHITE);
         lbl_bill.setText("<html><u>BILL MANAGEMENT</u></html>");
+        lbl_bill.grabFocus();
     }//GEN-LAST:event_lbl_billMouseEntered
 
     private void lbl_billMouseClicked(java.awt.event.MouseEvent evt)//GEN-FIRST:event_lbl_billMouseClicked
@@ -1243,6 +1300,10 @@ public class frm_dashboard extends javax.swing.JFrame
         pnl_bill.setkEndColor(new Color(228, 235, 246));
         pnl_bill.setBackground(Color.BLACK);
         lbl_bill.setForeground(new Color(68, 82, 121));
+
+        lbl_bill.setFont(new Font("Cascadia Monocai", Font.PLAIN, 24));
+        lbl_bill.setForeground(new Color(68, 82, 121));
+        lbl_bill.setText("BILL MANAGEMENT");
     }//GEN-LAST:event_lbl_billFocusLost
 
     private void lbl_billFocusGained(java.awt.event.FocusEvent evt)//GEN-FIRST:event_lbl_billFocusGained
@@ -1251,6 +1312,10 @@ public class frm_dashboard extends javax.swing.JFrame
         pnl_bill.setkEndColor(new Color(68, 82, 121));
         pnl_bill.setBackground(Color.red);
         lbl_bill.setForeground(Color.WHITE);
+
+        lbl_bill.setFont(new Font("Cascadia Monocai", Font.PLAIN, 24));
+        lbl_bill.setText("<html><u>BILL MANAGEMENT</u></html>");
+
     }//GEN-LAST:event_lbl_billFocusGained
 
     private void lbl_productKeyPressed(java.awt.event.KeyEvent evt)//GEN-FIRST:event_lbl_productKeyPressed
@@ -1286,11 +1351,11 @@ public class frm_dashboard extends javax.swing.JFrame
         pnl_product.setkStartColor(new Color(68, 82, 121));
         pnl_product.setkEndColor(new Color(68, 82, 121));
         pnl_product.setBackground(Color.red);
-        lbl_product.setForeground(Color.WHITE);
 
         lbl_product.setFont(new Font("Cascadia Monocai", Font.PLAIN, 24));
         lbl_product.setForeground(Color.WHITE);
         lbl_product.setText("<html><u>PRODUCT MANAGEMENT</u></html>");
+        lbl_product.grabFocus();
     }//GEN-LAST:event_lbl_productMouseEntered
 
     private void lbl_productMouseClicked(java.awt.event.MouseEvent evt)//GEN-FIRST:event_lbl_productMouseClicked
@@ -1315,6 +1380,10 @@ public class frm_dashboard extends javax.swing.JFrame
         pnl_product.setkEndColor(new Color(228, 235, 246));
         pnl_product.setBackground(Color.BLACK);
         lbl_product.setForeground(new Color(68, 82, 121));
+
+        lbl_product.setFont(new Font("Cascadia Monocai", Font.PLAIN, 24));
+        lbl_product.setForeground(new Color(68, 82, 121));
+        lbl_product.setText("PRODUCT MANAGEMENT");
     }//GEN-LAST:event_lbl_productFocusLost
 
     private void lbl_productFocusGained(java.awt.event.FocusEvent evt)//GEN-FIRST:event_lbl_productFocusGained
@@ -1323,6 +1392,10 @@ public class frm_dashboard extends javax.swing.JFrame
         pnl_product.setkEndColor(new Color(68, 82, 121));
         pnl_product.setBackground(Color.red);
         lbl_product.setForeground(Color.WHITE);
+
+        lbl_product.setFont(new Font("Cascadia Monocai", Font.PLAIN, 24));
+        lbl_product.setText("<html><u>PRODUCT MANAGEMENT</u></html>");
+
     }//GEN-LAST:event_lbl_productFocusGained
 
     private void lbl_employeeKeyPressed(java.awt.event.KeyEvent evt)//GEN-FIRST:event_lbl_employeeKeyPressed
@@ -1350,7 +1423,7 @@ public class frm_dashboard extends javax.swing.JFrame
 
         lbl_employee.setFont(new Font("Cascadia Monocai", Font.PLAIN, 24));
         lbl_employee.setForeground(new Color(68, 82, 121));
-        lbl_employee.setText("EMPLOYE MANAGEMENT");
+        lbl_employee.setText("EMPLOYEE MANAGEMENT");
     }//GEN-LAST:event_lbl_employeeMouseExited
 
     private void lbl_employeeMouseEntered(java.awt.event.MouseEvent evt)//GEN-FIRST:event_lbl_employeeMouseEntered
@@ -1358,11 +1431,12 @@ public class frm_dashboard extends javax.swing.JFrame
         pnl_employee.setkStartColor(new Color(68, 82, 121));
         pnl_employee.setkEndColor(new Color(68, 82, 121));
         pnl_employee.setBackground(Color.red);
-        lbl_employee.setForeground(Color.WHITE);
 
         lbl_employee.setFont(new Font("Cascadia Monocai", Font.PLAIN, 24));
         lbl_employee.setForeground(Color.WHITE);
-        lbl_employee.setText("<html><u>EMPLOYE MANAGEMENT</u></html>");
+        lbl_employee.setText("<html><u>EMPLOYEE MANAGEMENT</u></html>");
+        lbl_employee.grabFocus();
+
     }//GEN-LAST:event_lbl_employeeMouseEntered
 
     private void lbl_employeeMouseClicked(java.awt.event.MouseEvent evt)//GEN-FIRST:event_lbl_employeeMouseClicked
@@ -1387,6 +1461,11 @@ public class frm_dashboard extends javax.swing.JFrame
         pnl_employee.setkEndColor(new Color(228, 235, 246));
         pnl_employee.setBackground(Color.BLACK);
         lbl_employee.setForeground(new Color(68, 82, 121));
+
+        lbl_employee.setFont(new Font("Cascadia Monocai", Font.PLAIN, 24));
+        lbl_employee.setForeground(new Color(68, 82, 121));
+        lbl_employee.setText("EMPLOYEE MANAGEMENT");
+
     }//GEN-LAST:event_lbl_employeeFocusLost
 
     private void lbl_employeeFocusGained(java.awt.event.FocusEvent evt)//GEN-FIRST:event_lbl_employeeFocusGained
@@ -1395,6 +1474,9 @@ public class frm_dashboard extends javax.swing.JFrame
         pnl_employee.setkEndColor(new Color(68, 82, 121));
         pnl_employee.setBackground(Color.red);
         lbl_employee.setForeground(Color.WHITE);
+
+        lbl_employee.setFont(new Font("Cascadia Monocai", Font.PLAIN, 24));
+        lbl_employee.setText("<html><u>EMPLOYEE MANAGEMENT</u></html>");
     }//GEN-LAST:event_lbl_employeeFocusGained
 
     private void lbl_customerKeyPressed(java.awt.event.KeyEvent evt)//GEN-FIRST:event_lbl_customerKeyPressed
@@ -1430,11 +1512,11 @@ public class frm_dashboard extends javax.swing.JFrame
         pnl_customer.setkStartColor(new Color(68, 82, 121));
         pnl_customer.setkEndColor(new Color(68, 82, 121));
         pnl_customer.setBackground(Color.red);
-        lbl_customer.setForeground(Color.WHITE);
-
         lbl_customer.setFont(new Font("Cascadia Monocai", Font.PLAIN, 24));
         lbl_customer.setForeground(Color.WHITE);
+
         lbl_customer.setText("<html><u>CUSTOMER MANAGEMENT</u></html>");
+        lbl_customer.grabFocus();
     }//GEN-LAST:event_lbl_customerMouseEntered
 
     private void lbl_customerMouseClicked(java.awt.event.MouseEvent evt)//GEN-FIRST:event_lbl_customerMouseClicked
@@ -1459,6 +1541,10 @@ public class frm_dashboard extends javax.swing.JFrame
         pnl_customer.setkEndColor(new Color(228, 235, 246));
         pnl_customer.setBackground(Color.BLACK);
         lbl_customer.setForeground(new Color(68, 82, 121));
+
+        lbl_customer.setFont(new Font("Cascadia Monocai", Font.PLAIN, 24));
+        lbl_customer.setForeground(new Color(68, 82, 121));
+        lbl_customer.setText("CUSTOMER MANAGEMENT");
     }//GEN-LAST:event_lbl_customerFocusLost
 
     private void lbl_customerFocusGained(java.awt.event.FocusEvent evt)//GEN-FIRST:event_lbl_customerFocusGained
@@ -1467,6 +1553,9 @@ public class frm_dashboard extends javax.swing.JFrame
         pnl_customer.setkEndColor(new Color(68, 82, 121));
         pnl_customer.setBackground(Color.red);
         lbl_customer.setForeground(Color.WHITE);
+
+        lbl_customer.setFont(new Font("Cascadia Monocai", Font.PLAIN, 24));
+        lbl_customer.setText("<html><u>CUSTOMER MANAGEMENT</u></html>");
     }//GEN-LAST:event_lbl_customerFocusGained
 
     public static void main(String args[])
@@ -1482,9 +1571,12 @@ public class frm_dashboard extends javax.swing.JFrame
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JLabel jLabel1;
+    private javax.swing.JLabel jLabel2;
     private javax.swing.JPanel jPanel1;
     private javax.swing.JPanel jPanel2;
     private javax.swing.JPanel jPanel3;
+    private javax.swing.JPanel jPanel4;
+    private javax.swing.JSeparator jSeparator1;
     private javax.swing.JTabbedPane jTabbedPane1;
     private javax.swing.JTextField jTextField1;
     private com.k33ptoo.components.KGradientPanel kGradientPanel1;
