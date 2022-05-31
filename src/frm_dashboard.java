@@ -2,11 +2,13 @@
 import com.sun.beans.editors.ColorEditor;
 import java.awt.Color;
 import java.awt.Dimension;
+import java.awt.Font;
 import java.awt.Insets;
 import java.awt.Toolkit;
 import java.awt.Graphics;
 import java.awt.Image;
 import java.awt.color.ColorSpace;
+import java.awt.event.KeyEvent;
 import javax.swing.ImageIcon;
 import javax.swing.JFrame;
 import javax.swing.JOptionPane;
@@ -14,10 +16,11 @@ import javax.swing.JOptionPane;
 public class frm_dashboard extends javax.swing.JFrame
 {
 
+    KeyEvent ke;
+
     public frm_dashboard()
     {
         initComponents();
-        this.setAlwaysOnTop(true);
         Toolkit tk = Toolkit.getDefaultToolkit();
         int x = (int) tk.getScreenSize().getWidth();
         int y = (int) tk.getScreenSize().getHeight();
@@ -26,6 +29,7 @@ public class frm_dashboard extends javax.swing.JFrame
 
         this.setSize(x, y - taskbar);
 
+        panel_main.setVisible(true);
         panel_customer.setVisible(false);
         panel_employee.setVisible(false);
         panel_bill.setVisible(false);
@@ -33,6 +37,8 @@ public class frm_dashboard extends javax.swing.JFrame
         panel_account.setVisible(false);
         panel_about.setVisible(false);
         panel_help.setVisible(false);
+        panel_extra.setVisible(false);
+        jLabel2.grabFocus();
 
         // this.setExtendedState(JFrame.MAXIMIZED_BOTH);
     }
@@ -70,6 +76,8 @@ public class frm_dashboard extends javax.swing.JFrame
         lbl_about = new javax.swing.JLabel();
         pnl_help = new com.k33ptoo.components.KGradientPanel();
         lbl_help = new javax.swing.JLabel();
+        jLabel2 = new javax.swing.JLabel();
+        jSeparator1 = new javax.swing.JSeparator();
         pnl_header = new com.k33ptoo.components.KGradientPanel();
         pnl_close = new com.k33ptoo.components.KGradientPanel();
         lbl_close = new javax.swing.JLabel();
@@ -80,6 +88,8 @@ public class frm_dashboard extends javax.swing.JFrame
         panel_customer = new com.k33ptoo.components.KGradientPanel();
         jTabbedPane1 = new javax.swing.JTabbedPane();
         jPanel1 = new javax.swing.JPanel();
+        jLabel1 = new javax.swing.JLabel();
+        jTextField1 = new javax.swing.JTextField();
         jPanel2 = new javax.swing.JPanel();
         jPanel3 = new javax.swing.JPanel();
         panel_employee = new com.k33ptoo.components.KGradientPanel();
@@ -88,10 +98,9 @@ public class frm_dashboard extends javax.swing.JFrame
         panel_account = new com.k33ptoo.components.KGradientPanel();
         panel_about = new com.k33ptoo.components.KGradientPanel();
         panel_help = new com.k33ptoo.components.KGradientPanel();
-        panel_main9 = new com.k33ptoo.components.KGradientPanel();
+        panel_extra = new com.k33ptoo.components.KGradientPanel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
-        setAlwaysOnTop(true);
         setUndecorated(true);
         setResizable(false);
 
@@ -120,6 +129,19 @@ public class frm_dashboard extends javax.swing.JFrame
         lbl_customer.setForeground(new java.awt.Color(68, 82, 121));
         lbl_customer.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         lbl_customer.setText("CUSTOMER MANAGEMENT");
+        lbl_customer.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        lbl_customer.setNextFocusableComponent(lbl_employee);
+        lbl_customer.addFocusListener(new java.awt.event.FocusAdapter()
+        {
+            public void focusGained(java.awt.event.FocusEvent evt)
+            {
+                lbl_customerFocusGained(evt);
+            }
+            public void focusLost(java.awt.event.FocusEvent evt)
+            {
+                lbl_customerFocusLost(evt);
+            }
+        });
         lbl_customer.addMouseListener(new java.awt.event.MouseAdapter()
         {
             public void mouseClicked(java.awt.event.MouseEvent evt)
@@ -135,6 +157,13 @@ public class frm_dashboard extends javax.swing.JFrame
                 lbl_customerMouseExited(evt);
             }
         });
+        lbl_customer.addKeyListener(new java.awt.event.KeyAdapter()
+        {
+            public void keyPressed(java.awt.event.KeyEvent evt)
+            {
+                lbl_customerKeyPressed(evt);
+            }
+        });
 
         javax.swing.GroupLayout pnl_customerLayout = new javax.swing.GroupLayout(pnl_customer);
         pnl_customer.setLayout(pnl_customerLayout);
@@ -142,12 +171,12 @@ public class frm_dashboard extends javax.swing.JFrame
             pnl_customerLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(pnl_customerLayout.createSequentialGroup()
                 .addGap(50, 50, 50)
-                .addComponent(lbl_customer, javax.swing.GroupLayout.PREFERRED_SIZE, 304, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(50, Short.MAX_VALUE))
+                .addComponent(lbl_customer, javax.swing.GroupLayout.PREFERRED_SIZE, 311, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
         pnl_customerLayout.setVerticalGroup(
             pnl_customerLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(lbl_customer, javax.swing.GroupLayout.DEFAULT_SIZE, 51, Short.MAX_VALUE)
+            .addComponent(lbl_customer, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, 49, Short.MAX_VALUE)
         );
 
         pnl_employee.setkBorderRadius(40);
@@ -159,6 +188,19 @@ public class frm_dashboard extends javax.swing.JFrame
         lbl_employee.setForeground(new java.awt.Color(68, 82, 121));
         lbl_employee.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         lbl_employee.setText("EMPLOYEE MANAGEMENT");
+        lbl_employee.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        lbl_employee.setNextFocusableComponent(lbl_product);
+        lbl_employee.addFocusListener(new java.awt.event.FocusAdapter()
+        {
+            public void focusGained(java.awt.event.FocusEvent evt)
+            {
+                lbl_employeeFocusGained(evt);
+            }
+            public void focusLost(java.awt.event.FocusEvent evt)
+            {
+                lbl_employeeFocusLost(evt);
+            }
+        });
         lbl_employee.addMouseListener(new java.awt.event.MouseAdapter()
         {
             public void mouseClicked(java.awt.event.MouseEvent evt)
@@ -174,6 +216,13 @@ public class frm_dashboard extends javax.swing.JFrame
                 lbl_employeeMouseExited(evt);
             }
         });
+        lbl_employee.addKeyListener(new java.awt.event.KeyAdapter()
+        {
+            public void keyPressed(java.awt.event.KeyEvent evt)
+            {
+                lbl_employeeKeyPressed(evt);
+            }
+        });
 
         javax.swing.GroupLayout pnl_employeeLayout = new javax.swing.GroupLayout(pnl_employee);
         pnl_employee.setLayout(pnl_employeeLayout);
@@ -181,8 +230,8 @@ public class frm_dashboard extends javax.swing.JFrame
             pnl_employeeLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(pnl_employeeLayout.createSequentialGroup()
                 .addGap(50, 50, 50)
-                .addComponent(lbl_employee, javax.swing.GroupLayout.PREFERRED_SIZE, 304, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(50, Short.MAX_VALUE))
+                .addComponent(lbl_employee, javax.swing.GroupLayout.PREFERRED_SIZE, 311, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
         pnl_employeeLayout.setVerticalGroup(
             pnl_employeeLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -198,6 +247,19 @@ public class frm_dashboard extends javax.swing.JFrame
         lbl_product.setForeground(new java.awt.Color(68, 82, 121));
         lbl_product.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         lbl_product.setText("PRODUCT MANAGEMENT");
+        lbl_product.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        lbl_product.setNextFocusableComponent(lbl_bill);
+        lbl_product.addFocusListener(new java.awt.event.FocusAdapter()
+        {
+            public void focusGained(java.awt.event.FocusEvent evt)
+            {
+                lbl_productFocusGained(evt);
+            }
+            public void focusLost(java.awt.event.FocusEvent evt)
+            {
+                lbl_productFocusLost(evt);
+            }
+        });
         lbl_product.addMouseListener(new java.awt.event.MouseAdapter()
         {
             public void mouseClicked(java.awt.event.MouseEvent evt)
@@ -213,6 +275,13 @@ public class frm_dashboard extends javax.swing.JFrame
                 lbl_productMouseExited(evt);
             }
         });
+        lbl_product.addKeyListener(new java.awt.event.KeyAdapter()
+        {
+            public void keyPressed(java.awt.event.KeyEvent evt)
+            {
+                lbl_productKeyPressed(evt);
+            }
+        });
 
         javax.swing.GroupLayout pnl_productLayout = new javax.swing.GroupLayout(pnl_product);
         pnl_product.setLayout(pnl_productLayout);
@@ -220,8 +289,8 @@ public class frm_dashboard extends javax.swing.JFrame
             pnl_productLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(pnl_productLayout.createSequentialGroup()
                 .addGap(50, 50, 50)
-                .addComponent(lbl_product, javax.swing.GroupLayout.PREFERRED_SIZE, 304, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(50, Short.MAX_VALUE))
+                .addComponent(lbl_product, javax.swing.GroupLayout.PREFERRED_SIZE, 311, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
         pnl_productLayout.setVerticalGroup(
             pnl_productLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -237,6 +306,19 @@ public class frm_dashboard extends javax.swing.JFrame
         lbl_bill.setForeground(new java.awt.Color(68, 82, 121));
         lbl_bill.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         lbl_bill.setText("BILL MANAGEMENT");
+        lbl_bill.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        lbl_bill.setNextFocusableComponent(lbl_account);
+        lbl_bill.addFocusListener(new java.awt.event.FocusAdapter()
+        {
+            public void focusGained(java.awt.event.FocusEvent evt)
+            {
+                lbl_billFocusGained(evt);
+            }
+            public void focusLost(java.awt.event.FocusEvent evt)
+            {
+                lbl_billFocusLost(evt);
+            }
+        });
         lbl_bill.addMouseListener(new java.awt.event.MouseAdapter()
         {
             public void mouseClicked(java.awt.event.MouseEvent evt)
@@ -252,6 +334,13 @@ public class frm_dashboard extends javax.swing.JFrame
                 lbl_billMouseExited(evt);
             }
         });
+        lbl_bill.addKeyListener(new java.awt.event.KeyAdapter()
+        {
+            public void keyPressed(java.awt.event.KeyEvent evt)
+            {
+                lbl_billKeyPressed(evt);
+            }
+        });
 
         javax.swing.GroupLayout pnl_billLayout = new javax.swing.GroupLayout(pnl_bill);
         pnl_bill.setLayout(pnl_billLayout);
@@ -259,8 +348,8 @@ public class frm_dashboard extends javax.swing.JFrame
             pnl_billLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(pnl_billLayout.createSequentialGroup()
                 .addGap(50, 50, 50)
-                .addComponent(lbl_bill, javax.swing.GroupLayout.PREFERRED_SIZE, 304, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(50, Short.MAX_VALUE))
+                .addComponent(lbl_bill, javax.swing.GroupLayout.PREFERRED_SIZE, 311, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
         pnl_billLayout.setVerticalGroup(
             pnl_billLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -276,6 +365,19 @@ public class frm_dashboard extends javax.swing.JFrame
         lbl_account.setForeground(new java.awt.Color(68, 82, 121));
         lbl_account.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         lbl_account.setText("ACCOUNT MANAGEMENT");
+        lbl_account.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        lbl_account.setNextFocusableComponent(lbl_about);
+        lbl_account.addFocusListener(new java.awt.event.FocusAdapter()
+        {
+            public void focusGained(java.awt.event.FocusEvent evt)
+            {
+                lbl_accountFocusGained(evt);
+            }
+            public void focusLost(java.awt.event.FocusEvent evt)
+            {
+                lbl_accountFocusLost(evt);
+            }
+        });
         lbl_account.addMouseListener(new java.awt.event.MouseAdapter()
         {
             public void mouseClicked(java.awt.event.MouseEvent evt)
@@ -291,6 +393,13 @@ public class frm_dashboard extends javax.swing.JFrame
                 lbl_accountMouseExited(evt);
             }
         });
+        lbl_account.addKeyListener(new java.awt.event.KeyAdapter()
+        {
+            public void keyPressed(java.awt.event.KeyEvent evt)
+            {
+                lbl_accountKeyPressed(evt);
+            }
+        });
 
         javax.swing.GroupLayout pnl_accountLayout = new javax.swing.GroupLayout(pnl_account);
         pnl_account.setLayout(pnl_accountLayout);
@@ -298,8 +407,8 @@ public class frm_dashboard extends javax.swing.JFrame
             pnl_accountLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(pnl_accountLayout.createSequentialGroup()
                 .addGap(50, 50, 50)
-                .addComponent(lbl_account, javax.swing.GroupLayout.PREFERRED_SIZE, 304, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(50, Short.MAX_VALUE))
+                .addComponent(lbl_account, javax.swing.GroupLayout.PREFERRED_SIZE, 311, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
         pnl_accountLayout.setVerticalGroup(
             pnl_accountLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -315,6 +424,19 @@ public class frm_dashboard extends javax.swing.JFrame
         lbl_about.setForeground(new java.awt.Color(68, 82, 121));
         lbl_about.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         lbl_about.setText("ABOUT US");
+        lbl_about.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        lbl_about.setNextFocusableComponent(lbl_help);
+        lbl_about.addFocusListener(new java.awt.event.FocusAdapter()
+        {
+            public void focusGained(java.awt.event.FocusEvent evt)
+            {
+                lbl_aboutFocusGained(evt);
+            }
+            public void focusLost(java.awt.event.FocusEvent evt)
+            {
+                lbl_aboutFocusLost(evt);
+            }
+        });
         lbl_about.addMouseListener(new java.awt.event.MouseAdapter()
         {
             public void mouseClicked(java.awt.event.MouseEvent evt)
@@ -330,6 +452,13 @@ public class frm_dashboard extends javax.swing.JFrame
                 lbl_aboutMouseExited(evt);
             }
         });
+        lbl_about.addKeyListener(new java.awt.event.KeyAdapter()
+        {
+            public void keyPressed(java.awt.event.KeyEvent evt)
+            {
+                lbl_aboutKeyPressed(evt);
+            }
+        });
 
         javax.swing.GroupLayout pnl_aboutLayout = new javax.swing.GroupLayout(pnl_about);
         pnl_about.setLayout(pnl_aboutLayout);
@@ -337,8 +466,8 @@ public class frm_dashboard extends javax.swing.JFrame
             pnl_aboutLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(pnl_aboutLayout.createSequentialGroup()
                 .addGap(50, 50, 50)
-                .addComponent(lbl_about, javax.swing.GroupLayout.PREFERRED_SIZE, 304, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(50, Short.MAX_VALUE))
+                .addComponent(lbl_about, javax.swing.GroupLayout.PREFERRED_SIZE, 311, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
         pnl_aboutLayout.setVerticalGroup(
             pnl_aboutLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -354,6 +483,18 @@ public class frm_dashboard extends javax.swing.JFrame
         lbl_help.setForeground(new java.awt.Color(68, 82, 121));
         lbl_help.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         lbl_help.setText("HELP");
+        lbl_help.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        lbl_help.addFocusListener(new java.awt.event.FocusAdapter()
+        {
+            public void focusGained(java.awt.event.FocusEvent evt)
+            {
+                lbl_helpFocusGained(evt);
+            }
+            public void focusLost(java.awt.event.FocusEvent evt)
+            {
+                lbl_helpFocusLost(evt);
+            }
+        });
         lbl_help.addMouseListener(new java.awt.event.MouseAdapter()
         {
             public void mouseClicked(java.awt.event.MouseEvent evt)
@@ -369,6 +510,13 @@ public class frm_dashboard extends javax.swing.JFrame
                 lbl_helpMouseExited(evt);
             }
         });
+        lbl_help.addKeyListener(new java.awt.event.KeyAdapter()
+        {
+            public void keyPressed(java.awt.event.KeyEvent evt)
+            {
+                lbl_helpKeyPressed(evt);
+            }
+        });
 
         javax.swing.GroupLayout pnl_helpLayout = new javax.swing.GroupLayout(pnl_help);
         pnl_help.setLayout(pnl_helpLayout);
@@ -376,13 +524,21 @@ public class frm_dashboard extends javax.swing.JFrame
             pnl_helpLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(pnl_helpLayout.createSequentialGroup()
                 .addGap(50, 50, 50)
-                .addComponent(lbl_help, javax.swing.GroupLayout.PREFERRED_SIZE, 304, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(50, Short.MAX_VALUE))
+                .addComponent(lbl_help, javax.swing.GroupLayout.PREFERRED_SIZE, 310, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
         pnl_helpLayout.setVerticalGroup(
             pnl_helpLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addComponent(lbl_help, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, 51, Short.MAX_VALUE)
         );
+
+        jLabel2.setFont(new java.awt.Font("Segoe UI", 1, 48)); // NOI18N
+        jLabel2.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabel2.setText("GIRIRAJ TELECOM");
+        jLabel2.setNextFocusableComponent(lbl_customer);
+
+        jSeparator1.setBackground(new java.awt.Color(0, 0, 0));
+        jSeparator1.setForeground(new java.awt.Color(0, 0, 0));
 
         javax.swing.GroupLayout pnl_sidepaneLayout = new javax.swing.GroupLayout(pnl_sidepane);
         pnl_sidepane.setLayout(pnl_sidepaneLayout);
@@ -390,34 +546,40 @@ public class frm_dashboard extends javax.swing.JFrame
             pnl_sidepaneLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(pnl_sidepaneLayout.createSequentialGroup()
                 .addGap(50, 50, 50)
-                .addGroup(pnl_sidepaneLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(pnl_help, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(pnl_about, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(pnl_account, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(pnl_bill, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(pnl_product, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(pnl_employee, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(pnl_customer, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addContainerGap(50, Short.MAX_VALUE))
+                .addGroup(pnl_sidepaneLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                    .addComponent(pnl_help, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(pnl_about, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(pnl_account, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(pnl_bill, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(pnl_product, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(pnl_employee, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(pnl_customer, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(jLabel2, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(jSeparator1))
+                .addContainerGap(43, Short.MAX_VALUE))
         );
         pnl_sidepaneLayout.setVerticalGroup(
             pnl_sidepaneLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(pnl_sidepaneLayout.createSequentialGroup()
-                .addGap(25, 25, 25)
+                .addGap(26, 26, 26)
+                .addComponent(jLabel2)
+                .addGap(18, 18, 18)
+                .addComponent(jSeparator1, javax.swing.GroupLayout.PREFERRED_SIZE, 22, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(43, 43, 43)
                 .addComponent(pnl_customer, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(50, 50, 50)
+                .addGap(26, 26, 26)
                 .addComponent(pnl_employee, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(50, 50, 50)
+                .addGap(26, 26, 26)
                 .addComponent(pnl_product, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(50, 50, 50)
+                .addGap(26, 26, 26)
                 .addComponent(pnl_bill, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(50, 50, 50)
+                .addGap(26, 26, 26)
                 .addComponent(pnl_account, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(50, 50, 50)
+                .addGap(26, 26, 26)
                 .addComponent(pnl_about, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(50, 50, 50)
+                .addGap(26, 26, 26)
                 .addComponent(pnl_help, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(28, Short.MAX_VALUE))
+                .addContainerGap(26, Short.MAX_VALUE))
         );
 
         pnl_header.setkBorderRadius(30);
@@ -533,17 +695,35 @@ public class frm_dashboard extends javax.swing.JFrame
         panel_customer.setkStartColor(new java.awt.Color(228, 235, 246));
         panel_customer.setPreferredSize(new java.awt.Dimension(1061, 710));
 
+        jTabbedPane1.setBackground(new java.awt.Color(228, 235, 246));
         jTabbedPane1.setFont(new java.awt.Font("Cascadia Mono", 0, 24)); // NOI18N
+
+        jPanel1.setBackground(new java.awt.Color(228, 235, 246));
+
+        jLabel1.setFont(new java.awt.Font("Cascadia Mono", 0, 24)); // NOI18N
+        jLabel1.setText("CUSTOMER NAME");
+
+        jTextField1.setFont(new java.awt.Font("Cascadia Mono", 0, 24)); // NOI18N
 
         javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
         jPanel1.setLayout(jPanel1Layout);
         jPanel1Layout.setHorizontalGroup(
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 1061, Short.MAX_VALUE)
+            .addGroup(jPanel1Layout.createSequentialGroup()
+                .addGap(163, 163, 163)
+                .addComponent(jLabel1)
+                .addGap(18, 18, 18)
+                .addComponent(jTextField1, javax.swing.GroupLayout.PREFERRED_SIZE, 395, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(303, Short.MAX_VALUE))
         );
         jPanel1Layout.setVerticalGroup(
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 660, Short.MAX_VALUE)
+            .addGroup(jPanel1Layout.createSequentialGroup()
+                .addGap(135, 135, 135)
+                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jTextField1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addContainerGap(485, Short.MAX_VALUE))
         );
 
         jTabbedPane1.addTab("ADD CUSTOMER", jPanel1);
@@ -663,18 +843,18 @@ public class frm_dashboard extends javax.swing.JFrame
             .addGap(0, 710, Short.MAX_VALUE)
         );
 
-        panel_main9.setkEndColor(new java.awt.Color(228, 235, 246));
-        panel_main9.setkStartColor(new java.awt.Color(228, 235, 246));
-        panel_main9.setPreferredSize(new java.awt.Dimension(1061, 710));
+        panel_extra.setkEndColor(new java.awt.Color(102, 0, 0));
+        panel_extra.setkStartColor(new java.awt.Color(228, 235, 246));
+        panel_extra.setPreferredSize(new java.awt.Dimension(1061, 710));
 
-        javax.swing.GroupLayout panel_main9Layout = new javax.swing.GroupLayout(panel_main9);
-        panel_main9.setLayout(panel_main9Layout);
-        panel_main9Layout.setHorizontalGroup(
-            panel_main9Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+        javax.swing.GroupLayout panel_extraLayout = new javax.swing.GroupLayout(panel_extra);
+        panel_extra.setLayout(panel_extraLayout);
+        panel_extraLayout.setHorizontalGroup(
+            panel_extraLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGap(0, 1061, Short.MAX_VALUE)
         );
-        panel_main9Layout.setVerticalGroup(
-            panel_main9Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+        panel_extraLayout.setVerticalGroup(
+            panel_extraLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGap(0, 710, Short.MAX_VALUE)
         );
 
@@ -696,7 +876,7 @@ public class frm_dashboard extends javax.swing.JFrame
             .addGroup(panel_mainLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                 .addComponent(panel_employee, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
             .addGroup(panel_mainLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                .addComponent(panel_main9, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                .addComponent(panel_extra, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
             .addGroup(panel_mainLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                 .addComponent(panel_customer, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
@@ -716,7 +896,7 @@ public class frm_dashboard extends javax.swing.JFrame
             .addGroup(panel_mainLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                 .addComponent(panel_employee, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
             .addGroup(panel_mainLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                .addComponent(panel_main9, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                .addComponent(panel_extra, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
             .addGroup(panel_mainLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                 .addComponent(panel_customer, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
@@ -781,124 +961,6 @@ public class frm_dashboard extends javax.swing.JFrame
         pnl_min.setBackground(new Color(68, 82, 121));
     }//GEN-LAST:event_pnl_minMouseExited
 
-    private void lbl_customerMouseEntered(java.awt.event.MouseEvent evt)//GEN-FIRST:event_lbl_customerMouseEntered
-    {//GEN-HEADEREND:event_lbl_customerMouseEntered
-        pnl_customer.setkStartColor(new Color(68, 82, 121));
-        pnl_customer.setkEndColor(new Color(68, 82, 121));
-        pnl_customer.setBackground(Color.red);
-        lbl_customer.setForeground(Color.WHITE);
-    }//GEN-LAST:event_lbl_customerMouseEntered
-
-    private void lbl_customerMouseExited(java.awt.event.MouseEvent evt)//GEN-FIRST:event_lbl_customerMouseExited
-    {//GEN-HEADEREND:event_lbl_customerMouseExited
-
-        pnl_customer.setkStartColor(new Color(228, 235, 246));
-        pnl_customer.setkEndColor(new Color(228, 235, 246));
-        pnl_customer.setBackground(Color.BLACK);
-        lbl_customer.setForeground(new Color(68, 82, 121));
-    }//GEN-LAST:event_lbl_customerMouseExited
-
-    private void lbl_employeeMouseEntered(java.awt.event.MouseEvent evt)//GEN-FIRST:event_lbl_employeeMouseEntered
-    {//GEN-HEADEREND:event_lbl_employeeMouseEntered
-        pnl_employee.setkStartColor(new Color(68, 82, 121));
-        pnl_employee.setkEndColor(new Color(68, 82, 121));
-        pnl_employee.setBackground(Color.red);
-        lbl_employee.setForeground(Color.WHITE);
-    }//GEN-LAST:event_lbl_employeeMouseEntered
-
-    private void lbl_employeeMouseExited(java.awt.event.MouseEvent evt)//GEN-FIRST:event_lbl_employeeMouseExited
-    {//GEN-HEADEREND:event_lbl_employeeMouseExited
-
-        pnl_employee.setkStartColor(new Color(228, 235, 246));
-        pnl_employee.setkEndColor(new Color(228, 235, 246));
-        pnl_employee.setBackground(Color.BLACK);
-        lbl_employee.setForeground(new Color(68, 82, 121));
-    }//GEN-LAST:event_lbl_employeeMouseExited
-
-    private void lbl_productMouseEntered(java.awt.event.MouseEvent evt)//GEN-FIRST:event_lbl_productMouseEntered
-    {//GEN-HEADEREND:event_lbl_productMouseEntered
-        pnl_product.setkStartColor(new Color(68, 82, 121));
-        pnl_product.setkEndColor(new Color(68, 82, 121));
-        pnl_product.setBackground(Color.red);
-        lbl_product.setForeground(Color.WHITE);
-    }//GEN-LAST:event_lbl_productMouseEntered
-
-    private void lbl_productMouseExited(java.awt.event.MouseEvent evt)//GEN-FIRST:event_lbl_productMouseExited
-    {//GEN-HEADEREND:event_lbl_productMouseExited
-
-        pnl_product.setkStartColor(new Color(228, 235, 246));
-        pnl_product.setkEndColor(new Color(228, 235, 246));
-        pnl_product.setBackground(Color.BLACK);
-        lbl_product.setForeground(new Color(68, 82, 121));
-    }//GEN-LAST:event_lbl_productMouseExited
-
-    private void lbl_billMouseEntered(java.awt.event.MouseEvent evt)//GEN-FIRST:event_lbl_billMouseEntered
-    {//GEN-HEADEREND:event_lbl_billMouseEntered
-        pnl_bill.setkStartColor(new Color(68, 82, 121));
-        pnl_bill.setkEndColor(new Color(68, 82, 121));
-        pnl_bill.setBackground(Color.red);
-        lbl_bill.setForeground(Color.WHITE);
-    }//GEN-LAST:event_lbl_billMouseEntered
-
-    private void lbl_billMouseExited(java.awt.event.MouseEvent evt)//GEN-FIRST:event_lbl_billMouseExited
-    {//GEN-HEADEREND:event_lbl_billMouseExited
-
-        pnl_bill.setkStartColor(new Color(228, 235, 246));
-        pnl_bill.setkEndColor(new Color(228, 235, 246));
-        pnl_bill.setBackground(Color.BLACK);
-        lbl_bill.setForeground(new Color(68, 82, 121));
-    }//GEN-LAST:event_lbl_billMouseExited
-
-    private void lbl_accountMouseEntered(java.awt.event.MouseEvent evt)//GEN-FIRST:event_lbl_accountMouseEntered
-    {//GEN-HEADEREND:event_lbl_accountMouseEntered
-        pnl_account.setkStartColor(new Color(68, 82, 121));
-        pnl_account.setkEndColor(new Color(68, 82, 121));
-        pnl_account.setBackground(Color.red);
-        lbl_account.setForeground(Color.WHITE);
-    }//GEN-LAST:event_lbl_accountMouseEntered
-
-    private void lbl_accountMouseExited(java.awt.event.MouseEvent evt)//GEN-FIRST:event_lbl_accountMouseExited
-    {//GEN-HEADEREND:event_lbl_accountMouseExited
-
-        pnl_account.setkStartColor(new Color(228, 235, 246));
-        pnl_account.setkEndColor(new Color(228, 235, 246));
-        pnl_account.setBackground(Color.BLACK);
-        lbl_account.setForeground(new Color(68, 82, 121));
-    }//GEN-LAST:event_lbl_accountMouseExited
-
-    private void lbl_aboutMouseEntered(java.awt.event.MouseEvent evt)//GEN-FIRST:event_lbl_aboutMouseEntered
-    {//GEN-HEADEREND:event_lbl_aboutMouseEntered
-        pnl_about.setkStartColor(new Color(68, 82, 121));
-        pnl_about.setkEndColor(new Color(68, 82, 121));
-        pnl_about.setBackground(Color.red);
-        lbl_about.setForeground(Color.WHITE);
-    }//GEN-LAST:event_lbl_aboutMouseEntered
-
-    private void lbl_aboutMouseExited(java.awt.event.MouseEvent evt)//GEN-FIRST:event_lbl_aboutMouseExited
-    {//GEN-HEADEREND:event_lbl_aboutMouseExited
-
-        pnl_about.setkStartColor(new Color(228, 235, 246));
-        pnl_about.setkEndColor(new Color(228, 235, 246));
-        pnl_about.setBackground(Color.BLACK);
-        lbl_about.setForeground(new Color(68, 82, 121));
-    }//GEN-LAST:event_lbl_aboutMouseExited
-
-    private void lbl_helpMouseEntered(java.awt.event.MouseEvent evt)//GEN-FIRST:event_lbl_helpMouseEntered
-    {//GEN-HEADEREND:event_lbl_helpMouseEntered
-        pnl_help.setkStartColor(new Color(68, 82, 121));
-        pnl_help.setkEndColor(new Color(68, 82, 121));
-        pnl_help.setBackground(Color.red);
-        lbl_help.setForeground(Color.WHITE);
-    }//GEN-LAST:event_lbl_helpMouseEntered
-
-    private void lbl_helpMouseExited(java.awt.event.MouseEvent evt)//GEN-FIRST:event_lbl_helpMouseExited
-    {//GEN-HEADEREND:event_lbl_helpMouseExited
-        pnl_help.setkStartColor(new Color(228, 235, 246));
-        pnl_help.setkEndColor(new Color(228, 235, 246));
-        pnl_help.setBackground(Color.BLACK);
-        lbl_help.setForeground(new Color(68, 82, 121));
-    }//GEN-LAST:event_lbl_helpMouseExited
-
     private void pnl_closeMouseEntered(java.awt.event.MouseEvent evt)//GEN-FIRST:event_pnl_closeMouseEntered
     {//GEN-HEADEREND:event_pnl_closeMouseEntered
         pnl_close.setkStartColor(new Color(255, 0, 0));
@@ -919,102 +981,44 @@ public class frm_dashboard extends javax.swing.JFrame
         pnl_close.setkEndColor(new Color(68, 82, 121));
     }//GEN-LAST:event_pnl_closeMouseExited
 
-    private void lbl_customerMouseClicked(java.awt.event.MouseEvent evt)//GEN-FIRST:event_lbl_customerMouseClicked
-    {//GEN-HEADEREND:event_lbl_customerMouseClicked
-        panel_customer.setVisible(true);
-        panel_employee.setVisible(false);
-        panel_bill.setVisible(false);
-        panel_product.setVisible(false);
-        panel_account.setVisible(false);
-        panel_about.setVisible(false);
-        panel_help.setVisible(false);
-        panel_main9.setVisible(false);
-        pnl_customer.setkStartColor(Color.WHITE);
-        pnl_customer.setkEndColor(Color.WHITE);
-        pnl_customer.setBackground(Color.WHITE);
-        lbl_customer.setForeground(Color.BLACK);
+    private void lbl_helpKeyPressed(java.awt.event.KeyEvent evt)//GEN-FIRST:event_lbl_helpKeyPressed
+    {//GEN-HEADEREND:event_lbl_helpKeyPressed
+        if (evt.getKeyCode() == KeyEvent.VK_ENTER)
+        {
+            panel_customer.setVisible(false);
+            panel_employee.setVisible(false);
+            panel_bill.setVisible(false);
+            panel_product.setVisible(false);
+            panel_account.setVisible(false);
+            panel_about.setVisible(false);
+            panel_help.setVisible(true);
+            panel_extra.setVisible(false);
+        }
+    }//GEN-LAST:event_lbl_helpKeyPressed
 
-    }//GEN-LAST:event_lbl_customerMouseClicked
+    private void lbl_helpMouseExited(java.awt.event.MouseEvent evt)//GEN-FIRST:event_lbl_helpMouseExited
+    {//GEN-HEADEREND:event_lbl_helpMouseExited
+        pnl_help.setkStartColor(new Color(228, 235, 246));
+        pnl_help.setkEndColor(new Color(228, 235, 246));
+        pnl_help.setBackground(Color.BLACK);
+        lbl_help.setForeground(new Color(68, 82, 121));
 
-    private void lbl_employeeMouseClicked(java.awt.event.MouseEvent evt)//GEN-FIRST:event_lbl_employeeMouseClicked
-    {//GEN-HEADEREND:event_lbl_employeeMouseClicked
-        panel_customer.setVisible(false);
-        panel_employee.setVisible(true);
-        panel_bill.setVisible(false);
-        panel_product.setVisible(false);
-        panel_account.setVisible(false);
-        panel_about.setVisible(false);
-        panel_main9.setVisible(false);
-        panel_help.setVisible(false);
-        pnl_employee.setkStartColor(Color.WHITE);
-        pnl_employee.setkEndColor(Color.WHITE);
-        pnl_employee.setBackground(Color.WHITE);
-        lbl_employee.setForeground(Color.BLACK);
-    }//GEN-LAST:event_lbl_employeeMouseClicked
+        lbl_help.setFont(new Font("Cascadia Monocai", Font.PLAIN, 24));
+        lbl_help.setForeground(new Color(68, 82, 121));
+        lbl_help.setText("HELP");
+    }//GEN-LAST:event_lbl_helpMouseExited
 
-    private void lbl_productMouseClicked(java.awt.event.MouseEvent evt)//GEN-FIRST:event_lbl_productMouseClicked
-    {//GEN-HEADEREND:event_lbl_productMouseClicked
-        panel_customer.setVisible(false);
-        panel_employee.setVisible(false);
-        panel_bill.setVisible(false);
-        panel_product.setVisible(true);
-        panel_account.setVisible(false);
-        panel_about.setVisible(false);
-        panel_help.setVisible(false);
-        panel_main9.setVisible(false);
-        pnl_product.setkStartColor(Color.WHITE);
-        pnl_product.setkEndColor(Color.WHITE);
-        pnl_product.setBackground(Color.WHITE);
-        lbl_product.setForeground(Color.BLACK);
-    }//GEN-LAST:event_lbl_productMouseClicked
+    private void lbl_helpMouseEntered(java.awt.event.MouseEvent evt)//GEN-FIRST:event_lbl_helpMouseEntered
+    {//GEN-HEADEREND:event_lbl_helpMouseEntered
+        pnl_help.setkStartColor(new Color(68, 82, 121));
+        pnl_help.setkEndColor(new Color(68, 82, 121));
+        pnl_help.setBackground(Color.red);
+        lbl_help.setForeground(Color.WHITE);
 
-    private void lbl_billMouseClicked(java.awt.event.MouseEvent evt)//GEN-FIRST:event_lbl_billMouseClicked
-    {//GEN-HEADEREND:event_lbl_billMouseClicked
-        panel_customer.setVisible(false);
-        panel_employee.setVisible(false);
-        panel_bill.setVisible(true);
-        panel_product.setVisible(false);
-        panel_account.setVisible(false);
-        panel_about.setVisible(false);
-        panel_help.setVisible(false);
-        panel_main9.setVisible(false);
-        pnl_bill.setkStartColor(Color.WHITE);
-        pnl_bill.setkEndColor(Color.WHITE);
-        pnl_bill.setBackground(Color.WHITE);
-        lbl_bill.setForeground(Color.BLACK);
-    }//GEN-LAST:event_lbl_billMouseClicked
-
-    private void lbl_accountMouseClicked(java.awt.event.MouseEvent evt)//GEN-FIRST:event_lbl_accountMouseClicked
-    {//GEN-HEADEREND:event_lbl_accountMouseClicked
-        panel_customer.setVisible(false);
-        panel_employee.setVisible(false);
-        panel_bill.setVisible(false);
-        panel_product.setVisible(false);
-        panel_account.setVisible(true);
-        panel_about.setVisible(false);
-        panel_help.setVisible(false);
-        panel_main9.setVisible(false);
-        pnl_account.setkStartColor(Color.WHITE);
-        pnl_account.setkEndColor(Color.WHITE);
-        pnl_account.setBackground(Color.WHITE);
-        lbl_account.setForeground(Color.BLACK);
-    }//GEN-LAST:event_lbl_accountMouseClicked
-
-    private void lbl_aboutMouseClicked(java.awt.event.MouseEvent evt)//GEN-FIRST:event_lbl_aboutMouseClicked
-    {//GEN-HEADEREND:event_lbl_aboutMouseClicked
-        panel_customer.setVisible(false);
-        panel_employee.setVisible(false);
-        panel_bill.setVisible(false);
-        panel_product.setVisible(false);
-        panel_account.setVisible(false);
-        panel_about.setVisible(true);
-        panel_help.setVisible(false);
-        panel_main9.setVisible(false);
-        pnl_about.setkStartColor(Color.WHITE);
-        pnl_about.setkEndColor(Color.WHITE);
-        pnl_about.setBackground(Color.WHITE);
-        lbl_about.setForeground(Color.BLACK);
-    }//GEN-LAST:event_lbl_aboutMouseClicked
+        lbl_help.setFont(new Font("Cascadia Monocai", Font.PLAIN, 24));
+        lbl_help.setForeground(Color.WHITE);
+        lbl_help.setText("<html><u>HELP</u></html>");
+    }//GEN-LAST:event_lbl_helpMouseEntered
 
     private void lbl_helpMouseClicked(java.awt.event.MouseEvent evt)//GEN-FIRST:event_lbl_helpMouseClicked
     {//GEN-HEADEREND:event_lbl_helpMouseClicked
@@ -1025,12 +1029,460 @@ public class frm_dashboard extends javax.swing.JFrame
         panel_account.setVisible(false);
         panel_about.setVisible(false);
         panel_help.setVisible(true);
-        panel_main9.setVisible(false);
+        panel_extra.setVisible(false);
         pnl_help.setkStartColor(Color.WHITE);
         pnl_help.setkEndColor(Color.WHITE);
         pnl_help.setBackground(Color.WHITE);
-        lbl_help.setForeground(Color.BLACK);
+        //lbl_help.setForeground(Color.BLACK);
     }//GEN-LAST:event_lbl_helpMouseClicked
+
+    private void lbl_helpFocusLost(java.awt.event.FocusEvent evt)//GEN-FIRST:event_lbl_helpFocusLost
+    {//GEN-HEADEREND:event_lbl_helpFocusLost
+        pnl_help.setkStartColor(new Color(228, 235, 246));
+        pnl_help.setkEndColor(new Color(228, 235, 246));
+        pnl_help.setBackground(Color.BLACK);
+        lbl_help.setForeground(new Color(68, 82, 121));
+    }//GEN-LAST:event_lbl_helpFocusLost
+
+    private void lbl_helpFocusGained(java.awt.event.FocusEvent evt)//GEN-FIRST:event_lbl_helpFocusGained
+    {//GEN-HEADEREND:event_lbl_helpFocusGained
+        pnl_help.setkStartColor(new Color(68, 82, 121));
+        pnl_help.setkEndColor(new Color(68, 82, 121));
+        pnl_help.setBackground(Color.red);
+        lbl_help.setForeground(Color.WHITE);
+    }//GEN-LAST:event_lbl_helpFocusGained
+
+    private void lbl_aboutKeyPressed(java.awt.event.KeyEvent evt)//GEN-FIRST:event_lbl_aboutKeyPressed
+    {//GEN-HEADEREND:event_lbl_aboutKeyPressed
+        if (evt.getKeyCode() == KeyEvent.VK_ENTER)
+        {
+            panel_customer.setVisible(false);
+            panel_employee.setVisible(false);
+            panel_bill.setVisible(false);
+            panel_product.setVisible(false);
+            panel_account.setVisible(false);
+            panel_about.setVisible(true);
+            panel_help.setVisible(false);
+            panel_extra.setVisible(false);
+        }
+    }//GEN-LAST:event_lbl_aboutKeyPressed
+
+    private void lbl_aboutMouseExited(java.awt.event.MouseEvent evt)//GEN-FIRST:event_lbl_aboutMouseExited
+    {//GEN-HEADEREND:event_lbl_aboutMouseExited
+
+        pnl_about.setkStartColor(new Color(228, 235, 246));
+        pnl_about.setkEndColor(new Color(228, 235, 246));
+        pnl_about.setBackground(Color.BLACK);
+        lbl_about.setForeground(new Color(68, 82, 121));
+
+        lbl_about.setFont(new Font("Cascadia Monocai", Font.PLAIN, 24));
+        lbl_about.setForeground(new Color(68, 82, 121));
+        lbl_about.setText("ABOUT US");
+    }//GEN-LAST:event_lbl_aboutMouseExited
+
+    private void lbl_aboutMouseEntered(java.awt.event.MouseEvent evt)//GEN-FIRST:event_lbl_aboutMouseEntered
+    {//GEN-HEADEREND:event_lbl_aboutMouseEntered
+        pnl_about.setkStartColor(new Color(68, 82, 121));
+        pnl_about.setkEndColor(new Color(68, 82, 121));
+        pnl_about.setBackground(Color.red);
+        lbl_about.setForeground(Color.WHITE);
+
+        lbl_about.setFont(new Font("Cascadia Monocai", Font.PLAIN, 24));
+        lbl_about.setForeground(Color.WHITE);
+        lbl_about.setText("<html><u>ABOUT US</u></html>");
+    }//GEN-LAST:event_lbl_aboutMouseEntered
+
+    private void lbl_aboutMouseClicked(java.awt.event.MouseEvent evt)//GEN-FIRST:event_lbl_aboutMouseClicked
+    {//GEN-HEADEREND:event_lbl_aboutMouseClicked
+        panel_customer.setVisible(false);
+        panel_employee.setVisible(false);
+        panel_bill.setVisible(false);
+        panel_product.setVisible(false);
+        panel_account.setVisible(false);
+        panel_about.setVisible(true);
+        panel_help.setVisible(false);
+        panel_extra.setVisible(false);
+        pnl_about.setkStartColor(Color.WHITE);
+        pnl_about.setkEndColor(Color.WHITE);
+        pnl_about.setBackground(Color.WHITE);
+        lbl_about.setForeground(Color.BLACK);
+    }//GEN-LAST:event_lbl_aboutMouseClicked
+
+    private void lbl_aboutFocusLost(java.awt.event.FocusEvent evt)//GEN-FIRST:event_lbl_aboutFocusLost
+    {//GEN-HEADEREND:event_lbl_aboutFocusLost
+        pnl_about.setkStartColor(new Color(228, 235, 246));
+        pnl_about.setkEndColor(new Color(228, 235, 246));
+        pnl_about.setBackground(Color.BLACK);
+        lbl_about.setForeground(new Color(68, 82, 121));
+    }//GEN-LAST:event_lbl_aboutFocusLost
+
+    private void lbl_aboutFocusGained(java.awt.event.FocusEvent evt)//GEN-FIRST:event_lbl_aboutFocusGained
+    {//GEN-HEADEREND:event_lbl_aboutFocusGained
+        pnl_about.setkStartColor(new Color(68, 82, 121));
+        pnl_about.setkEndColor(new Color(68, 82, 121));
+        pnl_about.setBackground(Color.red);
+        lbl_about.setForeground(Color.WHITE);
+    }//GEN-LAST:event_lbl_aboutFocusGained
+
+    private void lbl_accountKeyPressed(java.awt.event.KeyEvent evt)//GEN-FIRST:event_lbl_accountKeyPressed
+    {//GEN-HEADEREND:event_lbl_accountKeyPressed
+        if (evt.getKeyCode() == KeyEvent.VK_ENTER)
+        {
+            panel_customer.setVisible(false);
+            panel_employee.setVisible(false);
+            panel_bill.setVisible(false);
+            panel_product.setVisible(false);
+            panel_account.setVisible(true);
+            panel_about.setVisible(false);
+            panel_help.setVisible(false);
+            panel_extra.setVisible(false);
+        }
+    }//GEN-LAST:event_lbl_accountKeyPressed
+
+    private void lbl_accountMouseExited(java.awt.event.MouseEvent evt)//GEN-FIRST:event_lbl_accountMouseExited
+    {//GEN-HEADEREND:event_lbl_accountMouseExited
+
+        pnl_account.setkStartColor(new Color(228, 235, 246));
+        pnl_account.setkEndColor(new Color(228, 235, 246));
+        pnl_account.setBackground(Color.BLACK);
+        lbl_account.setForeground(new Color(68, 82, 121));
+
+        lbl_account.setFont(new Font("Cascadia Monocai", Font.PLAIN, 24));
+        lbl_account.setForeground(new Color(68, 82, 121));
+        lbl_account.setText("ACCOUNT MANAGEMENT");
+    }//GEN-LAST:event_lbl_accountMouseExited
+
+    private void lbl_accountMouseEntered(java.awt.event.MouseEvent evt)//GEN-FIRST:event_lbl_accountMouseEntered
+    {//GEN-HEADEREND:event_lbl_accountMouseEntered
+        pnl_account.setkStartColor(new Color(68, 82, 121));
+        pnl_account.setkEndColor(new Color(68, 82, 121));
+        pnl_account.setBackground(Color.red);
+        lbl_account.setForeground(Color.WHITE);
+
+        lbl_account.setFont(new Font("Cascadia Monocai", Font.PLAIN, 24));
+        lbl_account.setForeground(Color.WHITE);
+        lbl_account.setText("<html><u>ACCOUNT MANAGEMENT</u></html>");
+    }//GEN-LAST:event_lbl_accountMouseEntered
+
+    private void lbl_accountMouseClicked(java.awt.event.MouseEvent evt)//GEN-FIRST:event_lbl_accountMouseClicked
+    {//GEN-HEADEREND:event_lbl_accountMouseClicked
+        panel_customer.setVisible(false);
+        panel_employee.setVisible(false);
+        panel_bill.setVisible(false);
+        panel_product.setVisible(false);
+        panel_account.setVisible(true);
+        panel_about.setVisible(false);
+        panel_help.setVisible(false);
+        panel_extra.setVisible(false);
+        pnl_account.setkStartColor(Color.WHITE);
+        pnl_account.setkEndColor(Color.WHITE);
+        pnl_account.setBackground(Color.WHITE);
+        lbl_account.setForeground(Color.BLACK);
+    }//GEN-LAST:event_lbl_accountMouseClicked
+
+    private void lbl_accountFocusLost(java.awt.event.FocusEvent evt)//GEN-FIRST:event_lbl_accountFocusLost
+    {//GEN-HEADEREND:event_lbl_accountFocusLost
+        pnl_account.setkStartColor(new Color(228, 235, 246));
+        pnl_account.setkEndColor(new Color(228, 235, 246));
+        pnl_account.setBackground(Color.BLACK);
+        lbl_account.setForeground(new Color(68, 82, 121));
+    }//GEN-LAST:event_lbl_accountFocusLost
+
+    private void lbl_accountFocusGained(java.awt.event.FocusEvent evt)//GEN-FIRST:event_lbl_accountFocusGained
+    {//GEN-HEADEREND:event_lbl_accountFocusGained
+        pnl_account.setkStartColor(new Color(68, 82, 121));
+        pnl_account.setkEndColor(new Color(68, 82, 121));
+        pnl_account.setBackground(Color.red);
+        lbl_account.setForeground(Color.WHITE);
+    }//GEN-LAST:event_lbl_accountFocusGained
+
+    private void lbl_billKeyPressed(java.awt.event.KeyEvent evt)//GEN-FIRST:event_lbl_billKeyPressed
+    {//GEN-HEADEREND:event_lbl_billKeyPressed
+        if (evt.getKeyCode() == KeyEvent.VK_ENTER)
+        {
+            panel_customer.setVisible(false);
+            panel_employee.setVisible(false);
+            panel_bill.setVisible(true);
+            panel_product.setVisible(false);
+            panel_account.setVisible(false);
+            panel_about.setVisible(false);
+            panel_help.setVisible(false);
+            panel_extra.setVisible(false);
+        }
+    }//GEN-LAST:event_lbl_billKeyPressed
+
+    private void lbl_billMouseExited(java.awt.event.MouseEvent evt)//GEN-FIRST:event_lbl_billMouseExited
+    {//GEN-HEADEREND:event_lbl_billMouseExited
+
+        pnl_bill.setkStartColor(new Color(228, 235, 246));
+        pnl_bill.setkEndColor(new Color(228, 235, 246));
+        pnl_bill.setBackground(Color.BLACK);
+        lbl_bill.setForeground(new Color(68, 82, 121));
+
+        lbl_bill.setFont(new Font("Cascadia Monocai", Font.PLAIN, 24));
+        lbl_bill.setForeground(new Color(68, 82, 121));
+        lbl_bill.setText("BILL MANAGEMENT");
+    }//GEN-LAST:event_lbl_billMouseExited
+
+    private void lbl_billMouseEntered(java.awt.event.MouseEvent evt)//GEN-FIRST:event_lbl_billMouseEntered
+    {//GEN-HEADEREND:event_lbl_billMouseEntered
+        pnl_bill.setkStartColor(new Color(68, 82, 121));
+        pnl_bill.setkEndColor(new Color(68, 82, 121));
+        pnl_bill.setBackground(Color.red);
+        lbl_bill.setForeground(Color.WHITE);
+
+        lbl_bill.setFont(new Font("Cascadia Monocai", Font.PLAIN, 24));
+        lbl_bill.setForeground(Color.WHITE);
+        lbl_bill.setText("<html><u>BILL MANAGEMENT</u></html>");
+    }//GEN-LAST:event_lbl_billMouseEntered
+
+    private void lbl_billMouseClicked(java.awt.event.MouseEvent evt)//GEN-FIRST:event_lbl_billMouseClicked
+    {//GEN-HEADEREND:event_lbl_billMouseClicked
+        panel_customer.setVisible(false);
+        panel_employee.setVisible(false);
+        panel_bill.setVisible(true);
+        panel_product.setVisible(false);
+        panel_account.setVisible(false);
+        panel_about.setVisible(false);
+        panel_help.setVisible(false);
+        panel_extra.setVisible(false);
+        pnl_bill.setkStartColor(Color.WHITE);
+        pnl_bill.setkEndColor(Color.WHITE);
+        pnl_bill.setBackground(Color.WHITE);
+        lbl_bill.setForeground(Color.BLACK);
+    }//GEN-LAST:event_lbl_billMouseClicked
+
+    private void lbl_billFocusLost(java.awt.event.FocusEvent evt)//GEN-FIRST:event_lbl_billFocusLost
+    {//GEN-HEADEREND:event_lbl_billFocusLost
+        pnl_bill.setkStartColor(new Color(228, 235, 246));
+        pnl_bill.setkEndColor(new Color(228, 235, 246));
+        pnl_bill.setBackground(Color.BLACK);
+        lbl_bill.setForeground(new Color(68, 82, 121));
+    }//GEN-LAST:event_lbl_billFocusLost
+
+    private void lbl_billFocusGained(java.awt.event.FocusEvent evt)//GEN-FIRST:event_lbl_billFocusGained
+    {//GEN-HEADEREND:event_lbl_billFocusGained
+        pnl_bill.setkStartColor(new Color(68, 82, 121));
+        pnl_bill.setkEndColor(new Color(68, 82, 121));
+        pnl_bill.setBackground(Color.red);
+        lbl_bill.setForeground(Color.WHITE);
+    }//GEN-LAST:event_lbl_billFocusGained
+
+    private void lbl_productKeyPressed(java.awt.event.KeyEvent evt)//GEN-FIRST:event_lbl_productKeyPressed
+    {//GEN-HEADEREND:event_lbl_productKeyPressed
+        if (evt.getKeyCode() == KeyEvent.VK_ENTER)
+        {
+            panel_customer.setVisible(false);
+            panel_employee.setVisible(false);
+            panel_bill.setVisible(false);
+            panel_product.setVisible(true);
+            panel_account.setVisible(false);
+            panel_about.setVisible(false);
+            panel_help.setVisible(false);
+            panel_extra.setVisible(false);
+        }
+    }//GEN-LAST:event_lbl_productKeyPressed
+
+    private void lbl_productMouseExited(java.awt.event.MouseEvent evt)//GEN-FIRST:event_lbl_productMouseExited
+    {//GEN-HEADEREND:event_lbl_productMouseExited
+
+        pnl_product.setkStartColor(new Color(228, 235, 246));
+        pnl_product.setkEndColor(new Color(228, 235, 246));
+        pnl_product.setBackground(Color.BLACK);
+        lbl_product.setForeground(new Color(68, 82, 121));
+
+        lbl_product.setFont(new Font("Cascadia Monocai", Font.PLAIN, 24));
+        lbl_product.setForeground(new Color(68, 82, 121));
+        lbl_product.setText("PRODUCT MANAGEMENT");
+    }//GEN-LAST:event_lbl_productMouseExited
+
+    private void lbl_productMouseEntered(java.awt.event.MouseEvent evt)//GEN-FIRST:event_lbl_productMouseEntered
+    {//GEN-HEADEREND:event_lbl_productMouseEntered
+        pnl_product.setkStartColor(new Color(68, 82, 121));
+        pnl_product.setkEndColor(new Color(68, 82, 121));
+        pnl_product.setBackground(Color.red);
+        lbl_product.setForeground(Color.WHITE);
+
+        lbl_product.setFont(new Font("Cascadia Monocai", Font.PLAIN, 24));
+        lbl_product.setForeground(Color.WHITE);
+        lbl_product.setText("<html><u>PRODUCT MANAGEMENT</u></html>");
+    }//GEN-LAST:event_lbl_productMouseEntered
+
+    private void lbl_productMouseClicked(java.awt.event.MouseEvent evt)//GEN-FIRST:event_lbl_productMouseClicked
+    {//GEN-HEADEREND:event_lbl_productMouseClicked
+        panel_customer.setVisible(false);
+        panel_employee.setVisible(false);
+        panel_bill.setVisible(false);
+        panel_product.setVisible(true);
+        panel_account.setVisible(false);
+        panel_about.setVisible(false);
+        panel_help.setVisible(false);
+        panel_extra.setVisible(false);
+        pnl_product.setkStartColor(Color.WHITE);
+        pnl_product.setkEndColor(Color.WHITE);
+        pnl_product.setBackground(Color.WHITE);
+        lbl_product.setForeground(Color.BLACK);
+    }//GEN-LAST:event_lbl_productMouseClicked
+
+    private void lbl_productFocusLost(java.awt.event.FocusEvent evt)//GEN-FIRST:event_lbl_productFocusLost
+    {//GEN-HEADEREND:event_lbl_productFocusLost
+        pnl_product.setkStartColor(new Color(228, 235, 246));
+        pnl_product.setkEndColor(new Color(228, 235, 246));
+        pnl_product.setBackground(Color.BLACK);
+        lbl_product.setForeground(new Color(68, 82, 121));
+    }//GEN-LAST:event_lbl_productFocusLost
+
+    private void lbl_productFocusGained(java.awt.event.FocusEvent evt)//GEN-FIRST:event_lbl_productFocusGained
+    {//GEN-HEADEREND:event_lbl_productFocusGained
+        pnl_product.setkStartColor(new Color(68, 82, 121));
+        pnl_product.setkEndColor(new Color(68, 82, 121));
+        pnl_product.setBackground(Color.red);
+        lbl_product.setForeground(Color.WHITE);
+    }//GEN-LAST:event_lbl_productFocusGained
+
+    private void lbl_employeeKeyPressed(java.awt.event.KeyEvent evt)//GEN-FIRST:event_lbl_employeeKeyPressed
+    {//GEN-HEADEREND:event_lbl_employeeKeyPressed
+        if (evt.getKeyCode() == KeyEvent.VK_ENTER)
+        {
+            panel_customer.setVisible(false);
+            panel_employee.setVisible(true);
+            panel_bill.setVisible(false);
+            panel_product.setVisible(false);
+            panel_account.setVisible(false);
+            panel_about.setVisible(false);
+            panel_help.setVisible(false);
+            panel_extra.setVisible(false);
+        }
+    }//GEN-LAST:event_lbl_employeeKeyPressed
+
+    private void lbl_employeeMouseExited(java.awt.event.MouseEvent evt)//GEN-FIRST:event_lbl_employeeMouseExited
+    {//GEN-HEADEREND:event_lbl_employeeMouseExited
+
+        pnl_employee.setkStartColor(new Color(228, 235, 246));
+        pnl_employee.setkEndColor(new Color(228, 235, 246));
+        pnl_employee.setBackground(Color.BLACK);
+        lbl_employee.setForeground(new Color(68, 82, 121));
+
+        lbl_employee.setFont(new Font("Cascadia Monocai", Font.PLAIN, 24));
+        lbl_employee.setForeground(new Color(68, 82, 121));
+        lbl_employee.setText("EMPLOYEE MANAGEMENT");
+    }//GEN-LAST:event_lbl_employeeMouseExited
+
+    private void lbl_employeeMouseEntered(java.awt.event.MouseEvent evt)//GEN-FIRST:event_lbl_employeeMouseEntered
+    {//GEN-HEADEREND:event_lbl_employeeMouseEntered
+        pnl_employee.setkStartColor(new Color(68, 82, 121));
+        pnl_employee.setkEndColor(new Color(68, 82, 121));
+        pnl_employee.setBackground(Color.red);
+        lbl_employee.setForeground(Color.WHITE);
+
+        lbl_employee.setFont(new Font("Cascadia Monocai", Font.PLAIN, 24));
+        lbl_employee.setForeground(Color.WHITE);
+        lbl_employee.setText("<html><u>EMPLOYEE MANAGEMENT</u></html>");
+    }//GEN-LAST:event_lbl_employeeMouseEntered
+
+    private void lbl_employeeMouseClicked(java.awt.event.MouseEvent evt)//GEN-FIRST:event_lbl_employeeMouseClicked
+    {//GEN-HEADEREND:event_lbl_employeeMouseClicked
+        panel_customer.setVisible(false);
+        panel_employee.setVisible(true);
+        panel_bill.setVisible(false);
+        panel_product.setVisible(false);
+        panel_account.setVisible(false);
+        panel_about.setVisible(false);
+        panel_extra.setVisible(false);
+        panel_help.setVisible(false);
+        pnl_employee.setkStartColor(Color.WHITE);
+        pnl_employee.setkEndColor(Color.WHITE);
+        pnl_employee.setBackground(Color.WHITE);
+        lbl_employee.setForeground(Color.BLACK);
+    }//GEN-LAST:event_lbl_employeeMouseClicked
+
+    private void lbl_employeeFocusLost(java.awt.event.FocusEvent evt)//GEN-FIRST:event_lbl_employeeFocusLost
+    {//GEN-HEADEREND:event_lbl_employeeFocusLost
+        pnl_employee.setkStartColor(new Color(228, 235, 246));
+        pnl_employee.setkEndColor(new Color(228, 235, 246));
+        pnl_employee.setBackground(Color.BLACK);
+        lbl_employee.setForeground(new Color(68, 82, 121));
+    }//GEN-LAST:event_lbl_employeeFocusLost
+
+    private void lbl_employeeFocusGained(java.awt.event.FocusEvent evt)//GEN-FIRST:event_lbl_employeeFocusGained
+    {//GEN-HEADEREND:event_lbl_employeeFocusGained
+        pnl_employee.setkStartColor(new Color(68, 82, 121));
+        pnl_employee.setkEndColor(new Color(68, 82, 121));
+        pnl_employee.setBackground(Color.red);
+        lbl_employee.setForeground(Color.WHITE);
+    }//GEN-LAST:event_lbl_employeeFocusGained
+
+    private void lbl_customerKeyPressed(java.awt.event.KeyEvent evt)//GEN-FIRST:event_lbl_customerKeyPressed
+    {//GEN-HEADEREND:event_lbl_customerKeyPressed
+        if (evt.getKeyCode() == KeyEvent.VK_ENTER)
+        {
+            panel_customer.setVisible(true);
+            panel_employee.setVisible(false);
+            panel_bill.setVisible(false);
+            panel_product.setVisible(false);
+            panel_account.setVisible(false);
+            panel_about.setVisible(false);
+            panel_help.setVisible(false);
+            panel_extra.setVisible(false);
+        }
+    }//GEN-LAST:event_lbl_customerKeyPressed
+
+    private void lbl_customerMouseExited(java.awt.event.MouseEvent evt)//GEN-FIRST:event_lbl_customerMouseExited
+    {//GEN-HEADEREND:event_lbl_customerMouseExited
+
+        pnl_customer.setkStartColor(new Color(228, 235, 246));
+        pnl_customer.setkEndColor(new Color(228, 235, 246));
+        pnl_customer.setBackground(Color.BLACK);
+        lbl_customer.setForeground(new Color(68, 82, 121));
+
+        lbl_customer.setFont(new Font("Cascadia Monocai", Font.PLAIN, 24));
+        lbl_customer.setForeground(new Color(68, 82, 121));
+        lbl_customer.setText("CUSTOMER MANAGEMENT");
+    }//GEN-LAST:event_lbl_customerMouseExited
+
+    private void lbl_customerMouseEntered(java.awt.event.MouseEvent evt)//GEN-FIRST:event_lbl_customerMouseEntered
+    {//GEN-HEADEREND:event_lbl_customerMouseEntered
+        pnl_customer.setkStartColor(new Color(68, 82, 121));
+        pnl_customer.setkEndColor(new Color(68, 82, 121));
+        pnl_customer.setBackground(Color.red);
+        lbl_customer.setForeground(Color.WHITE);
+
+        lbl_customer.setFont(new Font("Cascadia Monocai", Font.PLAIN, 24));
+        lbl_customer.setForeground(Color.WHITE);
+        lbl_customer.setText("<html><u>CUSTOMER MANAGEMENT</u></html>");
+    }//GEN-LAST:event_lbl_customerMouseEntered
+
+    private void lbl_customerMouseClicked(java.awt.event.MouseEvent evt)//GEN-FIRST:event_lbl_customerMouseClicked
+    {//GEN-HEADEREND:event_lbl_customerMouseClicked
+        panel_customer.setVisible(true);
+        panel_employee.setVisible(false);
+        panel_bill.setVisible(false);
+        panel_product.setVisible(false);
+        panel_account.setVisible(false);
+        panel_about.setVisible(false);
+        panel_help.setVisible(false);
+        panel_extra.setVisible(false);
+        pnl_customer.setkStartColor(Color.WHITE);
+        pnl_customer.setkEndColor(Color.WHITE);
+        pnl_customer.setBackground(Color.WHITE);
+        lbl_customer.setForeground(Color.BLACK);
+    }//GEN-LAST:event_lbl_customerMouseClicked
+
+    private void lbl_customerFocusLost(java.awt.event.FocusEvent evt)//GEN-FIRST:event_lbl_customerFocusLost
+    {//GEN-HEADEREND:event_lbl_customerFocusLost
+        pnl_customer.setkStartColor(new Color(228, 235, 246));
+        pnl_customer.setkEndColor(new Color(228, 235, 246));
+        pnl_customer.setBackground(Color.BLACK);
+        lbl_customer.setForeground(new Color(68, 82, 121));
+    }//GEN-LAST:event_lbl_customerFocusLost
+
+    private void lbl_customerFocusGained(java.awt.event.FocusEvent evt)//GEN-FIRST:event_lbl_customerFocusGained
+    {//GEN-HEADEREND:event_lbl_customerFocusGained
+        pnl_customer.setkStartColor(new Color(68, 82, 121));
+        pnl_customer.setkEndColor(new Color(68, 82, 121));
+        pnl_customer.setBackground(Color.red);
+        lbl_customer.setForeground(Color.WHITE);
+    }//GEN-LAST:event_lbl_customerFocusGained
 
     public static void main(String args[])
     {
@@ -1044,10 +1496,14 @@ public class frm_dashboard extends javax.swing.JFrame
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JLabel jLabel1;
+    private javax.swing.JLabel jLabel2;
     private javax.swing.JPanel jPanel1;
     private javax.swing.JPanel jPanel2;
     private javax.swing.JPanel jPanel3;
+    private javax.swing.JSeparator jSeparator1;
     private javax.swing.JTabbedPane jTabbedPane1;
+    private javax.swing.JTextField jTextField1;
     private com.k33ptoo.components.KGradientPanel kGradientPanel1;
     private com.k33ptoo.components.KGradientPanel kGradientPanel2;
     private javax.swing.JLabel lbl_about;
@@ -1065,9 +1521,9 @@ public class frm_dashboard extends javax.swing.JFrame
     private com.k33ptoo.components.KGradientPanel panel_bill;
     private com.k33ptoo.components.KGradientPanel panel_customer;
     private com.k33ptoo.components.KGradientPanel panel_employee;
+    private com.k33ptoo.components.KGradientPanel panel_extra;
     private com.k33ptoo.components.KGradientPanel panel_help;
     private com.k33ptoo.components.KGradientPanel panel_main;
-    private com.k33ptoo.components.KGradientPanel panel_main9;
     private com.k33ptoo.components.KGradientPanel panel_product;
     private com.k33ptoo.components.KGradientPanel pnl_about;
     private com.k33ptoo.components.KGradientPanel pnl_account;
