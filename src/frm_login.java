@@ -316,7 +316,7 @@ public class frm_login extends javax.swing.JFrame
         loginBtn.setkHoverForeGround(new java.awt.Color(68, 82, 121));
         loginBtn.setkHoverStartColor(new java.awt.Color(228, 235, 246));
         loginBtn.setkStartColor(new java.awt.Color(68, 82, 121));
-        loginBtn.setNextFocusableComponent(jComboBox1);
+        loginBtn.setNextFocusableComponent(jPanel10);
         loginBtn.addFocusListener(new java.awt.event.FocusAdapter()
         {
             public void focusGained(java.awt.event.FocusEvent evt)
@@ -369,6 +369,7 @@ public class frm_login extends javax.swing.JFrame
         jLabel10.setFont(new java.awt.Font("Cascadia Mono", 0, 20)); // NOI18N
         jLabel10.setText("CLICK HERE");
         jLabel10.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        jLabel10.setNextFocusableComponent(jComboBox1);
         jLabel10.addMouseListener(new java.awt.event.MouseAdapter()
         {
             public void mouseEntered(java.awt.event.MouseEvent evt)
