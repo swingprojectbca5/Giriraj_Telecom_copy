@@ -1457,7 +1457,7 @@
                                       </Group>
                                       <Group type="102" alignment="0" attributes="0">
                                           <EmptySpace min="-2" pref="253" max="-2" attributes="0"/>
-                                          <Component id="rmvloginBtn" min="-2" pref="454" max="-2" attributes="0"/>
+                                          <Component id="loginBtn_rmv" min="-2" pref="454" max="-2" attributes="0"/>
                                           <EmptySpace max="32767" attributes="0"/>
                                       </Group>
                                   </Group>
@@ -1489,7 +1489,7 @@
                                               <Component id="kGradientPanel18" alignment="1" min="-2" max="-2" attributes="0"/>
                                           </Group>
                                           <EmptySpace min="-2" pref="55" max="-2" attributes="0"/>
-                                          <Component id="rmvloginBtn" min="-2" max="-2" attributes="0"/>
+                                          <Component id="loginBtn_rmv" min="-2" max="-2" attributes="0"/>
                                           <EmptySpace min="-2" pref="80" max="-2" attributes="0"/>
                                       </Group>
                                   </Group>
@@ -1599,7 +1599,7 @@
                                           </Border>
                                         </Property>
                                         <Property name="nextFocusableComponent" type="java.awt.Component" editor="org.netbeans.modules.form.ComponentChooserEditor">
-                                          <ComponentRef name="txt_custnm"/>
+                                          <ComponentRef name="loginBtn_rmv"/>
                                         </Property>
                                       </Properties>
                                       <Events>
@@ -1829,7 +1829,7 @@
                                     </Component>
                                   </SubComponents>
                                 </Container>
-                                <Component class="com.k33ptoo.components.KButton" name="rmvloginBtn">
+                                <Component class="com.k33ptoo.components.KButton" name="loginBtn_rmv">
                                   <Properties>
                                     <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
                                       <Border info="null"/>
@@ -1855,6 +1855,10 @@
                                       <Color blue="79" green="52" red="44" type="rgb"/>
                                     </Property>
                                   </Properties>
+                                  <Events>
+                                    <EventHandler event="focusGained" listener="java.awt.event.FocusListener" parameters="java.awt.event.FocusEvent" handler="loginBtn_rmvFocusGained"/>
+                                    <EventHandler event="focusLost" listener="java.awt.event.FocusListener" parameters="java.awt.event.FocusEvent" handler="loginBtn_rmvFocusLost"/>
+                                  </Events>
                                 </Component>
                                 <Component class="javax.swing.JLabel" name="jLabel1">
                                   <Properties>

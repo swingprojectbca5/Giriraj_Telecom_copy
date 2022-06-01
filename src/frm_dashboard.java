@@ -118,7 +118,7 @@ public class frm_dashboard extends javax.swing.JFrame
         txt_rmvsname = new javax.swing.JTextField();
         kGradientPanel18 = new com.k33ptoo.components.KGradientPanel();
         txt_rmvsaddress = new javax.swing.JTextField();
-        rmvloginBtn = new com.k33ptoo.components.KButton();
+        loginBtn_rmv = new com.k33ptoo.components.KButton();
         jLabel1 = new javax.swing.JLabel();
         jPanel3 = new javax.swing.JPanel();
         pnl_addcust2 = new com.k33ptoo.components.KGradientPanel();
@@ -1142,7 +1142,7 @@ public class frm_dashboard extends javax.swing.JFrame
         txt_rmvcustid.setHorizontalAlignment(javax.swing.JTextField.CENTER);
         txt_rmvcustid.setText("CUSTOMER ID");
         txt_rmvcustid.setBorder(javax.swing.BorderFactory.createMatteBorder(0, 0, 0, 0, new java.awt.Color(0, 0, 0)));
-        txt_rmvcustid.setNextFocusableComponent(txt_custnm);
+        txt_rmvcustid.setNextFocusableComponent(loginBtn_rmv);
         txt_rmvcustid.addFocusListener(new java.awt.event.FocusAdapter()
         {
             public void focusGained(java.awt.event.FocusEvent evt)
@@ -1281,15 +1281,26 @@ public class frm_dashboard extends javax.swing.JFrame
             .addComponent(txt_rmvsaddress, javax.swing.GroupLayout.DEFAULT_SIZE, 50, Short.MAX_VALUE)
         );
 
-        rmvloginBtn.setBorder(null);
-        rmvloginBtn.setText("REMOVE CUSTOMER");
-        rmvloginBtn.setFont(new java.awt.Font("Segoe UI", 0, 24)); // NOI18N
-        rmvloginBtn.setkBorderRadius(30);
-        rmvloginBtn.setkEndColor(new java.awt.Color(68, 82, 121));
-        rmvloginBtn.setkHoverEndColor(new java.awt.Color(178, 199, 231));
-        rmvloginBtn.setkHoverForeGround(new java.awt.Color(68, 82, 121));
-        rmvloginBtn.setkHoverStartColor(new java.awt.Color(178, 199, 231));
-        rmvloginBtn.setkStartColor(new java.awt.Color(68, 82, 121));
+        loginBtn_rmv.setBorder(null);
+        loginBtn_rmv.setText("REMOVE CUSTOMER");
+        loginBtn_rmv.setFont(new java.awt.Font("Segoe UI", 0, 24)); // NOI18N
+        loginBtn_rmv.setkBorderRadius(30);
+        loginBtn_rmv.setkEndColor(new java.awt.Color(68, 82, 121));
+        loginBtn_rmv.setkHoverEndColor(new java.awt.Color(178, 199, 231));
+        loginBtn_rmv.setkHoverForeGround(new java.awt.Color(68, 82, 121));
+        loginBtn_rmv.setkHoverStartColor(new java.awt.Color(178, 199, 231));
+        loginBtn_rmv.setkStartColor(new java.awt.Color(68, 82, 121));
+        loginBtn_rmv.addFocusListener(new java.awt.event.FocusAdapter()
+        {
+            public void focusGained(java.awt.event.FocusEvent evt)
+            {
+                loginBtn_rmvFocusGained(evt);
+            }
+            public void focusLost(java.awt.event.FocusEvent evt)
+            {
+                loginBtn_rmvFocusLost(evt);
+            }
+        });
 
         jLabel1.setFont(new java.awt.Font("Segoe UI", 0, 22)); // NOI18N
         jLabel1.setText("Please Enter The Customer ID");
@@ -1317,7 +1328,7 @@ public class frm_dashboard extends javax.swing.JFrame
                 .addContainerGap(99, Short.MAX_VALUE))
             .addGroup(pnl_addcust1Layout.createSequentialGroup()
                 .addGap(253, 253, 253)
-                .addComponent(rmvloginBtn, javax.swing.GroupLayout.PREFERRED_SIZE, 454, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(loginBtn_rmv, javax.swing.GroupLayout.PREFERRED_SIZE, 454, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
         pnl_addcust1Layout.setVerticalGroup(
@@ -1342,7 +1353,7 @@ public class frm_dashboard extends javax.swing.JFrame
                     .addComponent(kGradientPanel17, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(kGradientPanel18, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(55, 55, 55)
-                .addComponent(rmvloginBtn, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(loginBtn_rmv, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(80, 80, 80))
         );
 
@@ -2583,6 +2594,20 @@ public class frm_dashboard extends javax.swing.JFrame
         }
     }//GEN-LAST:event_txt_detailcustidFocusLost
 
+    private void loginBtn_rmvFocusGained(java.awt.event.FocusEvent evt)//GEN-FIRST:event_loginBtn_rmvFocusGained
+    {//GEN-HEADEREND:event_loginBtn_rmvFocusGained
+        loginBtn_rmv.setkStartColor(new Color(178, 199, 231));
+        loginBtn_rmv.setkEndColor(new Color(178, 199, 231));
+        loginBtn_rmv.setkForeGround(new Color(68, 82, 121));
+    }//GEN-LAST:event_loginBtn_rmvFocusGained
+
+    private void loginBtn_rmvFocusLost(java.awt.event.FocusEvent evt)//GEN-FIRST:event_loginBtn_rmvFocusLost
+    {//GEN-HEADEREND:event_loginBtn_rmvFocusLost
+        loginBtn_rmv.setkStartColor(new Color(68, 82, 121));
+        loginBtn_rmv.setkEndColor(new Color(68, 82, 121));
+        loginBtn_rmv.setkForeGround(Color.WHITE);
+    }//GEN-LAST:event_loginBtn_rmvFocusLost
+
     public static void main(String args[])
     {
         java.awt.EventQueue.invokeLater(new Runnable()
@@ -2635,6 +2660,7 @@ public class frm_dashboard extends javax.swing.JFrame
     private javax.swing.JLabel lbl_min;
     private javax.swing.JLabel lbl_product;
     private com.k33ptoo.components.KButton loginBtn;
+    private com.k33ptoo.components.KButton loginBtn_rmv;
     private com.k33ptoo.components.KGradientPanel panel_about;
     private com.k33ptoo.components.KGradientPanel panel_account;
     private com.k33ptoo.components.KGradientPanel panel_bill;
@@ -2658,7 +2684,6 @@ public class frm_dashboard extends javax.swing.JFrame
     private javax.swing.JPanel pnl_min;
     private com.k33ptoo.components.KGradientPanel pnl_product;
     private com.k33ptoo.components.KGradientPanel pnl_sidepane;
-    private com.k33ptoo.components.KButton rmvloginBtn;
     private javax.swing.JTextField txt_custid;
     private javax.swing.JTextField txt_custnm;
     private javax.swing.JTextField txt_detailcustid;
