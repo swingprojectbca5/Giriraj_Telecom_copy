@@ -883,6 +883,9 @@
                           <Font name="Cascadia Mono" size="24" style="0"/>
                         </Property>
                       </Properties>
+                      <Events>
+                        <EventHandler event="keyPressed" listener="java.awt.event.KeyListener" parameters="java.awt.event.KeyEvent" handler="jTabbedPane1KeyPressed"/>
+                      </Events>
 
                       <Layout class="org.netbeans.modules.form.compat2.layouts.support.JTabbedPaneSupportLayout"/>
                       <SubComponents>
@@ -935,6 +938,9 @@
                                 </Property>
                                 <Property name="opaque" type="boolean" value="false"/>
                               </Properties>
+                              <Events>
+                                <EventHandler event="keyPressed" listener="java.awt.event.KeyListener" parameters="java.awt.event.KeyEvent" handler="pnl_addcustKeyPressed"/>
+                              </Events>
 
                               <Layout>
                                 <DimensionLayout dim="0">
@@ -2027,9 +2033,6 @@
                                             <MatteColorBorder bottom="0" left="0" right="0" top="0"/>
                                           </Border>
                                         </Property>
-                                        <Property name="nextFocusableComponent" type="java.awt.Component" editor="org.netbeans.modules.form.ComponentChooserEditor">
-                                          <ComponentRef name="txt_phone"/>
-                                        </Property>
                                       </Properties>
                                     </Component>
                                   </SubComponents>
@@ -2082,7 +2085,7 @@
                                           </Border>
                                         </Property>
                                         <Property name="nextFocusableComponent" type="java.awt.Component" editor="org.netbeans.modules.form.ComponentChooserEditor">
-                                          <ComponentRef name="txt_custnm"/>
+                                          <ComponentRef name="jTabbedPane1"/>
                                         </Property>
                                       </Properties>
                                       <Events>
@@ -2140,9 +2143,6 @@
                                             <MatteColorBorder bottom="0" left="0" right="0" top="0"/>
                                           </Border>
                                         </Property>
-                                        <Property name="nextFocusableComponent" type="java.awt.Component" editor="org.netbeans.modules.form.ComponentChooserEditor">
-                                          <ComponentRef name="txt_email"/>
-                                        </Property>
                                       </Properties>
                                     </Component>
                                   </SubComponents>
@@ -2194,9 +2194,6 @@
                                           <Border info="org.netbeans.modules.form.compat2.border.MatteColorBorderInfo">
                                             <MatteColorBorder bottom="0" left="0" right="0" top="0"/>
                                           </Border>
-                                        </Property>
-                                        <Property name="nextFocusableComponent" type="java.awt.Component" editor="org.netbeans.modules.form.ComponentChooserEditor">
-                                          <ComponentRef name="txt_sname"/>
                                         </Property>
                                       </Properties>
                                     </Component>
@@ -2250,9 +2247,6 @@
                                             <MatteColorBorder bottom="0" left="0" right="0" top="0"/>
                                           </Border>
                                         </Property>
-                                        <Property name="nextFocusableComponent" type="java.awt.Component" editor="org.netbeans.modules.form.ComponentChooserEditor">
-                                          <ComponentRef name="txt_saddress"/>
-                                        </Property>
                                       </Properties>
                                     </Component>
                                   </SubComponents>
@@ -2304,9 +2298,6 @@
                                           <Border info="org.netbeans.modules.form.compat2.border.MatteColorBorderInfo">
                                             <MatteColorBorder bottom="0" left="0" right="0" top="0"/>
                                           </Border>
-                                        </Property>
-                                        <Property name="nextFocusableComponent" type="java.awt.Component" editor="org.netbeans.modules.form.ComponentChooserEditor">
-                                          <ComponentRef name="loginBtn"/>
                                         </Property>
                                       </Properties>
                                     </Component>

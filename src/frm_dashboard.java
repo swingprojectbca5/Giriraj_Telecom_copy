@@ -758,6 +758,13 @@ public class frm_dashboard extends javax.swing.JFrame
 
         jTabbedPane1.setBackground(new java.awt.Color(228, 235, 246));
         jTabbedPane1.setFont(new java.awt.Font("Cascadia Mono", 0, 24)); // NOI18N
+        jTabbedPane1.addKeyListener(new java.awt.event.KeyAdapter()
+        {
+            public void keyPressed(java.awt.event.KeyEvent evt)
+            {
+                jTabbedPane1KeyPressed(evt);
+            }
+        });
 
         jPanel1.setBackground(new java.awt.Color(178, 199, 231));
         jPanel1.addKeyListener(new java.awt.event.KeyAdapter()
@@ -772,6 +779,13 @@ public class frm_dashboard extends javax.swing.JFrame
         pnl_addcust.setkEndColor(new java.awt.Color(228, 235, 246));
         pnl_addcust.setkStartColor(new java.awt.Color(228, 235, 246));
         pnl_addcust.setOpaque(false);
+        pnl_addcust.addKeyListener(new java.awt.event.KeyAdapter()
+        {
+            public void keyPressed(java.awt.event.KeyEvent evt)
+            {
+                pnl_addcustKeyPressed(evt);
+            }
+        });
 
         kGradientPanel7.setkBorderRadius(30);
         kGradientPanel7.setkEndColor(new java.awt.Color(164, 177, 252));
@@ -1395,7 +1409,6 @@ public class frm_dashboard extends javax.swing.JFrame
         txt_rmvcustnm1.setHorizontalAlignment(javax.swing.JTextField.CENTER);
         txt_rmvcustnm1.setText("CUSTOMER NAME");
         txt_rmvcustnm1.setBorder(javax.swing.BorderFactory.createMatteBorder(0, 0, 0, 0, new java.awt.Color(0, 0, 0)));
-        txt_rmvcustnm1.setNextFocusableComponent(txt_phone);
 
         javax.swing.GroupLayout kGradientPanel19Layout = new javax.swing.GroupLayout(kGradientPanel19);
         kGradientPanel19.setLayout(kGradientPanel19Layout);
@@ -1422,7 +1435,7 @@ public class frm_dashboard extends javax.swing.JFrame
         txt_detailcustid.setHorizontalAlignment(javax.swing.JTextField.CENTER);
         txt_detailcustid.setText("CUSTOMER ID");
         txt_detailcustid.setBorder(javax.swing.BorderFactory.createMatteBorder(0, 0, 0, 0, new java.awt.Color(0, 0, 0)));
-        txt_detailcustid.setNextFocusableComponent(txt_custnm);
+        txt_detailcustid.setNextFocusableComponent(jTabbedPane1);
         txt_detailcustid.addFocusListener(new java.awt.event.FocusAdapter()
         {
             public void focusGained(java.awt.event.FocusEvent evt)
@@ -1461,7 +1474,6 @@ public class frm_dashboard extends javax.swing.JFrame
         txt_rmvphone1.setHorizontalAlignment(javax.swing.JTextField.CENTER);
         txt_rmvphone1.setText("PHONE NO.");
         txt_rmvphone1.setBorder(javax.swing.BorderFactory.createMatteBorder(0, 0, 0, 0, new java.awt.Color(0, 0, 0)));
-        txt_rmvphone1.setNextFocusableComponent(txt_email);
 
         javax.swing.GroupLayout kGradientPanel21Layout = new javax.swing.GroupLayout(kGradientPanel21);
         kGradientPanel21.setLayout(kGradientPanel21Layout);
@@ -1489,7 +1501,6 @@ public class frm_dashboard extends javax.swing.JFrame
         txt_rmvemail1.setHorizontalAlignment(javax.swing.JTextField.CENTER);
         txt_rmvemail1.setText("EMAIL");
         txt_rmvemail1.setBorder(javax.swing.BorderFactory.createMatteBorder(0, 0, 0, 0, new java.awt.Color(0, 0, 0)));
-        txt_rmvemail1.setNextFocusableComponent(txt_sname);
 
         javax.swing.GroupLayout kGradientPanel22Layout = new javax.swing.GroupLayout(kGradientPanel22);
         kGradientPanel22.setLayout(kGradientPanel22Layout);
@@ -1517,7 +1528,6 @@ public class frm_dashboard extends javax.swing.JFrame
         txt_rmvsname1.setHorizontalAlignment(javax.swing.JTextField.CENTER);
         txt_rmvsname1.setText("SHOP NAME");
         txt_rmvsname1.setBorder(javax.swing.BorderFactory.createMatteBorder(0, 0, 0, 0, new java.awt.Color(0, 0, 0)));
-        txt_rmvsname1.setNextFocusableComponent(txt_saddress);
 
         javax.swing.GroupLayout kGradientPanel23Layout = new javax.swing.GroupLayout(kGradientPanel23);
         kGradientPanel23.setLayout(kGradientPanel23Layout);
@@ -1545,7 +1555,6 @@ public class frm_dashboard extends javax.swing.JFrame
         txt_rmvsaddress1.setHorizontalAlignment(javax.swing.JTextField.CENTER);
         txt_rmvsaddress1.setText("SHOP ADDRESS");
         txt_rmvsaddress1.setBorder(javax.swing.BorderFactory.createMatteBorder(0, 0, 0, 0, new java.awt.Color(0, 0, 0)));
-        txt_rmvsaddress1.setNextFocusableComponent(loginBtn);
 
         javax.swing.GroupLayout kGradientPanel24Layout = new javax.swing.GroupLayout(kGradientPanel24);
         kGradientPanel24.setLayout(kGradientPanel24Layout);
@@ -2340,6 +2349,7 @@ public class frm_dashboard extends javax.swing.JFrame
         if (evt.getKeyCode() == KeyEvent.VK_ENTER)
         {
             panel_customer.setVisible(true);
+            jTabbedPane1.grabFocus();
             panel_employee.setVisible(false);
             panel_bill.setVisible(false);
             panel_product.setVisible(false);
@@ -2347,7 +2357,6 @@ public class frm_dashboard extends javax.swing.JFrame
             panel_about.setVisible(false);
             panel_help.setVisible(false);
             panel_extra.setVisible(false);
-            jPanel1.grabFocus();
         }
     }//GEN-LAST:event_lbl_customerKeyPressed
 
@@ -2379,6 +2388,7 @@ public class frm_dashboard extends javax.swing.JFrame
     private void lbl_customerMouseClicked(java.awt.event.MouseEvent evt)//GEN-FIRST:event_lbl_customerMouseClicked
     {//GEN-HEADEREND:event_lbl_customerMouseClicked
         panel_customer.setVisible(true);
+        jTabbedPane1.grabFocus();
         panel_employee.setVisible(false);
         panel_bill.setVisible(false);
         panel_product.setVisible(false);
@@ -2607,6 +2617,22 @@ public class frm_dashboard extends javax.swing.JFrame
         loginBtn_rmv.setkEndColor(new Color(68, 82, 121));
         loginBtn_rmv.setkForeGround(Color.WHITE);
     }//GEN-LAST:event_loginBtn_rmvFocusLost
+
+    private void jTabbedPane1KeyPressed(java.awt.event.KeyEvent evt)//GEN-FIRST:event_jTabbedPane1KeyPressed
+    {//GEN-HEADEREND:event_jTabbedPane1KeyPressed
+        if (evt.getKeyCode() == KeyEvent.VK_ESCAPE)
+        {
+            lbl_customer.grabFocus();
+        }
+    }//GEN-LAST:event_jTabbedPane1KeyPressed
+
+    private void pnl_addcustKeyPressed(java.awt.event.KeyEvent evt)//GEN-FIRST:event_pnl_addcustKeyPressed
+    {//GEN-HEADEREND:event_pnl_addcustKeyPressed
+        if (evt.getKeyCode() == KeyEvent.VK_ESCAPE)
+        {
+            lbl_customer.grabFocus();
+        }
+    }//GEN-LAST:event_pnl_addcustKeyPressed
 
     public static void main(String args[])
     {
