@@ -941,25 +941,23 @@
                                   <Group type="103" groupAlignment="0" attributes="0">
                                       <Group type="102" attributes="0">
                                           <EmptySpace pref="100" max="32767" attributes="0"/>
-                                          <Group type="103" groupAlignment="0" max="-2" attributes="0">
-                                              <Group type="102" attributes="0">
-                                                  <Component id="kGradientPanel11" min="-2" max="-2" attributes="0"/>
-                                                  <EmptySpace max="32767" attributes="0"/>
-                                                  <Component id="kGradientPanel12" min="-2" max="-2" attributes="0"/>
-                                              </Group>
-                                              <Group type="102" attributes="0">
-                                                  <Group type="103" groupAlignment="0" attributes="0">
-                                                      <Component id="kGradientPanel7" alignment="0" min="-2" max="-2" attributes="0"/>
-                                                      <Component id="kGradientPanel9" alignment="0" min="-2" max="-2" attributes="0"/>
-                                                  </Group>
-                                                  <EmptySpace min="-2" pref="62" max="-2" attributes="0"/>
-                                                  <Group type="103" groupAlignment="1" attributes="0">
+                                          <Group type="103" groupAlignment="0" attributes="0">
+                                              <Component id="kGradientPanel11" alignment="1" min="-2" max="-2" attributes="0"/>
+                                              <Group type="103" groupAlignment="0" attributes="0">
+                                                  <Group type="102" attributes="0">
+                                                      <EmptySpace min="-2" pref="1" max="-2" attributes="0"/>
                                                       <Component id="kGradientPanel8" min="-2" max="-2" attributes="0"/>
-                                                      <Component id="kGradientPanel10" min="-2" max="-2" attributes="0"/>
                                                   </Group>
+                                                  <Component id="kGradientPanel9" alignment="1" min="-2" max="-2" attributes="0"/>
                                               </Group>
                                           </Group>
-                                          <EmptySpace pref="100" max="32767" attributes="0"/>
+                                          <EmptySpace pref="62" max="32767" attributes="0"/>
+                                          <Group type="103" groupAlignment="0" attributes="0">
+                                              <Component id="kGradientPanel10" min="-2" max="-2" attributes="0"/>
+                                              <Component id="kGradientPanel12" min="-2" max="-2" attributes="0"/>
+                                              <Component id="kGradientPanel7" min="-2" max="-2" attributes="0"/>
+                                          </Group>
+                                          <EmptySpace pref="99" max="32767" attributes="0"/>
                                       </Group>
                                       <Group type="102" alignment="0" attributes="0">
                                           <EmptySpace min="-2" pref="253" max="-2" attributes="0"/>
@@ -971,18 +969,24 @@
                                 <DimensionLayout dim="1">
                                   <Group type="103" groupAlignment="0" attributes="0">
                                       <Group type="102" alignment="0" attributes="0">
-                                          <EmptySpace min="-2" pref="80" max="-2" attributes="0"/>
-                                          <Group type="103" groupAlignment="1" attributes="0">
-                                              <Component id="kGradientPanel8" min="-2" max="-2" attributes="0"/>
-                                              <Component id="kGradientPanel7" min="-2" max="-2" attributes="0"/>
-                                          </Group>
                                           <EmptySpace pref="80" max="32767" attributes="0"/>
                                           <Group type="103" groupAlignment="0" attributes="0">
-                                              <Component id="kGradientPanel9" alignment="1" min="-2" max="-2" attributes="0"/>
-                                              <Component id="kGradientPanel10" alignment="1" min="-2" max="-2" attributes="0"/>
+                                              <Component id="kGradientPanel8" alignment="1" min="-2" max="-2" attributes="0"/>
+                                              <Component id="kGradientPanel7" alignment="1" min="-2" max="-2" attributes="0"/>
                                           </Group>
-                                          <EmptySpace min="-2" pref="80" max="-2" attributes="0"/>
                                           <Group type="103" groupAlignment="0" attributes="0">
+                                              <Group type="102" attributes="0">
+                                                  <EmptySpace min="-2" pref="80" max="-2" attributes="0"/>
+                                                  <Component id="kGradientPanel9" min="-2" max="-2" attributes="0"/>
+                                                  <EmptySpace min="-2" pref="80" max="-2" attributes="0"/>
+                                              </Group>
+                                              <Group type="102" alignment="1" attributes="0">
+                                                  <EmptySpace max="-2" attributes="0"/>
+                                                  <Component id="kGradientPanel10" min="-2" max="-2" attributes="0"/>
+                                                  <EmptySpace min="-2" pref="71" max="-2" attributes="0"/>
+                                              </Group>
+                                          </Group>
+                                          <Group type="103" groupAlignment="1" attributes="0">
                                               <Component id="kGradientPanel11" min="-2" max="-2" attributes="0"/>
                                               <Component id="kGradientPanel12" min="-2" max="-2" attributes="0"/>
                                           </Group>
@@ -1010,8 +1014,8 @@
                                     <DimensionLayout dim="0">
                                       <Group type="103" groupAlignment="0" attributes="0">
                                           <Group type="102" alignment="1" attributes="0">
-                                              <EmptySpace pref="20" max="32767" attributes="0"/>
-                                              <Component id="txt_custnm" min="-2" pref="324" max="-2" attributes="0"/>
+                                              <EmptySpace pref="24" max="32767" attributes="0"/>
+                                              <Component id="txt_custnm" min="-2" pref="320" max="-2" attributes="0"/>
                                               <EmptySpace max="-2" attributes="0"/>
                                           </Group>
                                       </Group>
@@ -1042,7 +1046,7 @@
                                           </Border>
                                         </Property>
                                         <Property name="nextFocusableComponent" type="java.awt.Component" editor="org.netbeans.modules.form.ComponentChooserEditor">
-                                          <ComponentRef name="txt_custid"/>
+                                          <ComponentRef name="txt_phone"/>
                                         </Property>
                                       </Properties>
                                       <Events>
@@ -1068,9 +1072,9 @@
                                     <DimensionLayout dim="0">
                                       <Group type="103" groupAlignment="0" attributes="0">
                                           <Group type="102" alignment="1" attributes="0">
-                                              <EmptySpace pref="17" max="32767" attributes="0"/>
-                                              <Component id="txt_custid" min="-2" pref="314" max="-2" attributes="0"/>
-                                              <EmptySpace min="-2" pref="18" max="-2" attributes="0"/>
+                                              <EmptySpace pref="23" max="32767" attributes="0"/>
+                                              <Component id="txt_custid" min="-2" pref="320" max="-2" attributes="0"/>
+                                              <EmptySpace max="-2" attributes="0"/>
                                           </Group>
                                       </Group>
                                     </DimensionLayout>
@@ -1099,6 +1103,9 @@
                                             <MatteColorBorder bottom="0" left="0" right="0" top="0"/>
                                           </Border>
                                         </Property>
+                                        <Property name="nextFocusableComponent" type="java.awt.Component" editor="org.netbeans.modules.form.ComponentChooserEditor">
+                                          <ComponentRef name="txt_custnm"/>
+                                        </Property>
                                       </Properties>
                                       <Events>
                                         <EventHandler event="focusGained" listener="java.awt.event.FocusListener" parameters="java.awt.event.FocusEvent" handler="txt_custidFocusGained"/>
@@ -1123,8 +1130,8 @@
                                     <DimensionLayout dim="0">
                                       <Group type="103" groupAlignment="0" attributes="0">
                                           <Group type="102" alignment="1" attributes="0">
-                                              <EmptySpace pref="20" max="32767" attributes="0"/>
-                                              <Component id="txt_phone" min="-2" pref="324" max="-2" attributes="0"/>
+                                              <EmptySpace pref="24" max="32767" attributes="0"/>
+                                              <Component id="txt_phone" min="-2" pref="320" max="-2" attributes="0"/>
                                               <EmptySpace max="-2" attributes="0"/>
                                           </Group>
                                       </Group>
@@ -1181,9 +1188,9 @@
                                     <DimensionLayout dim="0">
                                       <Group type="103" groupAlignment="0" attributes="0">
                                           <Group type="102" alignment="1" attributes="0">
-                                              <EmptySpace pref="17" max="32767" attributes="0"/>
-                                              <Component id="txt_email" min="-2" pref="314" max="-2" attributes="0"/>
-                                              <EmptySpace min="-2" pref="18" max="-2" attributes="0"/>
+                                              <EmptySpace pref="24" max="32767" attributes="0"/>
+                                              <Component id="txt_email" min="-2" pref="320" max="-2" attributes="0"/>
+                                              <EmptySpace max="-2" attributes="0"/>
                                           </Group>
                                       </Group>
                                     </DimensionLayout>
@@ -1212,6 +1219,9 @@
                                             <MatteColorBorder bottom="0" left="0" right="0" top="0"/>
                                           </Border>
                                         </Property>
+                                        <Property name="nextFocusableComponent" type="java.awt.Component" editor="org.netbeans.modules.form.ComponentChooserEditor">
+                                          <ComponentRef name="txt_sname"/>
+                                        </Property>
                                       </Properties>
                                       <Events>
                                         <EventHandler event="focusGained" listener="java.awt.event.FocusListener" parameters="java.awt.event.FocusEvent" handler="txt_emailFocusGained"/>
@@ -1236,8 +1246,8 @@
                                     <DimensionLayout dim="0">
                                       <Group type="103" groupAlignment="0" attributes="0">
                                           <Group type="102" alignment="1" attributes="0">
-                                              <EmptySpace pref="20" max="32767" attributes="0"/>
-                                              <Component id="txt_sname" min="-2" pref="324" max="-2" attributes="0"/>
+                                              <EmptySpace pref="23" max="32767" attributes="0"/>
+                                              <Component id="txt_sname" min="-2" pref="321" max="-2" attributes="0"/>
                                               <EmptySpace max="-2" attributes="0"/>
                                           </Group>
                                       </Group>
@@ -1294,9 +1304,9 @@
                                     <DimensionLayout dim="0">
                                       <Group type="103" groupAlignment="0" attributes="0">
                                           <Group type="102" alignment="1" attributes="0">
-                                              <EmptySpace pref="17" max="32767" attributes="0"/>
-                                              <Component id="txt_saddress" min="-2" pref="314" max="-2" attributes="0"/>
-                                              <EmptySpace min="-2" pref="18" max="-2" attributes="0"/>
+                                              <EmptySpace pref="24" max="32767" attributes="0"/>
+                                              <Component id="txt_saddress" min="-2" pref="320" max="-2" attributes="0"/>
+                                              <EmptySpace max="-2" attributes="0"/>
                                           </Group>
                                       </Group>
                                     </DimensionLayout>
@@ -1391,7 +1401,7 @@
                               <Group type="103" groupAlignment="0" attributes="0">
                                   <Group type="102" alignment="0" attributes="0">
                                       <EmptySpace min="-2" pref="50" max="-2" attributes="0"/>
-                                      <Component id="pnl_rmvcust" min="-2" max="-2" attributes="0"/>
+                                      <Component id="pnl_addcust1" min="-2" max="-2" attributes="0"/>
                                       <EmptySpace pref="50" max="32767" attributes="0"/>
                                   </Group>
                               </Group>
@@ -1400,14 +1410,14 @@
                               <Group type="103" groupAlignment="0" attributes="0">
                                   <Group type="102" alignment="0" attributes="0">
                                       <EmptySpace min="-2" pref="50" max="-2" attributes="0"/>
-                                      <Component id="pnl_rmvcust" min="-2" max="-2" attributes="0"/>
+                                      <Component id="pnl_addcust1" min="-2" max="-2" attributes="0"/>
                                       <EmptySpace pref="40" max="32767" attributes="0"/>
                                   </Group>
                               </Group>
                             </DimensionLayout>
                           </Layout>
                           <SubComponents>
-                            <Container class="com.k33ptoo.components.KGradientPanel" name="pnl_rmvcust">
+                            <Container class="com.k33ptoo.components.KGradientPanel" name="pnl_addcust1">
                               <Properties>
                                 <Property name="kBorderRadius" type="int" value="40"/>
                                 <Property name="kEndColor" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
@@ -1422,15 +1432,439 @@
                               <Layout>
                                 <DimensionLayout dim="0">
                                   <Group type="103" groupAlignment="0" attributes="0">
-                                      <EmptySpace min="0" pref="961" max="32767" attributes="0"/>
+                                      <Group type="102" alignment="0" attributes="0">
+                                          <EmptySpace pref="100" max="32767" attributes="0"/>
+                                          <Group type="103" groupAlignment="0" attributes="0">
+                                              <Component id="kGradientPanel17" alignment="1" min="-2" max="-2" attributes="0"/>
+                                              <Group type="103" alignment="0" groupAlignment="0" attributes="0">
+                                                  <Component id="kGradientPanel15" alignment="1" min="-2" max="-2" attributes="0"/>
+                                                  <Group type="102" alignment="0" attributes="0">
+                                                      <EmptySpace min="-2" pref="1" max="-2" attributes="0"/>
+                                                      <Group type="103" groupAlignment="0" max="-2" attributes="0">
+                                                          <Component id="jLabel1" max="32767" attributes="0"/>
+                                                          <Component id="kGradientPanel14" max="32767" attributes="0"/>
+                                                      </Group>
+                                                  </Group>
+                                              </Group>
+                                          </Group>
+                                          <EmptySpace pref="62" max="32767" attributes="0"/>
+                                          <Group type="103" groupAlignment="0" attributes="0">
+                                              <Component id="kGradientPanel16" alignment="0" min="-2" max="-2" attributes="0"/>
+                                              <Component id="kGradientPanel18" alignment="0" min="-2" max="-2" attributes="0"/>
+                                              <Component id="kGradientPanel13" alignment="0" min="-2" max="-2" attributes="0"/>
+                                          </Group>
+                                          <EmptySpace pref="99" max="32767" attributes="0"/>
+                                      </Group>
+                                      <Group type="102" alignment="0" attributes="0">
+                                          <EmptySpace min="-2" pref="253" max="-2" attributes="0"/>
+                                          <Component id="rmvloginBtn" min="-2" pref="454" max="-2" attributes="0"/>
+                                          <EmptySpace max="32767" attributes="0"/>
+                                      </Group>
                                   </Group>
                                 </DimensionLayout>
                                 <DimensionLayout dim="1">
                                   <Group type="103" groupAlignment="0" attributes="0">
-                                      <EmptySpace min="0" pref="570" max="32767" attributes="0"/>
+                                      <Group type="102" alignment="0" attributes="0">
+                                          <EmptySpace pref="33" max="32767" attributes="0"/>
+                                          <Component id="jLabel1" min="-2" pref="35" max="-2" attributes="0"/>
+                                          <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                                          <Group type="103" groupAlignment="0" attributes="0">
+                                              <Component id="kGradientPanel14" alignment="1" min="-2" max="-2" attributes="0"/>
+                                              <Component id="kGradientPanel13" alignment="1" min="-2" max="-2" attributes="0"/>
+                                          </Group>
+                                          <Group type="103" groupAlignment="0" attributes="0">
+                                              <Group type="102" alignment="0" attributes="0">
+                                                  <EmptySpace min="-2" pref="80" max="-2" attributes="0"/>
+                                                  <Component id="kGradientPanel15" min="-2" max="-2" attributes="0"/>
+                                                  <EmptySpace min="-2" pref="80" max="-2" attributes="0"/>
+                                              </Group>
+                                              <Group type="102" alignment="1" attributes="0">
+                                                  <EmptySpace max="-2" attributes="0"/>
+                                                  <Component id="kGradientPanel16" min="-2" max="-2" attributes="0"/>
+                                                  <EmptySpace min="-2" pref="71" max="-2" attributes="0"/>
+                                              </Group>
+                                          </Group>
+                                          <Group type="103" groupAlignment="1" attributes="0">
+                                              <Component id="kGradientPanel17" alignment="1" min="-2" max="-2" attributes="0"/>
+                                              <Component id="kGradientPanel18" alignment="1" min="-2" max="-2" attributes="0"/>
+                                          </Group>
+                                          <EmptySpace min="-2" pref="55" max="-2" attributes="0"/>
+                                          <Component id="rmvloginBtn" min="-2" max="-2" attributes="0"/>
+                                          <EmptySpace min="-2" pref="80" max="-2" attributes="0"/>
+                                      </Group>
                                   </Group>
                                 </DimensionLayout>
                               </Layout>
+                              <SubComponents>
+                                <Container class="com.k33ptoo.components.KGradientPanel" name="kGradientPanel13">
+                                  <Properties>
+                                    <Property name="kBorderRadius" type="int" value="30"/>
+                                    <Property name="kEndColor" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+                                      <Color blue="fc" green="b1" red="a4" type="rgb"/>
+                                    </Property>
+                                    <Property name="kStartColor" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+                                      <Color blue="fc" green="b1" red="a4" type="rgb"/>
+                                    </Property>
+                                    <Property name="opaque" type="boolean" value="false"/>
+                                  </Properties>
+
+                                  <Layout>
+                                    <DimensionLayout dim="0">
+                                      <Group type="103" groupAlignment="0" attributes="0">
+                                          <Group type="102" alignment="1" attributes="0">
+                                              <EmptySpace pref="24" max="32767" attributes="0"/>
+                                              <Component id="txt_rmvcustnm" min="-2" pref="320" max="-2" attributes="0"/>
+                                              <EmptySpace max="-2" attributes="0"/>
+                                          </Group>
+                                      </Group>
+                                    </DimensionLayout>
+                                    <DimensionLayout dim="1">
+                                      <Group type="103" groupAlignment="0" attributes="0">
+                                          <Component id="txt_rmvcustnm" alignment="0" pref="50" max="32767" attributes="0"/>
+                                      </Group>
+                                    </DimensionLayout>
+                                  </Layout>
+                                  <SubComponents>
+                                    <Component class="javax.swing.JTextField" name="txt_rmvcustnm">
+                                      <Properties>
+                                        <Property name="editable" type="boolean" value="false"/>
+                                        <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+                                          <Color blue="fc" green="b1" red="a4" type="rgb"/>
+                                        </Property>
+                                        <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+                                          <Font name="Cascadia Mono" size="24" style="0"/>
+                                        </Property>
+                                        <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+                                          <Color blue="f6" green="eb" red="e4" type="rgb"/>
+                                        </Property>
+                                        <Property name="horizontalAlignment" type="int" value="0"/>
+                                        <Property name="text" type="java.lang.String" value="CUSTOMER NAME"/>
+                                        <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
+                                          <Border info="org.netbeans.modules.form.compat2.border.MatteColorBorderInfo">
+                                            <MatteColorBorder bottom="0" left="0" right="0" top="0"/>
+                                          </Border>
+                                        </Property>
+                                        <Property name="nextFocusableComponent" type="java.awt.Component" editor="org.netbeans.modules.form.ComponentChooserEditor">
+                                          <ComponentRef name="txt_phone"/>
+                                        </Property>
+                                      </Properties>
+                                    </Component>
+                                  </SubComponents>
+                                </Container>
+                                <Container class="com.k33ptoo.components.KGradientPanel" name="kGradientPanel14">
+                                  <Properties>
+                                    <Property name="kBorderRadius" type="int" value="30"/>
+                                    <Property name="kEndColor" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+                                      <Color blue="fc" green="b1" red="a4" type="rgb"/>
+                                    </Property>
+                                    <Property name="kStartColor" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+                                      <Color blue="fc" green="b1" red="a4" type="rgb"/>
+                                    </Property>
+                                    <Property name="opaque" type="boolean" value="false"/>
+                                  </Properties>
+
+                                  <Layout>
+                                    <DimensionLayout dim="0">
+                                      <Group type="103" groupAlignment="0" attributes="0">
+                                          <Group type="102" alignment="1" attributes="0">
+                                              <EmptySpace pref="23" max="32767" attributes="0"/>
+                                              <Component id="txt_rmvcustid" min="-2" pref="320" max="-2" attributes="0"/>
+                                              <EmptySpace max="-2" attributes="0"/>
+                                          </Group>
+                                      </Group>
+                                    </DimensionLayout>
+                                    <DimensionLayout dim="1">
+                                      <Group type="103" groupAlignment="0" attributes="0">
+                                          <Component id="txt_rmvcustid" alignment="0" pref="50" max="32767" attributes="0"/>
+                                      </Group>
+                                    </DimensionLayout>
+                                  </Layout>
+                                  <SubComponents>
+                                    <Component class="javax.swing.JTextField" name="txt_rmvcustid">
+                                      <Properties>
+                                        <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+                                          <Color blue="fc" green="b1" red="a4" type="rgb"/>
+                                        </Property>
+                                        <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+                                          <Font name="Cascadia Mono" size="24" style="0"/>
+                                        </Property>
+                                        <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+                                          <Color blue="f6" green="eb" red="e4" type="rgb"/>
+                                        </Property>
+                                        <Property name="horizontalAlignment" type="int" value="0"/>
+                                        <Property name="text" type="java.lang.String" value="CUSTOMER ID"/>
+                                        <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
+                                          <Border info="org.netbeans.modules.form.compat2.border.MatteColorBorderInfo">
+                                            <MatteColorBorder bottom="0" left="0" right="0" top="0"/>
+                                          </Border>
+                                        </Property>
+                                        <Property name="nextFocusableComponent" type="java.awt.Component" editor="org.netbeans.modules.form.ComponentChooserEditor">
+                                          <ComponentRef name="txt_custnm"/>
+                                        </Property>
+                                      </Properties>
+                                      <Events>
+                                        <EventHandler event="focusGained" listener="java.awt.event.FocusListener" parameters="java.awt.event.FocusEvent" handler="txt_rmvcustidFocusGained"/>
+                                        <EventHandler event="focusLost" listener="java.awt.event.FocusListener" parameters="java.awt.event.FocusEvent" handler="txt_rmvcustidFocusLost"/>
+                                      </Events>
+                                    </Component>
+                                  </SubComponents>
+                                </Container>
+                                <Container class="com.k33ptoo.components.KGradientPanel" name="kGradientPanel15">
+                                  <Properties>
+                                    <Property name="kBorderRadius" type="int" value="30"/>
+                                    <Property name="kEndColor" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+                                      <Color blue="fc" green="b1" red="a4" type="rgb"/>
+                                    </Property>
+                                    <Property name="kStartColor" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+                                      <Color blue="fc" green="b1" red="a4" type="rgb"/>
+                                    </Property>
+                                    <Property name="opaque" type="boolean" value="false"/>
+                                  </Properties>
+
+                                  <Layout>
+                                    <DimensionLayout dim="0">
+                                      <Group type="103" groupAlignment="0" attributes="0">
+                                          <Group type="102" alignment="1" attributes="0">
+                                              <EmptySpace pref="24" max="32767" attributes="0"/>
+                                              <Component id="txt_rmvphone" min="-2" pref="320" max="-2" attributes="0"/>
+                                              <EmptySpace max="-2" attributes="0"/>
+                                          </Group>
+                                      </Group>
+                                    </DimensionLayout>
+                                    <DimensionLayout dim="1">
+                                      <Group type="103" groupAlignment="0" attributes="0">
+                                          <Component id="txt_rmvphone" alignment="0" pref="50" max="32767" attributes="0"/>
+                                      </Group>
+                                    </DimensionLayout>
+                                  </Layout>
+                                  <SubComponents>
+                                    <Component class="javax.swing.JTextField" name="txt_rmvphone">
+                                      <Properties>
+                                        <Property name="editable" type="boolean" value="false"/>
+                                        <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+                                          <Color blue="fc" green="b1" red="a4" type="rgb"/>
+                                        </Property>
+                                        <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+                                          <Font name="Cascadia Mono" size="24" style="0"/>
+                                        </Property>
+                                        <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+                                          <Color blue="f6" green="eb" red="e4" type="rgb"/>
+                                        </Property>
+                                        <Property name="horizontalAlignment" type="int" value="0"/>
+                                        <Property name="text" type="java.lang.String" value="PHONE NO."/>
+                                        <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
+                                          <Border info="org.netbeans.modules.form.compat2.border.MatteColorBorderInfo">
+                                            <MatteColorBorder bottom="0" left="0" right="0" top="0"/>
+                                          </Border>
+                                        </Property>
+                                        <Property name="nextFocusableComponent" type="java.awt.Component" editor="org.netbeans.modules.form.ComponentChooserEditor">
+                                          <ComponentRef name="txt_email"/>
+                                        </Property>
+                                      </Properties>
+                                    </Component>
+                                  </SubComponents>
+                                </Container>
+                                <Container class="com.k33ptoo.components.KGradientPanel" name="kGradientPanel16">
+                                  <Properties>
+                                    <Property name="kBorderRadius" type="int" value="30"/>
+                                    <Property name="kEndColor" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+                                      <Color blue="fc" green="b1" red="a4" type="rgb"/>
+                                    </Property>
+                                    <Property name="kStartColor" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+                                      <Color blue="fc" green="b1" red="a4" type="rgb"/>
+                                    </Property>
+                                    <Property name="opaque" type="boolean" value="false"/>
+                                  </Properties>
+
+                                  <Layout>
+                                    <DimensionLayout dim="0">
+                                      <Group type="103" groupAlignment="0" attributes="0">
+                                          <Group type="102" alignment="1" attributes="0">
+                                              <EmptySpace pref="24" max="32767" attributes="0"/>
+                                              <Component id="txt_rmvemail" min="-2" pref="320" max="-2" attributes="0"/>
+                                              <EmptySpace max="-2" attributes="0"/>
+                                          </Group>
+                                      </Group>
+                                    </DimensionLayout>
+                                    <DimensionLayout dim="1">
+                                      <Group type="103" groupAlignment="0" attributes="0">
+                                          <Component id="txt_rmvemail" alignment="0" pref="50" max="32767" attributes="0"/>
+                                      </Group>
+                                    </DimensionLayout>
+                                  </Layout>
+                                  <SubComponents>
+                                    <Component class="javax.swing.JTextField" name="txt_rmvemail">
+                                      <Properties>
+                                        <Property name="editable" type="boolean" value="false"/>
+                                        <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+                                          <Color blue="fc" green="b1" red="a4" type="rgb"/>
+                                        </Property>
+                                        <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+                                          <Font name="Cascadia Mono" size="24" style="0"/>
+                                        </Property>
+                                        <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+                                          <Color blue="f6" green="eb" red="e4" type="rgb"/>
+                                        </Property>
+                                        <Property name="horizontalAlignment" type="int" value="0"/>
+                                        <Property name="text" type="java.lang.String" value="EMAIL"/>
+                                        <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
+                                          <Border info="org.netbeans.modules.form.compat2.border.MatteColorBorderInfo">
+                                            <MatteColorBorder bottom="0" left="0" right="0" top="0"/>
+                                          </Border>
+                                        </Property>
+                                        <Property name="nextFocusableComponent" type="java.awt.Component" editor="org.netbeans.modules.form.ComponentChooserEditor">
+                                          <ComponentRef name="txt_sname"/>
+                                        </Property>
+                                      </Properties>
+                                    </Component>
+                                  </SubComponents>
+                                </Container>
+                                <Container class="com.k33ptoo.components.KGradientPanel" name="kGradientPanel17">
+                                  <Properties>
+                                    <Property name="kBorderRadius" type="int" value="30"/>
+                                    <Property name="kEndColor" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+                                      <Color blue="fc" green="b1" red="a4" type="rgb"/>
+                                    </Property>
+                                    <Property name="kStartColor" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+                                      <Color blue="fc" green="b1" red="a4" type="rgb"/>
+                                    </Property>
+                                    <Property name="opaque" type="boolean" value="false"/>
+                                  </Properties>
+
+                                  <Layout>
+                                    <DimensionLayout dim="0">
+                                      <Group type="103" groupAlignment="0" attributes="0">
+                                          <Group type="102" alignment="1" attributes="0">
+                                              <EmptySpace pref="23" max="32767" attributes="0"/>
+                                              <Component id="txt_rmvsname" min="-2" pref="321" max="-2" attributes="0"/>
+                                              <EmptySpace max="-2" attributes="0"/>
+                                          </Group>
+                                      </Group>
+                                    </DimensionLayout>
+                                    <DimensionLayout dim="1">
+                                      <Group type="103" groupAlignment="0" attributes="0">
+                                          <Component id="txt_rmvsname" alignment="0" pref="50" max="32767" attributes="0"/>
+                                      </Group>
+                                    </DimensionLayout>
+                                  </Layout>
+                                  <SubComponents>
+                                    <Component class="javax.swing.JTextField" name="txt_rmvsname">
+                                      <Properties>
+                                        <Property name="editable" type="boolean" value="false"/>
+                                        <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+                                          <Color blue="fc" green="b1" red="a4" type="rgb"/>
+                                        </Property>
+                                        <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+                                          <Font name="Cascadia Mono" size="24" style="0"/>
+                                        </Property>
+                                        <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+                                          <Color blue="f6" green="eb" red="e4" type="rgb"/>
+                                        </Property>
+                                        <Property name="horizontalAlignment" type="int" value="0"/>
+                                        <Property name="text" type="java.lang.String" value="SHOP NAME"/>
+                                        <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
+                                          <Border info="org.netbeans.modules.form.compat2.border.MatteColorBorderInfo">
+                                            <MatteColorBorder bottom="0" left="0" right="0" top="0"/>
+                                          </Border>
+                                        </Property>
+                                        <Property name="nextFocusableComponent" type="java.awt.Component" editor="org.netbeans.modules.form.ComponentChooserEditor">
+                                          <ComponentRef name="txt_saddress"/>
+                                        </Property>
+                                      </Properties>
+                                    </Component>
+                                  </SubComponents>
+                                </Container>
+                                <Container class="com.k33ptoo.components.KGradientPanel" name="kGradientPanel18">
+                                  <Properties>
+                                    <Property name="kBorderRadius" type="int" value="30"/>
+                                    <Property name="kEndColor" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+                                      <Color blue="fc" green="b1" red="a4" type="rgb"/>
+                                    </Property>
+                                    <Property name="kStartColor" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+                                      <Color blue="fc" green="b1" red="a4" type="rgb"/>
+                                    </Property>
+                                    <Property name="opaque" type="boolean" value="false"/>
+                                  </Properties>
+
+                                  <Layout>
+                                    <DimensionLayout dim="0">
+                                      <Group type="103" groupAlignment="0" attributes="0">
+                                          <Group type="102" alignment="1" attributes="0">
+                                              <EmptySpace pref="24" max="32767" attributes="0"/>
+                                              <Component id="txt_rmvsaddress" min="-2" pref="320" max="-2" attributes="0"/>
+                                              <EmptySpace max="-2" attributes="0"/>
+                                          </Group>
+                                      </Group>
+                                    </DimensionLayout>
+                                    <DimensionLayout dim="1">
+                                      <Group type="103" groupAlignment="0" attributes="0">
+                                          <Component id="txt_rmvsaddress" alignment="0" pref="50" max="32767" attributes="0"/>
+                                      </Group>
+                                    </DimensionLayout>
+                                  </Layout>
+                                  <SubComponents>
+                                    <Component class="javax.swing.JTextField" name="txt_rmvsaddress">
+                                      <Properties>
+                                        <Property name="editable" type="boolean" value="false"/>
+                                        <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+                                          <Color blue="fc" green="b1" red="a4" type="rgb"/>
+                                        </Property>
+                                        <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+                                          <Font name="Cascadia Mono" size="24" style="0"/>
+                                        </Property>
+                                        <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+                                          <Color blue="f6" green="eb" red="e4" type="rgb"/>
+                                        </Property>
+                                        <Property name="horizontalAlignment" type="int" value="0"/>
+                                        <Property name="text" type="java.lang.String" value="SHOP ADDRESS"/>
+                                        <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
+                                          <Border info="org.netbeans.modules.form.compat2.border.MatteColorBorderInfo">
+                                            <MatteColorBorder bottom="0" left="0" right="0" top="0"/>
+                                          </Border>
+                                        </Property>
+                                        <Property name="nextFocusableComponent" type="java.awt.Component" editor="org.netbeans.modules.form.ComponentChooserEditor">
+                                          <ComponentRef name="loginBtn"/>
+                                        </Property>
+                                      </Properties>
+                                    </Component>
+                                  </SubComponents>
+                                </Container>
+                                <Component class="com.k33ptoo.components.KButton" name="rmvloginBtn">
+                                  <Properties>
+                                    <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
+                                      <Border info="null"/>
+                                    </Property>
+                                    <Property name="text" type="java.lang.String" value="REMOVE CUSTOMER"/>
+                                    <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+                                      <Font name="Segoe UI" size="24" style="0"/>
+                                    </Property>
+                                    <Property name="kBorderRadius" type="int" value="30"/>
+                                    <Property name="kEndColor" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+                                      <Color blue="79" green="52" red="44" type="rgb"/>
+                                    </Property>
+                                    <Property name="kHoverEndColor" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+                                      <Color blue="e7" green="c7" red="b2" type="rgb"/>
+                                    </Property>
+                                    <Property name="kHoverForeGround" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+                                      <Color blue="79" green="52" red="44" type="rgb"/>
+                                    </Property>
+                                    <Property name="kHoverStartColor" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+                                      <Color blue="e7" green="c7" red="b2" type="rgb"/>
+                                    </Property>
+                                    <Property name="kStartColor" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+                                      <Color blue="79" green="52" red="44" type="rgb"/>
+                                    </Property>
+                                  </Properties>
+                                </Component>
+                                <Component class="javax.swing.JLabel" name="jLabel1">
+                                  <Properties>
+                                    <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+                                      <Font name="Segoe UI" size="22" style="0"/>
+                                    </Property>
+                                    <Property name="text" type="java.lang.String" value="Please Enter The Customer ID"/>
+                                  </Properties>
+                                </Component>
+                              </SubComponents>
                             </Container>
                           </SubComponents>
                         </Container>
@@ -1453,7 +1887,7 @@
                               <Group type="103" groupAlignment="0" attributes="0">
                                   <Group type="102" alignment="0" attributes="0">
                                       <EmptySpace min="-2" pref="50" max="-2" attributes="0"/>
-                                      <Component id="pnl_custdetail" min="-2" max="-2" attributes="0"/>
+                                      <Component id="pnl_addcust2" min="-2" max="-2" attributes="0"/>
                                       <EmptySpace pref="50" max="32767" attributes="0"/>
                                   </Group>
                               </Group>
@@ -1462,14 +1896,14 @@
                               <Group type="103" groupAlignment="0" attributes="0">
                                   <Group type="102" alignment="0" attributes="0">
                                       <EmptySpace min="-2" pref="50" max="-2" attributes="0"/>
-                                      <Component id="pnl_custdetail" min="-2" max="-2" attributes="0"/>
+                                      <Component id="pnl_addcust2" min="-2" max="-2" attributes="0"/>
                                       <EmptySpace pref="40" max="32767" attributes="0"/>
                                   </Group>
                               </Group>
                             </DimensionLayout>
                           </Layout>
                           <SubComponents>
-                            <Container class="com.k33ptoo.components.KGradientPanel" name="pnl_custdetail">
+                            <Container class="com.k33ptoo.components.KGradientPanel" name="pnl_addcust2">
                               <Properties>
                                 <Property name="kBorderRadius" type="int" value="40"/>
                                 <Property name="kEndColor" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
@@ -1484,15 +1918,405 @@
                               <Layout>
                                 <DimensionLayout dim="0">
                                   <Group type="103" groupAlignment="0" attributes="0">
-                                      <EmptySpace min="0" pref="961" max="32767" attributes="0"/>
+                                      <Group type="102" alignment="0" attributes="0">
+                                          <EmptySpace pref="100" max="32767" attributes="0"/>
+                                          <Group type="103" groupAlignment="0" attributes="0">
+                                              <Component id="kGradientPanel23" alignment="1" min="-2" max="-2" attributes="0"/>
+                                              <Group type="103" alignment="0" groupAlignment="0" attributes="0">
+                                                  <Component id="kGradientPanel21" alignment="1" min="-2" max="-2" attributes="0"/>
+                                                  <Group type="102" alignment="0" attributes="0">
+                                                      <EmptySpace min="-2" pref="1" max="-2" attributes="0"/>
+                                                      <Group type="103" groupAlignment="0" attributes="0">
+                                                          <Component id="jLabel3" max="32767" attributes="0"/>
+                                                          <Component id="kGradientPanel20" min="-2" max="-2" attributes="0"/>
+                                                      </Group>
+                                                  </Group>
+                                              </Group>
+                                          </Group>
+                                          <EmptySpace pref="62" max="32767" attributes="0"/>
+                                          <Group type="103" groupAlignment="0" attributes="0">
+                                              <Component id="kGradientPanel22" alignment="0" min="-2" max="-2" attributes="0"/>
+                                              <Component id="kGradientPanel24" alignment="0" min="-2" max="-2" attributes="0"/>
+                                              <Component id="kGradientPanel19" alignment="0" min="-2" max="-2" attributes="0"/>
+                                          </Group>
+                                          <EmptySpace pref="99" max="32767" attributes="0"/>
+                                      </Group>
                                   </Group>
                                 </DimensionLayout>
                                 <DimensionLayout dim="1">
                                   <Group type="103" groupAlignment="0" attributes="0">
-                                      <EmptySpace min="0" pref="570" max="32767" attributes="0"/>
+                                      <Group type="102" alignment="0" attributes="0">
+                                          <EmptySpace pref="33" max="32767" attributes="0"/>
+                                          <Component id="jLabel3" min="-2" pref="35" max="-2" attributes="0"/>
+                                          <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                                          <Group type="103" groupAlignment="0" attributes="0">
+                                              <Component id="kGradientPanel20" alignment="1" min="-2" max="-2" attributes="0"/>
+                                              <Component id="kGradientPanel19" alignment="1" min="-2" max="-2" attributes="0"/>
+                                          </Group>
+                                          <Group type="103" groupAlignment="0" attributes="0">
+                                              <Group type="102" alignment="0" attributes="0">
+                                                  <EmptySpace min="-2" pref="80" max="-2" attributes="0"/>
+                                                  <Component id="kGradientPanel21" min="-2" max="-2" attributes="0"/>
+                                                  <EmptySpace min="-2" pref="80" max="-2" attributes="0"/>
+                                              </Group>
+                                              <Group type="102" alignment="1" attributes="0">
+                                                  <EmptySpace max="-2" attributes="0"/>
+                                                  <Component id="kGradientPanel22" min="-2" max="-2" attributes="0"/>
+                                                  <EmptySpace min="-2" pref="71" max="-2" attributes="0"/>
+                                              </Group>
+                                          </Group>
+                                          <Group type="103" groupAlignment="1" attributes="0">
+                                              <Component id="kGradientPanel23" alignment="1" min="-2" max="-2" attributes="0"/>
+                                              <Component id="kGradientPanel24" alignment="1" min="-2" max="-2" attributes="0"/>
+                                          </Group>
+                                          <EmptySpace min="-2" pref="180" max="-2" attributes="0"/>
+                                      </Group>
                                   </Group>
                                 </DimensionLayout>
                               </Layout>
+                              <SubComponents>
+                                <Container class="com.k33ptoo.components.KGradientPanel" name="kGradientPanel19">
+                                  <Properties>
+                                    <Property name="kBorderRadius" type="int" value="30"/>
+                                    <Property name="kEndColor" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+                                      <Color blue="fc" green="b1" red="a4" type="rgb"/>
+                                    </Property>
+                                    <Property name="kStartColor" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+                                      <Color blue="fc" green="b1" red="a4" type="rgb"/>
+                                    </Property>
+                                    <Property name="opaque" type="boolean" value="false"/>
+                                  </Properties>
+
+                                  <Layout>
+                                    <DimensionLayout dim="0">
+                                      <Group type="103" groupAlignment="0" attributes="0">
+                                          <Group type="102" alignment="1" attributes="0">
+                                              <EmptySpace pref="24" max="32767" attributes="0"/>
+                                              <Component id="txt_rmvcustnm1" min="-2" pref="320" max="-2" attributes="0"/>
+                                              <EmptySpace max="-2" attributes="0"/>
+                                          </Group>
+                                      </Group>
+                                    </DimensionLayout>
+                                    <DimensionLayout dim="1">
+                                      <Group type="103" groupAlignment="0" attributes="0">
+                                          <Component id="txt_rmvcustnm1" alignment="0" pref="50" max="32767" attributes="0"/>
+                                      </Group>
+                                    </DimensionLayout>
+                                  </Layout>
+                                  <SubComponents>
+                                    <Component class="javax.swing.JTextField" name="txt_rmvcustnm1">
+                                      <Properties>
+                                        <Property name="editable" type="boolean" value="false"/>
+                                        <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+                                          <Color blue="fc" green="b1" red="a4" type="rgb"/>
+                                        </Property>
+                                        <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+                                          <Font name="Cascadia Mono" size="24" style="0"/>
+                                        </Property>
+                                        <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+                                          <Color blue="f6" green="eb" red="e4" type="rgb"/>
+                                        </Property>
+                                        <Property name="horizontalAlignment" type="int" value="0"/>
+                                        <Property name="text" type="java.lang.String" value="CUSTOMER NAME"/>
+                                        <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
+                                          <Border info="org.netbeans.modules.form.compat2.border.MatteColorBorderInfo">
+                                            <MatteColorBorder bottom="0" left="0" right="0" top="0"/>
+                                          </Border>
+                                        </Property>
+                                        <Property name="nextFocusableComponent" type="java.awt.Component" editor="org.netbeans.modules.form.ComponentChooserEditor">
+                                          <ComponentRef name="txt_phone"/>
+                                        </Property>
+                                      </Properties>
+                                    </Component>
+                                  </SubComponents>
+                                </Container>
+                                <Container class="com.k33ptoo.components.KGradientPanel" name="kGradientPanel20">
+                                  <Properties>
+                                    <Property name="kBorderRadius" type="int" value="30"/>
+                                    <Property name="kEndColor" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+                                      <Color blue="fc" green="b1" red="a4" type="rgb"/>
+                                    </Property>
+                                    <Property name="kStartColor" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+                                      <Color blue="fc" green="b1" red="a4" type="rgb"/>
+                                    </Property>
+                                    <Property name="opaque" type="boolean" value="false"/>
+                                  </Properties>
+
+                                  <Layout>
+                                    <DimensionLayout dim="0">
+                                      <Group type="103" groupAlignment="0" attributes="0">
+                                          <Group type="102" alignment="1" attributes="0">
+                                              <EmptySpace pref="23" max="32767" attributes="0"/>
+                                              <Component id="txt_detailcustid" min="-2" pref="320" max="-2" attributes="0"/>
+                                              <EmptySpace max="-2" attributes="0"/>
+                                          </Group>
+                                      </Group>
+                                    </DimensionLayout>
+                                    <DimensionLayout dim="1">
+                                      <Group type="103" groupAlignment="0" attributes="0">
+                                          <Component id="txt_detailcustid" alignment="0" pref="50" max="32767" attributes="0"/>
+                                      </Group>
+                                    </DimensionLayout>
+                                  </Layout>
+                                  <SubComponents>
+                                    <Component class="javax.swing.JTextField" name="txt_detailcustid">
+                                      <Properties>
+                                        <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+                                          <Color blue="fc" green="b1" red="a4" type="rgb"/>
+                                        </Property>
+                                        <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+                                          <Font name="Cascadia Mono" size="24" style="0"/>
+                                        </Property>
+                                        <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+                                          <Color blue="f6" green="eb" red="e4" type="rgb"/>
+                                        </Property>
+                                        <Property name="horizontalAlignment" type="int" value="0"/>
+                                        <Property name="text" type="java.lang.String" value="CUSTOMER ID"/>
+                                        <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
+                                          <Border info="org.netbeans.modules.form.compat2.border.MatteColorBorderInfo">
+                                            <MatteColorBorder bottom="0" left="0" right="0" top="0"/>
+                                          </Border>
+                                        </Property>
+                                        <Property name="nextFocusableComponent" type="java.awt.Component" editor="org.netbeans.modules.form.ComponentChooserEditor">
+                                          <ComponentRef name="txt_custnm"/>
+                                        </Property>
+                                      </Properties>
+                                      <Events>
+                                        <EventHandler event="focusGained" listener="java.awt.event.FocusListener" parameters="java.awt.event.FocusEvent" handler="txt_detailcustidFocusGained"/>
+                                        <EventHandler event="focusLost" listener="java.awt.event.FocusListener" parameters="java.awt.event.FocusEvent" handler="txt_detailcustidFocusLost"/>
+                                      </Events>
+                                    </Component>
+                                  </SubComponents>
+                                </Container>
+                                <Container class="com.k33ptoo.components.KGradientPanel" name="kGradientPanel21">
+                                  <Properties>
+                                    <Property name="kBorderRadius" type="int" value="30"/>
+                                    <Property name="kEndColor" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+                                      <Color blue="fc" green="b1" red="a4" type="rgb"/>
+                                    </Property>
+                                    <Property name="kStartColor" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+                                      <Color blue="fc" green="b1" red="a4" type="rgb"/>
+                                    </Property>
+                                    <Property name="opaque" type="boolean" value="false"/>
+                                  </Properties>
+
+                                  <Layout>
+                                    <DimensionLayout dim="0">
+                                      <Group type="103" groupAlignment="0" attributes="0">
+                                          <Group type="102" alignment="1" attributes="0">
+                                              <EmptySpace pref="24" max="32767" attributes="0"/>
+                                              <Component id="txt_rmvphone1" min="-2" pref="320" max="-2" attributes="0"/>
+                                              <EmptySpace max="-2" attributes="0"/>
+                                          </Group>
+                                      </Group>
+                                    </DimensionLayout>
+                                    <DimensionLayout dim="1">
+                                      <Group type="103" groupAlignment="0" attributes="0">
+                                          <Component id="txt_rmvphone1" alignment="0" pref="50" max="32767" attributes="0"/>
+                                      </Group>
+                                    </DimensionLayout>
+                                  </Layout>
+                                  <SubComponents>
+                                    <Component class="javax.swing.JTextField" name="txt_rmvphone1">
+                                      <Properties>
+                                        <Property name="editable" type="boolean" value="false"/>
+                                        <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+                                          <Color blue="fc" green="b1" red="a4" type="rgb"/>
+                                        </Property>
+                                        <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+                                          <Font name="Cascadia Mono" size="24" style="0"/>
+                                        </Property>
+                                        <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+                                          <Color blue="f6" green="eb" red="e4" type="rgb"/>
+                                        </Property>
+                                        <Property name="horizontalAlignment" type="int" value="0"/>
+                                        <Property name="text" type="java.lang.String" value="PHONE NO."/>
+                                        <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
+                                          <Border info="org.netbeans.modules.form.compat2.border.MatteColorBorderInfo">
+                                            <MatteColorBorder bottom="0" left="0" right="0" top="0"/>
+                                          </Border>
+                                        </Property>
+                                        <Property name="nextFocusableComponent" type="java.awt.Component" editor="org.netbeans.modules.form.ComponentChooserEditor">
+                                          <ComponentRef name="txt_email"/>
+                                        </Property>
+                                      </Properties>
+                                    </Component>
+                                  </SubComponents>
+                                </Container>
+                                <Container class="com.k33ptoo.components.KGradientPanel" name="kGradientPanel22">
+                                  <Properties>
+                                    <Property name="kBorderRadius" type="int" value="30"/>
+                                    <Property name="kEndColor" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+                                      <Color blue="fc" green="b1" red="a4" type="rgb"/>
+                                    </Property>
+                                    <Property name="kStartColor" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+                                      <Color blue="fc" green="b1" red="a4" type="rgb"/>
+                                    </Property>
+                                    <Property name="opaque" type="boolean" value="false"/>
+                                  </Properties>
+
+                                  <Layout>
+                                    <DimensionLayout dim="0">
+                                      <Group type="103" groupAlignment="0" attributes="0">
+                                          <Group type="102" alignment="1" attributes="0">
+                                              <EmptySpace pref="24" max="32767" attributes="0"/>
+                                              <Component id="txt_rmvemail1" min="-2" pref="320" max="-2" attributes="0"/>
+                                              <EmptySpace max="-2" attributes="0"/>
+                                          </Group>
+                                      </Group>
+                                    </DimensionLayout>
+                                    <DimensionLayout dim="1">
+                                      <Group type="103" groupAlignment="0" attributes="0">
+                                          <Component id="txt_rmvemail1" alignment="0" pref="50" max="32767" attributes="0"/>
+                                      </Group>
+                                    </DimensionLayout>
+                                  </Layout>
+                                  <SubComponents>
+                                    <Component class="javax.swing.JTextField" name="txt_rmvemail1">
+                                      <Properties>
+                                        <Property name="editable" type="boolean" value="false"/>
+                                        <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+                                          <Color blue="fc" green="b1" red="a4" type="rgb"/>
+                                        </Property>
+                                        <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+                                          <Font name="Cascadia Mono" size="24" style="0"/>
+                                        </Property>
+                                        <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+                                          <Color blue="f6" green="eb" red="e4" type="rgb"/>
+                                        </Property>
+                                        <Property name="horizontalAlignment" type="int" value="0"/>
+                                        <Property name="text" type="java.lang.String" value="EMAIL"/>
+                                        <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
+                                          <Border info="org.netbeans.modules.form.compat2.border.MatteColorBorderInfo">
+                                            <MatteColorBorder bottom="0" left="0" right="0" top="0"/>
+                                          </Border>
+                                        </Property>
+                                        <Property name="nextFocusableComponent" type="java.awt.Component" editor="org.netbeans.modules.form.ComponentChooserEditor">
+                                          <ComponentRef name="txt_sname"/>
+                                        </Property>
+                                      </Properties>
+                                    </Component>
+                                  </SubComponents>
+                                </Container>
+                                <Container class="com.k33ptoo.components.KGradientPanel" name="kGradientPanel23">
+                                  <Properties>
+                                    <Property name="kBorderRadius" type="int" value="30"/>
+                                    <Property name="kEndColor" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+                                      <Color blue="fc" green="b1" red="a4" type="rgb"/>
+                                    </Property>
+                                    <Property name="kStartColor" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+                                      <Color blue="fc" green="b1" red="a4" type="rgb"/>
+                                    </Property>
+                                    <Property name="opaque" type="boolean" value="false"/>
+                                  </Properties>
+
+                                  <Layout>
+                                    <DimensionLayout dim="0">
+                                      <Group type="103" groupAlignment="0" attributes="0">
+                                          <Group type="102" alignment="1" attributes="0">
+                                              <EmptySpace pref="23" max="32767" attributes="0"/>
+                                              <Component id="txt_rmvsname1" min="-2" pref="321" max="-2" attributes="0"/>
+                                              <EmptySpace max="-2" attributes="0"/>
+                                          </Group>
+                                      </Group>
+                                    </DimensionLayout>
+                                    <DimensionLayout dim="1">
+                                      <Group type="103" groupAlignment="0" attributes="0">
+                                          <Component id="txt_rmvsname1" alignment="0" pref="50" max="32767" attributes="0"/>
+                                      </Group>
+                                    </DimensionLayout>
+                                  </Layout>
+                                  <SubComponents>
+                                    <Component class="javax.swing.JTextField" name="txt_rmvsname1">
+                                      <Properties>
+                                        <Property name="editable" type="boolean" value="false"/>
+                                        <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+                                          <Color blue="fc" green="b1" red="a4" type="rgb"/>
+                                        </Property>
+                                        <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+                                          <Font name="Cascadia Mono" size="24" style="0"/>
+                                        </Property>
+                                        <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+                                          <Color blue="f6" green="eb" red="e4" type="rgb"/>
+                                        </Property>
+                                        <Property name="horizontalAlignment" type="int" value="0"/>
+                                        <Property name="text" type="java.lang.String" value="SHOP NAME"/>
+                                        <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
+                                          <Border info="org.netbeans.modules.form.compat2.border.MatteColorBorderInfo">
+                                            <MatteColorBorder bottom="0" left="0" right="0" top="0"/>
+                                          </Border>
+                                        </Property>
+                                        <Property name="nextFocusableComponent" type="java.awt.Component" editor="org.netbeans.modules.form.ComponentChooserEditor">
+                                          <ComponentRef name="txt_saddress"/>
+                                        </Property>
+                                      </Properties>
+                                    </Component>
+                                  </SubComponents>
+                                </Container>
+                                <Container class="com.k33ptoo.components.KGradientPanel" name="kGradientPanel24">
+                                  <Properties>
+                                    <Property name="kBorderRadius" type="int" value="30"/>
+                                    <Property name="kEndColor" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+                                      <Color blue="fc" green="b1" red="a4" type="rgb"/>
+                                    </Property>
+                                    <Property name="kStartColor" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+                                      <Color blue="fc" green="b1" red="a4" type="rgb"/>
+                                    </Property>
+                                    <Property name="opaque" type="boolean" value="false"/>
+                                  </Properties>
+
+                                  <Layout>
+                                    <DimensionLayout dim="0">
+                                      <Group type="103" groupAlignment="0" attributes="0">
+                                          <Group type="102" alignment="1" attributes="0">
+                                              <EmptySpace pref="24" max="32767" attributes="0"/>
+                                              <Component id="txt_rmvsaddress1" min="-2" pref="320" max="-2" attributes="0"/>
+                                              <EmptySpace max="-2" attributes="0"/>
+                                          </Group>
+                                      </Group>
+                                    </DimensionLayout>
+                                    <DimensionLayout dim="1">
+                                      <Group type="103" groupAlignment="0" attributes="0">
+                                          <Component id="txt_rmvsaddress1" alignment="0" pref="50" max="32767" attributes="0"/>
+                                      </Group>
+                                    </DimensionLayout>
+                                  </Layout>
+                                  <SubComponents>
+                                    <Component class="javax.swing.JTextField" name="txt_rmvsaddress1">
+                                      <Properties>
+                                        <Property name="editable" type="boolean" value="false"/>
+                                        <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+                                          <Color blue="fc" green="b1" red="a4" type="rgb"/>
+                                        </Property>
+                                        <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+                                          <Font name="Cascadia Mono" size="24" style="0"/>
+                                        </Property>
+                                        <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+                                          <Color blue="f6" green="eb" red="e4" type="rgb"/>
+                                        </Property>
+                                        <Property name="horizontalAlignment" type="int" value="0"/>
+                                        <Property name="text" type="java.lang.String" value="SHOP ADDRESS"/>
+                                        <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
+                                          <Border info="org.netbeans.modules.form.compat2.border.MatteColorBorderInfo">
+                                            <MatteColorBorder bottom="0" left="0" right="0" top="0"/>
+                                          </Border>
+                                        </Property>
+                                        <Property name="nextFocusableComponent" type="java.awt.Component" editor="org.netbeans.modules.form.ComponentChooserEditor">
+                                          <ComponentRef name="loginBtn"/>
+                                        </Property>
+                                      </Properties>
+                                    </Component>
+                                  </SubComponents>
+                                </Container>
+                                <Component class="javax.swing.JLabel" name="jLabel3">
+                                  <Properties>
+                                    <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+                                      <Font name="Segoe UI" size="22" style="0"/>
+                                    </Property>
+                                    <Property name="text" type="java.lang.String" value="Please Enter The Customer ID"/>
+                                  </Properties>
+                                </Component>
+                              </SubComponents>
                             </Container>
                           </SubComponents>
                         </Container>

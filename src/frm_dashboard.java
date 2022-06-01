@@ -105,9 +105,36 @@ public class frm_dashboard extends javax.swing.JFrame
         txt_saddress = new javax.swing.JTextField();
         loginBtn = new com.k33ptoo.components.KButton();
         jPanel2 = new javax.swing.JPanel();
-        pnl_rmvcust = new com.k33ptoo.components.KGradientPanel();
+        pnl_addcust1 = new com.k33ptoo.components.KGradientPanel();
+        kGradientPanel13 = new com.k33ptoo.components.KGradientPanel();
+        txt_rmvcustnm = new javax.swing.JTextField();
+        kGradientPanel14 = new com.k33ptoo.components.KGradientPanel();
+        txt_rmvcustid = new javax.swing.JTextField();
+        kGradientPanel15 = new com.k33ptoo.components.KGradientPanel();
+        txt_rmvphone = new javax.swing.JTextField();
+        kGradientPanel16 = new com.k33ptoo.components.KGradientPanel();
+        txt_rmvemail = new javax.swing.JTextField();
+        kGradientPanel17 = new com.k33ptoo.components.KGradientPanel();
+        txt_rmvsname = new javax.swing.JTextField();
+        kGradientPanel18 = new com.k33ptoo.components.KGradientPanel();
+        txt_rmvsaddress = new javax.swing.JTextField();
+        rmvloginBtn = new com.k33ptoo.components.KButton();
+        jLabel1 = new javax.swing.JLabel();
         jPanel3 = new javax.swing.JPanel();
-        pnl_custdetail = new com.k33ptoo.components.KGradientPanel();
+        pnl_addcust2 = new com.k33ptoo.components.KGradientPanel();
+        kGradientPanel19 = new com.k33ptoo.components.KGradientPanel();
+        txt_rmvcustnm1 = new javax.swing.JTextField();
+        kGradientPanel20 = new com.k33ptoo.components.KGradientPanel();
+        txt_detailcustid = new javax.swing.JTextField();
+        kGradientPanel21 = new com.k33ptoo.components.KGradientPanel();
+        txt_rmvphone1 = new javax.swing.JTextField();
+        kGradientPanel22 = new com.k33ptoo.components.KGradientPanel();
+        txt_rmvemail1 = new javax.swing.JTextField();
+        kGradientPanel23 = new com.k33ptoo.components.KGradientPanel();
+        txt_rmvsname1 = new javax.swing.JTextField();
+        kGradientPanel24 = new com.k33ptoo.components.KGradientPanel();
+        txt_rmvsaddress1 = new javax.swing.JTextField();
+        jLabel3 = new javax.swing.JLabel();
         panel_employee = new com.k33ptoo.components.KGradientPanel();
         panel_product = new com.k33ptoo.components.KGradientPanel();
         panel_bill = new com.k33ptoo.components.KGradientPanel();
@@ -757,7 +784,7 @@ public class frm_dashboard extends javax.swing.JFrame
         txt_custnm.setHorizontalAlignment(javax.swing.JTextField.CENTER);
         txt_custnm.setText("CUSTOMER NAME");
         txt_custnm.setBorder(javax.swing.BorderFactory.createMatteBorder(0, 0, 0, 0, new java.awt.Color(0, 0, 0)));
-        txt_custnm.setNextFocusableComponent(txt_custid);
+        txt_custnm.setNextFocusableComponent(txt_phone);
         txt_custnm.addFocusListener(new java.awt.event.FocusAdapter()
         {
             public void focusGained(java.awt.event.FocusEvent evt)
@@ -775,8 +802,8 @@ public class frm_dashboard extends javax.swing.JFrame
         kGradientPanel7Layout.setHorizontalGroup(
             kGradientPanel7Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, kGradientPanel7Layout.createSequentialGroup()
-                .addContainerGap(20, Short.MAX_VALUE)
-                .addComponent(txt_custnm, javax.swing.GroupLayout.PREFERRED_SIZE, 324, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(24, Short.MAX_VALUE)
+                .addComponent(txt_custnm, javax.swing.GroupLayout.PREFERRED_SIZE, 320, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addContainerGap())
         );
         kGradientPanel7Layout.setVerticalGroup(
@@ -795,6 +822,7 @@ public class frm_dashboard extends javax.swing.JFrame
         txt_custid.setHorizontalAlignment(javax.swing.JTextField.CENTER);
         txt_custid.setText("CUSTOMER ID");
         txt_custid.setBorder(javax.swing.BorderFactory.createMatteBorder(0, 0, 0, 0, new java.awt.Color(0, 0, 0)));
+        txt_custid.setNextFocusableComponent(txt_custnm);
         txt_custid.addFocusListener(new java.awt.event.FocusAdapter()
         {
             public void focusGained(java.awt.event.FocusEvent evt)
@@ -812,9 +840,9 @@ public class frm_dashboard extends javax.swing.JFrame
         kGradientPanel8Layout.setHorizontalGroup(
             kGradientPanel8Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, kGradientPanel8Layout.createSequentialGroup()
-                .addContainerGap(17, Short.MAX_VALUE)
-                .addComponent(txt_custid, javax.swing.GroupLayout.PREFERRED_SIZE, 314, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(18, 18, 18))
+                .addContainerGap(23, Short.MAX_VALUE)
+                .addComponent(txt_custid, javax.swing.GroupLayout.PREFERRED_SIZE, 320, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap())
         );
         kGradientPanel8Layout.setVerticalGroup(
             kGradientPanel8Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -850,8 +878,8 @@ public class frm_dashboard extends javax.swing.JFrame
         kGradientPanel9Layout.setHorizontalGroup(
             kGradientPanel9Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, kGradientPanel9Layout.createSequentialGroup()
-                .addContainerGap(20, Short.MAX_VALUE)
-                .addComponent(txt_phone, javax.swing.GroupLayout.PREFERRED_SIZE, 324, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(24, Short.MAX_VALUE)
+                .addComponent(txt_phone, javax.swing.GroupLayout.PREFERRED_SIZE, 320, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addContainerGap())
         );
         kGradientPanel9Layout.setVerticalGroup(
@@ -870,6 +898,7 @@ public class frm_dashboard extends javax.swing.JFrame
         txt_email.setHorizontalAlignment(javax.swing.JTextField.CENTER);
         txt_email.setText("EMAIL");
         txt_email.setBorder(javax.swing.BorderFactory.createMatteBorder(0, 0, 0, 0, new java.awt.Color(0, 0, 0)));
+        txt_email.setNextFocusableComponent(txt_sname);
         txt_email.addFocusListener(new java.awt.event.FocusAdapter()
         {
             public void focusGained(java.awt.event.FocusEvent evt)
@@ -887,9 +916,9 @@ public class frm_dashboard extends javax.swing.JFrame
         kGradientPanel10Layout.setHorizontalGroup(
             kGradientPanel10Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, kGradientPanel10Layout.createSequentialGroup()
-                .addContainerGap(17, Short.MAX_VALUE)
-                .addComponent(txt_email, javax.swing.GroupLayout.PREFERRED_SIZE, 314, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(18, 18, 18))
+                .addContainerGap(24, Short.MAX_VALUE)
+                .addComponent(txt_email, javax.swing.GroupLayout.PREFERRED_SIZE, 320, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap())
         );
         kGradientPanel10Layout.setVerticalGroup(
             kGradientPanel10Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -925,8 +954,8 @@ public class frm_dashboard extends javax.swing.JFrame
         kGradientPanel11Layout.setHorizontalGroup(
             kGradientPanel11Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, kGradientPanel11Layout.createSequentialGroup()
-                .addContainerGap(20, Short.MAX_VALUE)
-                .addComponent(txt_sname, javax.swing.GroupLayout.PREFERRED_SIZE, 324, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(23, Short.MAX_VALUE)
+                .addComponent(txt_sname, javax.swing.GroupLayout.PREFERRED_SIZE, 321, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addContainerGap())
         );
         kGradientPanel11Layout.setVerticalGroup(
@@ -963,9 +992,9 @@ public class frm_dashboard extends javax.swing.JFrame
         kGradientPanel12Layout.setHorizontalGroup(
             kGradientPanel12Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, kGradientPanel12Layout.createSequentialGroup()
-                .addContainerGap(17, Short.MAX_VALUE)
-                .addComponent(txt_saddress, javax.swing.GroupLayout.PREFERRED_SIZE, 314, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(18, 18, 18))
+                .addContainerGap(24, Short.MAX_VALUE)
+                .addComponent(txt_saddress, javax.swing.GroupLayout.PREFERRED_SIZE, 320, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap())
         );
         kGradientPanel12Layout.setVerticalGroup(
             kGradientPanel12Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -1006,20 +1035,19 @@ public class frm_dashboard extends javax.swing.JFrame
             pnl_addcustLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(pnl_addcustLayout.createSequentialGroup()
                 .addContainerGap(100, Short.MAX_VALUE)
-                .addGroup(pnl_addcustLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                    .addGroup(pnl_addcustLayout.createSequentialGroup()
-                        .addComponent(kGradientPanel11, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                        .addComponent(kGradientPanel12, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                    .addGroup(pnl_addcustLayout.createSequentialGroup()
-                        .addGroup(pnl_addcustLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(kGradientPanel7, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(kGradientPanel9, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                        .addGap(62, 62, 62)
-                        .addGroup(pnl_addcustLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                            .addComponent(kGradientPanel8, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(kGradientPanel10, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))))
-                .addContainerGap(100, Short.MAX_VALUE))
+                .addGroup(pnl_addcustLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(kGradientPanel11, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addGroup(pnl_addcustLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                        .addGroup(pnl_addcustLayout.createSequentialGroup()
+                            .addGap(1, 1, 1)
+                            .addComponent(kGradientPanel8, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addComponent(kGradientPanel9, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 62, Short.MAX_VALUE)
+                .addGroup(pnl_addcustLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(kGradientPanel10, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(kGradientPanel12, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(kGradientPanel7, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addContainerGap(99, Short.MAX_VALUE))
             .addGroup(pnl_addcustLayout.createSequentialGroup()
                 .addGap(253, 253, 253)
                 .addComponent(loginBtn, javax.swing.GroupLayout.PREFERRED_SIZE, 454, javax.swing.GroupLayout.PREFERRED_SIZE)
@@ -1028,16 +1056,20 @@ public class frm_dashboard extends javax.swing.JFrame
         pnl_addcustLayout.setVerticalGroup(
             pnl_addcustLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(pnl_addcustLayout.createSequentialGroup()
-                .addGap(80, 80, 80)
+                .addContainerGap(80, Short.MAX_VALUE)
+                .addGroup(pnl_addcustLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(kGradientPanel8, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(kGradientPanel7, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGroup(pnl_addcustLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(pnl_addcustLayout.createSequentialGroup()
+                        .addGap(80, 80, 80)
+                        .addComponent(kGradientPanel9, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(80, 80, 80))
+                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, pnl_addcustLayout.createSequentialGroup()
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(kGradientPanel10, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(71, 71, 71)))
                 .addGroup(pnl_addcustLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                    .addComponent(kGradientPanel8, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(kGradientPanel7, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 80, Short.MAX_VALUE)
-                .addGroup(pnl_addcustLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(kGradientPanel9, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(kGradientPanel10, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(80, 80, 80)
-                .addGroup(pnl_addcustLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addComponent(kGradientPanel11, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(kGradientPanel12, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(55, 55, 55)
@@ -1066,20 +1098,252 @@ public class frm_dashboard extends javax.swing.JFrame
 
         jPanel2.setBackground(new java.awt.Color(178, 199, 231));
 
-        pnl_rmvcust.setkBorderRadius(40);
-        pnl_rmvcust.setkEndColor(new java.awt.Color(228, 235, 246));
-        pnl_rmvcust.setkStartColor(new java.awt.Color(228, 235, 246));
-        pnl_rmvcust.setOpaque(false);
+        pnl_addcust1.setkBorderRadius(40);
+        pnl_addcust1.setkEndColor(new java.awt.Color(228, 235, 246));
+        pnl_addcust1.setkStartColor(new java.awt.Color(228, 235, 246));
+        pnl_addcust1.setOpaque(false);
 
-        javax.swing.GroupLayout pnl_rmvcustLayout = new javax.swing.GroupLayout(pnl_rmvcust);
-        pnl_rmvcust.setLayout(pnl_rmvcustLayout);
-        pnl_rmvcustLayout.setHorizontalGroup(
-            pnl_rmvcustLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 961, Short.MAX_VALUE)
+        kGradientPanel13.setkBorderRadius(30);
+        kGradientPanel13.setkEndColor(new java.awt.Color(164, 177, 252));
+        kGradientPanel13.setkStartColor(new java.awt.Color(164, 177, 252));
+        kGradientPanel13.setOpaque(false);
+
+        txt_rmvcustnm.setEditable(false);
+        txt_rmvcustnm.setBackground(new java.awt.Color(164, 177, 252));
+        txt_rmvcustnm.setFont(new java.awt.Font("Cascadia Mono", 0, 24)); // NOI18N
+        txt_rmvcustnm.setForeground(new java.awt.Color(228, 235, 246));
+        txt_rmvcustnm.setHorizontalAlignment(javax.swing.JTextField.CENTER);
+        txt_rmvcustnm.setText("CUSTOMER NAME");
+        txt_rmvcustnm.setBorder(javax.swing.BorderFactory.createMatteBorder(0, 0, 0, 0, new java.awt.Color(0, 0, 0)));
+        txt_rmvcustnm.setNextFocusableComponent(txt_phone);
+
+        javax.swing.GroupLayout kGradientPanel13Layout = new javax.swing.GroupLayout(kGradientPanel13);
+        kGradientPanel13.setLayout(kGradientPanel13Layout);
+        kGradientPanel13Layout.setHorizontalGroup(
+            kGradientPanel13Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, kGradientPanel13Layout.createSequentialGroup()
+                .addContainerGap(24, Short.MAX_VALUE)
+                .addComponent(txt_rmvcustnm, javax.swing.GroupLayout.PREFERRED_SIZE, 320, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap())
         );
-        pnl_rmvcustLayout.setVerticalGroup(
-            pnl_rmvcustLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 570, Short.MAX_VALUE)
+        kGradientPanel13Layout.setVerticalGroup(
+            kGradientPanel13Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addComponent(txt_rmvcustnm, javax.swing.GroupLayout.DEFAULT_SIZE, 50, Short.MAX_VALUE)
+        );
+
+        kGradientPanel14.setkBorderRadius(30);
+        kGradientPanel14.setkEndColor(new java.awt.Color(164, 177, 252));
+        kGradientPanel14.setkStartColor(new java.awt.Color(164, 177, 252));
+        kGradientPanel14.setOpaque(false);
+
+        txt_rmvcustid.setBackground(new java.awt.Color(164, 177, 252));
+        txt_rmvcustid.setFont(new java.awt.Font("Cascadia Mono", 0, 24)); // NOI18N
+        txt_rmvcustid.setForeground(new java.awt.Color(228, 235, 246));
+        txt_rmvcustid.setHorizontalAlignment(javax.swing.JTextField.CENTER);
+        txt_rmvcustid.setText("CUSTOMER ID");
+        txt_rmvcustid.setBorder(javax.swing.BorderFactory.createMatteBorder(0, 0, 0, 0, new java.awt.Color(0, 0, 0)));
+        txt_rmvcustid.setNextFocusableComponent(txt_custnm);
+        txt_rmvcustid.addFocusListener(new java.awt.event.FocusAdapter()
+        {
+            public void focusGained(java.awt.event.FocusEvent evt)
+            {
+                txt_rmvcustidFocusGained(evt);
+            }
+            public void focusLost(java.awt.event.FocusEvent evt)
+            {
+                txt_rmvcustidFocusLost(evt);
+            }
+        });
+
+        javax.swing.GroupLayout kGradientPanel14Layout = new javax.swing.GroupLayout(kGradientPanel14);
+        kGradientPanel14.setLayout(kGradientPanel14Layout);
+        kGradientPanel14Layout.setHorizontalGroup(
+            kGradientPanel14Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, kGradientPanel14Layout.createSequentialGroup()
+                .addContainerGap(23, Short.MAX_VALUE)
+                .addComponent(txt_rmvcustid, javax.swing.GroupLayout.PREFERRED_SIZE, 320, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap())
+        );
+        kGradientPanel14Layout.setVerticalGroup(
+            kGradientPanel14Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addComponent(txt_rmvcustid, javax.swing.GroupLayout.DEFAULT_SIZE, 50, Short.MAX_VALUE)
+        );
+
+        kGradientPanel15.setkBorderRadius(30);
+        kGradientPanel15.setkEndColor(new java.awt.Color(164, 177, 252));
+        kGradientPanel15.setkStartColor(new java.awt.Color(164, 177, 252));
+        kGradientPanel15.setOpaque(false);
+
+        txt_rmvphone.setEditable(false);
+        txt_rmvphone.setBackground(new java.awt.Color(164, 177, 252));
+        txt_rmvphone.setFont(new java.awt.Font("Cascadia Mono", 0, 24)); // NOI18N
+        txt_rmvphone.setForeground(new java.awt.Color(228, 235, 246));
+        txt_rmvphone.setHorizontalAlignment(javax.swing.JTextField.CENTER);
+        txt_rmvphone.setText("PHONE NO.");
+        txt_rmvphone.setBorder(javax.swing.BorderFactory.createMatteBorder(0, 0, 0, 0, new java.awt.Color(0, 0, 0)));
+        txt_rmvphone.setNextFocusableComponent(txt_email);
+
+        javax.swing.GroupLayout kGradientPanel15Layout = new javax.swing.GroupLayout(kGradientPanel15);
+        kGradientPanel15.setLayout(kGradientPanel15Layout);
+        kGradientPanel15Layout.setHorizontalGroup(
+            kGradientPanel15Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, kGradientPanel15Layout.createSequentialGroup()
+                .addContainerGap(24, Short.MAX_VALUE)
+                .addComponent(txt_rmvphone, javax.swing.GroupLayout.PREFERRED_SIZE, 320, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap())
+        );
+        kGradientPanel15Layout.setVerticalGroup(
+            kGradientPanel15Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addComponent(txt_rmvphone, javax.swing.GroupLayout.DEFAULT_SIZE, 50, Short.MAX_VALUE)
+        );
+
+        kGradientPanel16.setkBorderRadius(30);
+        kGradientPanel16.setkEndColor(new java.awt.Color(164, 177, 252));
+        kGradientPanel16.setkStartColor(new java.awt.Color(164, 177, 252));
+        kGradientPanel16.setOpaque(false);
+
+        txt_rmvemail.setEditable(false);
+        txt_rmvemail.setBackground(new java.awt.Color(164, 177, 252));
+        txt_rmvemail.setFont(new java.awt.Font("Cascadia Mono", 0, 24)); // NOI18N
+        txt_rmvemail.setForeground(new java.awt.Color(228, 235, 246));
+        txt_rmvemail.setHorizontalAlignment(javax.swing.JTextField.CENTER);
+        txt_rmvemail.setText("EMAIL");
+        txt_rmvemail.setBorder(javax.swing.BorderFactory.createMatteBorder(0, 0, 0, 0, new java.awt.Color(0, 0, 0)));
+        txt_rmvemail.setNextFocusableComponent(txt_sname);
+
+        javax.swing.GroupLayout kGradientPanel16Layout = new javax.swing.GroupLayout(kGradientPanel16);
+        kGradientPanel16.setLayout(kGradientPanel16Layout);
+        kGradientPanel16Layout.setHorizontalGroup(
+            kGradientPanel16Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, kGradientPanel16Layout.createSequentialGroup()
+                .addContainerGap(24, Short.MAX_VALUE)
+                .addComponent(txt_rmvemail, javax.swing.GroupLayout.PREFERRED_SIZE, 320, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap())
+        );
+        kGradientPanel16Layout.setVerticalGroup(
+            kGradientPanel16Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addComponent(txt_rmvemail, javax.swing.GroupLayout.DEFAULT_SIZE, 50, Short.MAX_VALUE)
+        );
+
+        kGradientPanel17.setkBorderRadius(30);
+        kGradientPanel17.setkEndColor(new java.awt.Color(164, 177, 252));
+        kGradientPanel17.setkStartColor(new java.awt.Color(164, 177, 252));
+        kGradientPanel17.setOpaque(false);
+
+        txt_rmvsname.setEditable(false);
+        txt_rmvsname.setBackground(new java.awt.Color(164, 177, 252));
+        txt_rmvsname.setFont(new java.awt.Font("Cascadia Mono", 0, 24)); // NOI18N
+        txt_rmvsname.setForeground(new java.awt.Color(228, 235, 246));
+        txt_rmvsname.setHorizontalAlignment(javax.swing.JTextField.CENTER);
+        txt_rmvsname.setText("SHOP NAME");
+        txt_rmvsname.setBorder(javax.swing.BorderFactory.createMatteBorder(0, 0, 0, 0, new java.awt.Color(0, 0, 0)));
+        txt_rmvsname.setNextFocusableComponent(txt_saddress);
+
+        javax.swing.GroupLayout kGradientPanel17Layout = new javax.swing.GroupLayout(kGradientPanel17);
+        kGradientPanel17.setLayout(kGradientPanel17Layout);
+        kGradientPanel17Layout.setHorizontalGroup(
+            kGradientPanel17Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, kGradientPanel17Layout.createSequentialGroup()
+                .addContainerGap(23, Short.MAX_VALUE)
+                .addComponent(txt_rmvsname, javax.swing.GroupLayout.PREFERRED_SIZE, 321, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap())
+        );
+        kGradientPanel17Layout.setVerticalGroup(
+            kGradientPanel17Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addComponent(txt_rmvsname, javax.swing.GroupLayout.DEFAULT_SIZE, 50, Short.MAX_VALUE)
+        );
+
+        kGradientPanel18.setkBorderRadius(30);
+        kGradientPanel18.setkEndColor(new java.awt.Color(164, 177, 252));
+        kGradientPanel18.setkStartColor(new java.awt.Color(164, 177, 252));
+        kGradientPanel18.setOpaque(false);
+
+        txt_rmvsaddress.setEditable(false);
+        txt_rmvsaddress.setBackground(new java.awt.Color(164, 177, 252));
+        txt_rmvsaddress.setFont(new java.awt.Font("Cascadia Mono", 0, 24)); // NOI18N
+        txt_rmvsaddress.setForeground(new java.awt.Color(228, 235, 246));
+        txt_rmvsaddress.setHorizontalAlignment(javax.swing.JTextField.CENTER);
+        txt_rmvsaddress.setText("SHOP ADDRESS");
+        txt_rmvsaddress.setBorder(javax.swing.BorderFactory.createMatteBorder(0, 0, 0, 0, new java.awt.Color(0, 0, 0)));
+        txt_rmvsaddress.setNextFocusableComponent(loginBtn);
+
+        javax.swing.GroupLayout kGradientPanel18Layout = new javax.swing.GroupLayout(kGradientPanel18);
+        kGradientPanel18.setLayout(kGradientPanel18Layout);
+        kGradientPanel18Layout.setHorizontalGroup(
+            kGradientPanel18Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, kGradientPanel18Layout.createSequentialGroup()
+                .addContainerGap(24, Short.MAX_VALUE)
+                .addComponent(txt_rmvsaddress, javax.swing.GroupLayout.PREFERRED_SIZE, 320, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap())
+        );
+        kGradientPanel18Layout.setVerticalGroup(
+            kGradientPanel18Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addComponent(txt_rmvsaddress, javax.swing.GroupLayout.DEFAULT_SIZE, 50, Short.MAX_VALUE)
+        );
+
+        rmvloginBtn.setBorder(null);
+        rmvloginBtn.setText("REMOVE CUSTOMER");
+        rmvloginBtn.setFont(new java.awt.Font("Segoe UI", 0, 24)); // NOI18N
+        rmvloginBtn.setkBorderRadius(30);
+        rmvloginBtn.setkEndColor(new java.awt.Color(68, 82, 121));
+        rmvloginBtn.setkHoverEndColor(new java.awt.Color(178, 199, 231));
+        rmvloginBtn.setkHoverForeGround(new java.awt.Color(68, 82, 121));
+        rmvloginBtn.setkHoverStartColor(new java.awt.Color(178, 199, 231));
+        rmvloginBtn.setkStartColor(new java.awt.Color(68, 82, 121));
+
+        jLabel1.setFont(new java.awt.Font("Segoe UI", 0, 22)); // NOI18N
+        jLabel1.setText("Please Enter The Customer ID");
+
+        javax.swing.GroupLayout pnl_addcust1Layout = new javax.swing.GroupLayout(pnl_addcust1);
+        pnl_addcust1.setLayout(pnl_addcust1Layout);
+        pnl_addcust1Layout.setHorizontalGroup(
+            pnl_addcust1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(pnl_addcust1Layout.createSequentialGroup()
+                .addContainerGap(100, Short.MAX_VALUE)
+                .addGroup(pnl_addcust1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(kGradientPanel17, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addGroup(pnl_addcust1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                        .addComponent(kGradientPanel15, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGroup(pnl_addcust1Layout.createSequentialGroup()
+                            .addGap(1, 1, 1)
+                            .addGroup(pnl_addcust1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                                .addComponent(jLabel1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                                .addComponent(kGradientPanel14, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)))))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 62, Short.MAX_VALUE)
+                .addGroup(pnl_addcust1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(kGradientPanel16, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(kGradientPanel18, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(kGradientPanel13, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addContainerGap(99, Short.MAX_VALUE))
+            .addGroup(pnl_addcust1Layout.createSequentialGroup()
+                .addGap(253, 253, 253)
+                .addComponent(rmvloginBtn, javax.swing.GroupLayout.PREFERRED_SIZE, 454, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+        );
+        pnl_addcust1Layout.setVerticalGroup(
+            pnl_addcust1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(pnl_addcust1Layout.createSequentialGroup()
+                .addContainerGap(33, Short.MAX_VALUE)
+                .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 35, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addGroup(pnl_addcust1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(kGradientPanel14, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(kGradientPanel13, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGroup(pnl_addcust1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(pnl_addcust1Layout.createSequentialGroup()
+                        .addGap(80, 80, 80)
+                        .addComponent(kGradientPanel15, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(80, 80, 80))
+                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, pnl_addcust1Layout.createSequentialGroup()
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(kGradientPanel16, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(71, 71, 71)))
+                .addGroup(pnl_addcust1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                    .addComponent(kGradientPanel17, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(kGradientPanel18, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(55, 55, 55)
+                .addComponent(rmvloginBtn, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(80, 80, 80))
         );
 
         javax.swing.GroupLayout jPanel2Layout = new javax.swing.GroupLayout(jPanel2);
@@ -1088,14 +1352,14 @@ public class frm_dashboard extends javax.swing.JFrame
             jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel2Layout.createSequentialGroup()
                 .addGap(50, 50, 50)
-                .addComponent(pnl_rmvcust, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(pnl_addcust1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addContainerGap(50, Short.MAX_VALUE))
         );
         jPanel2Layout.setVerticalGroup(
             jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel2Layout.createSequentialGroup()
                 .addGap(50, 50, 50)
-                .addComponent(pnl_rmvcust, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(pnl_addcust1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addContainerGap(40, Short.MAX_VALUE))
         );
 
@@ -1103,20 +1367,236 @@ public class frm_dashboard extends javax.swing.JFrame
 
         jPanel3.setBackground(new java.awt.Color(178, 199, 231));
 
-        pnl_custdetail.setkBorderRadius(40);
-        pnl_custdetail.setkEndColor(new java.awt.Color(228, 235, 246));
-        pnl_custdetail.setkStartColor(new java.awt.Color(228, 235, 246));
-        pnl_custdetail.setOpaque(false);
+        pnl_addcust2.setkBorderRadius(40);
+        pnl_addcust2.setkEndColor(new java.awt.Color(228, 235, 246));
+        pnl_addcust2.setkStartColor(new java.awt.Color(228, 235, 246));
+        pnl_addcust2.setOpaque(false);
 
-        javax.swing.GroupLayout pnl_custdetailLayout = new javax.swing.GroupLayout(pnl_custdetail);
-        pnl_custdetail.setLayout(pnl_custdetailLayout);
-        pnl_custdetailLayout.setHorizontalGroup(
-            pnl_custdetailLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 961, Short.MAX_VALUE)
+        kGradientPanel19.setkBorderRadius(30);
+        kGradientPanel19.setkEndColor(new java.awt.Color(164, 177, 252));
+        kGradientPanel19.setkStartColor(new java.awt.Color(164, 177, 252));
+        kGradientPanel19.setOpaque(false);
+
+        txt_rmvcustnm1.setEditable(false);
+        txt_rmvcustnm1.setBackground(new java.awt.Color(164, 177, 252));
+        txt_rmvcustnm1.setFont(new java.awt.Font("Cascadia Mono", 0, 24)); // NOI18N
+        txt_rmvcustnm1.setForeground(new java.awt.Color(228, 235, 246));
+        txt_rmvcustnm1.setHorizontalAlignment(javax.swing.JTextField.CENTER);
+        txt_rmvcustnm1.setText("CUSTOMER NAME");
+        txt_rmvcustnm1.setBorder(javax.swing.BorderFactory.createMatteBorder(0, 0, 0, 0, new java.awt.Color(0, 0, 0)));
+        txt_rmvcustnm1.setNextFocusableComponent(txt_phone);
+
+        javax.swing.GroupLayout kGradientPanel19Layout = new javax.swing.GroupLayout(kGradientPanel19);
+        kGradientPanel19.setLayout(kGradientPanel19Layout);
+        kGradientPanel19Layout.setHorizontalGroup(
+            kGradientPanel19Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, kGradientPanel19Layout.createSequentialGroup()
+                .addContainerGap(24, Short.MAX_VALUE)
+                .addComponent(txt_rmvcustnm1, javax.swing.GroupLayout.PREFERRED_SIZE, 320, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap())
         );
-        pnl_custdetailLayout.setVerticalGroup(
-            pnl_custdetailLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 570, Short.MAX_VALUE)
+        kGradientPanel19Layout.setVerticalGroup(
+            kGradientPanel19Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addComponent(txt_rmvcustnm1, javax.swing.GroupLayout.DEFAULT_SIZE, 50, Short.MAX_VALUE)
+        );
+
+        kGradientPanel20.setkBorderRadius(30);
+        kGradientPanel20.setkEndColor(new java.awt.Color(164, 177, 252));
+        kGradientPanel20.setkStartColor(new java.awt.Color(164, 177, 252));
+        kGradientPanel20.setOpaque(false);
+
+        txt_detailcustid.setBackground(new java.awt.Color(164, 177, 252));
+        txt_detailcustid.setFont(new java.awt.Font("Cascadia Mono", 0, 24)); // NOI18N
+        txt_detailcustid.setForeground(new java.awt.Color(228, 235, 246));
+        txt_detailcustid.setHorizontalAlignment(javax.swing.JTextField.CENTER);
+        txt_detailcustid.setText("CUSTOMER ID");
+        txt_detailcustid.setBorder(javax.swing.BorderFactory.createMatteBorder(0, 0, 0, 0, new java.awt.Color(0, 0, 0)));
+        txt_detailcustid.setNextFocusableComponent(txt_custnm);
+        txt_detailcustid.addFocusListener(new java.awt.event.FocusAdapter()
+        {
+            public void focusGained(java.awt.event.FocusEvent evt)
+            {
+                txt_detailcustidFocusGained(evt);
+            }
+            public void focusLost(java.awt.event.FocusEvent evt)
+            {
+                txt_detailcustidFocusLost(evt);
+            }
+        });
+
+        javax.swing.GroupLayout kGradientPanel20Layout = new javax.swing.GroupLayout(kGradientPanel20);
+        kGradientPanel20.setLayout(kGradientPanel20Layout);
+        kGradientPanel20Layout.setHorizontalGroup(
+            kGradientPanel20Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, kGradientPanel20Layout.createSequentialGroup()
+                .addContainerGap(23, Short.MAX_VALUE)
+                .addComponent(txt_detailcustid, javax.swing.GroupLayout.PREFERRED_SIZE, 320, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap())
+        );
+        kGradientPanel20Layout.setVerticalGroup(
+            kGradientPanel20Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addComponent(txt_detailcustid, javax.swing.GroupLayout.DEFAULT_SIZE, 50, Short.MAX_VALUE)
+        );
+
+        kGradientPanel21.setkBorderRadius(30);
+        kGradientPanel21.setkEndColor(new java.awt.Color(164, 177, 252));
+        kGradientPanel21.setkStartColor(new java.awt.Color(164, 177, 252));
+        kGradientPanel21.setOpaque(false);
+
+        txt_rmvphone1.setEditable(false);
+        txt_rmvphone1.setBackground(new java.awt.Color(164, 177, 252));
+        txt_rmvphone1.setFont(new java.awt.Font("Cascadia Mono", 0, 24)); // NOI18N
+        txt_rmvphone1.setForeground(new java.awt.Color(228, 235, 246));
+        txt_rmvphone1.setHorizontalAlignment(javax.swing.JTextField.CENTER);
+        txt_rmvphone1.setText("PHONE NO.");
+        txt_rmvphone1.setBorder(javax.swing.BorderFactory.createMatteBorder(0, 0, 0, 0, new java.awt.Color(0, 0, 0)));
+        txt_rmvphone1.setNextFocusableComponent(txt_email);
+
+        javax.swing.GroupLayout kGradientPanel21Layout = new javax.swing.GroupLayout(kGradientPanel21);
+        kGradientPanel21.setLayout(kGradientPanel21Layout);
+        kGradientPanel21Layout.setHorizontalGroup(
+            kGradientPanel21Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, kGradientPanel21Layout.createSequentialGroup()
+                .addContainerGap(24, Short.MAX_VALUE)
+                .addComponent(txt_rmvphone1, javax.swing.GroupLayout.PREFERRED_SIZE, 320, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap())
+        );
+        kGradientPanel21Layout.setVerticalGroup(
+            kGradientPanel21Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addComponent(txt_rmvphone1, javax.swing.GroupLayout.DEFAULT_SIZE, 50, Short.MAX_VALUE)
+        );
+
+        kGradientPanel22.setkBorderRadius(30);
+        kGradientPanel22.setkEndColor(new java.awt.Color(164, 177, 252));
+        kGradientPanel22.setkStartColor(new java.awt.Color(164, 177, 252));
+        kGradientPanel22.setOpaque(false);
+
+        txt_rmvemail1.setEditable(false);
+        txt_rmvemail1.setBackground(new java.awt.Color(164, 177, 252));
+        txt_rmvemail1.setFont(new java.awt.Font("Cascadia Mono", 0, 24)); // NOI18N
+        txt_rmvemail1.setForeground(new java.awt.Color(228, 235, 246));
+        txt_rmvemail1.setHorizontalAlignment(javax.swing.JTextField.CENTER);
+        txt_rmvemail1.setText("EMAIL");
+        txt_rmvemail1.setBorder(javax.swing.BorderFactory.createMatteBorder(0, 0, 0, 0, new java.awt.Color(0, 0, 0)));
+        txt_rmvemail1.setNextFocusableComponent(txt_sname);
+
+        javax.swing.GroupLayout kGradientPanel22Layout = new javax.swing.GroupLayout(kGradientPanel22);
+        kGradientPanel22.setLayout(kGradientPanel22Layout);
+        kGradientPanel22Layout.setHorizontalGroup(
+            kGradientPanel22Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, kGradientPanel22Layout.createSequentialGroup()
+                .addContainerGap(24, Short.MAX_VALUE)
+                .addComponent(txt_rmvemail1, javax.swing.GroupLayout.PREFERRED_SIZE, 320, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap())
+        );
+        kGradientPanel22Layout.setVerticalGroup(
+            kGradientPanel22Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addComponent(txt_rmvemail1, javax.swing.GroupLayout.DEFAULT_SIZE, 50, Short.MAX_VALUE)
+        );
+
+        kGradientPanel23.setkBorderRadius(30);
+        kGradientPanel23.setkEndColor(new java.awt.Color(164, 177, 252));
+        kGradientPanel23.setkStartColor(new java.awt.Color(164, 177, 252));
+        kGradientPanel23.setOpaque(false);
+
+        txt_rmvsname1.setEditable(false);
+        txt_rmvsname1.setBackground(new java.awt.Color(164, 177, 252));
+        txt_rmvsname1.setFont(new java.awt.Font("Cascadia Mono", 0, 24)); // NOI18N
+        txt_rmvsname1.setForeground(new java.awt.Color(228, 235, 246));
+        txt_rmvsname1.setHorizontalAlignment(javax.swing.JTextField.CENTER);
+        txt_rmvsname1.setText("SHOP NAME");
+        txt_rmvsname1.setBorder(javax.swing.BorderFactory.createMatteBorder(0, 0, 0, 0, new java.awt.Color(0, 0, 0)));
+        txt_rmvsname1.setNextFocusableComponent(txt_saddress);
+
+        javax.swing.GroupLayout kGradientPanel23Layout = new javax.swing.GroupLayout(kGradientPanel23);
+        kGradientPanel23.setLayout(kGradientPanel23Layout);
+        kGradientPanel23Layout.setHorizontalGroup(
+            kGradientPanel23Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, kGradientPanel23Layout.createSequentialGroup()
+                .addContainerGap(23, Short.MAX_VALUE)
+                .addComponent(txt_rmvsname1, javax.swing.GroupLayout.PREFERRED_SIZE, 321, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap())
+        );
+        kGradientPanel23Layout.setVerticalGroup(
+            kGradientPanel23Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addComponent(txt_rmvsname1, javax.swing.GroupLayout.DEFAULT_SIZE, 50, Short.MAX_VALUE)
+        );
+
+        kGradientPanel24.setkBorderRadius(30);
+        kGradientPanel24.setkEndColor(new java.awt.Color(164, 177, 252));
+        kGradientPanel24.setkStartColor(new java.awt.Color(164, 177, 252));
+        kGradientPanel24.setOpaque(false);
+
+        txt_rmvsaddress1.setEditable(false);
+        txt_rmvsaddress1.setBackground(new java.awt.Color(164, 177, 252));
+        txt_rmvsaddress1.setFont(new java.awt.Font("Cascadia Mono", 0, 24)); // NOI18N
+        txt_rmvsaddress1.setForeground(new java.awt.Color(228, 235, 246));
+        txt_rmvsaddress1.setHorizontalAlignment(javax.swing.JTextField.CENTER);
+        txt_rmvsaddress1.setText("SHOP ADDRESS");
+        txt_rmvsaddress1.setBorder(javax.swing.BorderFactory.createMatteBorder(0, 0, 0, 0, new java.awt.Color(0, 0, 0)));
+        txt_rmvsaddress1.setNextFocusableComponent(loginBtn);
+
+        javax.swing.GroupLayout kGradientPanel24Layout = new javax.swing.GroupLayout(kGradientPanel24);
+        kGradientPanel24.setLayout(kGradientPanel24Layout);
+        kGradientPanel24Layout.setHorizontalGroup(
+            kGradientPanel24Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, kGradientPanel24Layout.createSequentialGroup()
+                .addContainerGap(24, Short.MAX_VALUE)
+                .addComponent(txt_rmvsaddress1, javax.swing.GroupLayout.PREFERRED_SIZE, 320, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap())
+        );
+        kGradientPanel24Layout.setVerticalGroup(
+            kGradientPanel24Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addComponent(txt_rmvsaddress1, javax.swing.GroupLayout.DEFAULT_SIZE, 50, Short.MAX_VALUE)
+        );
+
+        jLabel3.setFont(new java.awt.Font("Segoe UI", 0, 22)); // NOI18N
+        jLabel3.setText("Please Enter The Customer ID");
+
+        javax.swing.GroupLayout pnl_addcust2Layout = new javax.swing.GroupLayout(pnl_addcust2);
+        pnl_addcust2.setLayout(pnl_addcust2Layout);
+        pnl_addcust2Layout.setHorizontalGroup(
+            pnl_addcust2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(pnl_addcust2Layout.createSequentialGroup()
+                .addContainerGap(100, Short.MAX_VALUE)
+                .addGroup(pnl_addcust2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(kGradientPanel23, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addGroup(pnl_addcust2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                        .addComponent(kGradientPanel21, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGroup(pnl_addcust2Layout.createSequentialGroup()
+                            .addGap(1, 1, 1)
+                            .addGroup(pnl_addcust2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                .addComponent(jLabel3, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                                .addComponent(kGradientPanel20, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 62, Short.MAX_VALUE)
+                .addGroup(pnl_addcust2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(kGradientPanel22, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(kGradientPanel24, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(kGradientPanel19, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addContainerGap(99, Short.MAX_VALUE))
+        );
+        pnl_addcust2Layout.setVerticalGroup(
+            pnl_addcust2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(pnl_addcust2Layout.createSequentialGroup()
+                .addContainerGap(33, Short.MAX_VALUE)
+                .addComponent(jLabel3, javax.swing.GroupLayout.PREFERRED_SIZE, 35, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addGroup(pnl_addcust2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(kGradientPanel20, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(kGradientPanel19, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGroup(pnl_addcust2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(pnl_addcust2Layout.createSequentialGroup()
+                        .addGap(80, 80, 80)
+                        .addComponent(kGradientPanel21, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(80, 80, 80))
+                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, pnl_addcust2Layout.createSequentialGroup()
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(kGradientPanel22, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(71, 71, 71)))
+                .addGroup(pnl_addcust2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                    .addComponent(kGradientPanel23, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(kGradientPanel24, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(180, 180, 180))
         );
 
         javax.swing.GroupLayout jPanel3Layout = new javax.swing.GroupLayout(jPanel3);
@@ -1125,14 +1605,14 @@ public class frm_dashboard extends javax.swing.JFrame
             jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel3Layout.createSequentialGroup()
                 .addGap(50, 50, 50)
-                .addComponent(pnl_custdetail, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(pnl_addcust2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addContainerGap(50, Short.MAX_VALUE))
         );
         jPanel3Layout.setVerticalGroup(
             jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel3Layout.createSequentialGroup()
                 .addGap(50, 50, 50)
-                .addComponent(pnl_custdetail, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(pnl_addcust2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addContainerGap(40, Short.MAX_VALUE))
         );
 
@@ -2067,6 +2547,42 @@ public class frm_dashboard extends javax.swing.JFrame
         }
     }//GEN-LAST:event_jPanel1KeyPressed
 
+    private void txt_rmvcustidFocusGained(java.awt.event.FocusEvent evt)//GEN-FIRST:event_txt_rmvcustidFocusGained
+    {//GEN-HEADEREND:event_txt_rmvcustidFocusGained
+        if (txt_rmvcustid.getText().equals("CUSTOMER ID"))
+        {
+            txt_rmvcustid.setText("");
+            txt_rmvcustid.setForeground(new Color(68, 82, 121));
+        }
+    }//GEN-LAST:event_txt_rmvcustidFocusGained
+
+    private void txt_rmvcustidFocusLost(java.awt.event.FocusEvent evt)//GEN-FIRST:event_txt_rmvcustidFocusLost
+    {//GEN-HEADEREND:event_txt_rmvcustidFocusLost
+        if (txt_rmvcustid.getText().equals(""))
+        {
+            txt_rmvcustid.setText("CUSTOMER ID");
+            txt_rmvcustid.setForeground(new Color(228, 235, 246));
+        }
+    }//GEN-LAST:event_txt_rmvcustidFocusLost
+
+    private void txt_detailcustidFocusGained(java.awt.event.FocusEvent evt)//GEN-FIRST:event_txt_detailcustidFocusGained
+    {//GEN-HEADEREND:event_txt_detailcustidFocusGained
+        if (txt_detailcustid.getText().equals("CUSTOMER ID"))
+        {
+            txt_detailcustid.setText("");
+            txt_detailcustid.setForeground(new Color(68, 82, 121));
+        }
+    }//GEN-LAST:event_txt_detailcustidFocusGained
+
+    private void txt_detailcustidFocusLost(java.awt.event.FocusEvent evt)//GEN-FIRST:event_txt_detailcustidFocusLost
+    {//GEN-HEADEREND:event_txt_detailcustidFocusLost
+        if (txt_detailcustid.getText().equals(""))
+        {
+            txt_detailcustid.setText("CUSTOMER ID");
+            txt_detailcustid.setForeground(new Color(228, 235, 246));
+        }
+    }//GEN-LAST:event_txt_detailcustidFocusLost
+
     public static void main(String args[])
     {
         java.awt.EventQueue.invokeLater(new Runnable()
@@ -2079,7 +2595,9 @@ public class frm_dashboard extends javax.swing.JFrame
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
+    private javax.swing.JLabel jLabel3;
     private javax.swing.JPanel jPanel1;
     private javax.swing.JPanel jPanel2;
     private javax.swing.JPanel jPanel3;
@@ -2090,7 +2608,19 @@ public class frm_dashboard extends javax.swing.JFrame
     private com.k33ptoo.components.KGradientPanel kGradientPanel10;
     private com.k33ptoo.components.KGradientPanel kGradientPanel11;
     private com.k33ptoo.components.KGradientPanel kGradientPanel12;
+    private com.k33ptoo.components.KGradientPanel kGradientPanel13;
+    private com.k33ptoo.components.KGradientPanel kGradientPanel14;
+    private com.k33ptoo.components.KGradientPanel kGradientPanel15;
+    private com.k33ptoo.components.KGradientPanel kGradientPanel16;
+    private com.k33ptoo.components.KGradientPanel kGradientPanel17;
+    private com.k33ptoo.components.KGradientPanel kGradientPanel18;
+    private com.k33ptoo.components.KGradientPanel kGradientPanel19;
     private com.k33ptoo.components.KGradientPanel kGradientPanel2;
+    private com.k33ptoo.components.KGradientPanel kGradientPanel20;
+    private com.k33ptoo.components.KGradientPanel kGradientPanel21;
+    private com.k33ptoo.components.KGradientPanel kGradientPanel22;
+    private com.k33ptoo.components.KGradientPanel kGradientPanel23;
+    private com.k33ptoo.components.KGradientPanel kGradientPanel24;
     private com.k33ptoo.components.KGradientPanel kGradientPanel7;
     private com.k33ptoo.components.KGradientPanel kGradientPanel8;
     private com.k33ptoo.components.KGradientPanel kGradientPanel9;
@@ -2117,21 +2647,34 @@ public class frm_dashboard extends javax.swing.JFrame
     private com.k33ptoo.components.KGradientPanel pnl_about;
     private com.k33ptoo.components.KGradientPanel pnl_account;
     private com.k33ptoo.components.KGradientPanel pnl_addcust;
+    private com.k33ptoo.components.KGradientPanel pnl_addcust1;
+    private com.k33ptoo.components.KGradientPanel pnl_addcust2;
     private com.k33ptoo.components.KGradientPanel pnl_bill;
     private com.k33ptoo.components.KGradientPanel pnl_close;
-    private com.k33ptoo.components.KGradientPanel pnl_custdetail;
     private com.k33ptoo.components.KGradientPanel pnl_customer;
     private com.k33ptoo.components.KGradientPanel pnl_employee;
     private com.k33ptoo.components.KGradientPanel pnl_header;
     private com.k33ptoo.components.KGradientPanel pnl_help;
     private javax.swing.JPanel pnl_min;
     private com.k33ptoo.components.KGradientPanel pnl_product;
-    private com.k33ptoo.components.KGradientPanel pnl_rmvcust;
     private com.k33ptoo.components.KGradientPanel pnl_sidepane;
+    private com.k33ptoo.components.KButton rmvloginBtn;
     private javax.swing.JTextField txt_custid;
     private javax.swing.JTextField txt_custnm;
+    private javax.swing.JTextField txt_detailcustid;
     private javax.swing.JTextField txt_email;
     private javax.swing.JTextField txt_phone;
+    private javax.swing.JTextField txt_rmvcustid;
+    private javax.swing.JTextField txt_rmvcustnm;
+    private javax.swing.JTextField txt_rmvcustnm1;
+    private javax.swing.JTextField txt_rmvemail;
+    private javax.swing.JTextField txt_rmvemail1;
+    private javax.swing.JTextField txt_rmvphone;
+    private javax.swing.JTextField txt_rmvphone1;
+    private javax.swing.JTextField txt_rmvsaddress;
+    private javax.swing.JTextField txt_rmvsaddress1;
+    private javax.swing.JTextField txt_rmvsname;
+    private javax.swing.JTextField txt_rmvsname1;
     private javax.swing.JTextField txt_saddress;
     private javax.swing.JTextField txt_sname;
     // End of variables declaration//GEN-END:variables
