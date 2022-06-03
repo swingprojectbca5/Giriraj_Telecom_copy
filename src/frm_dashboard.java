@@ -14,13 +14,11 @@ import javax.swing.ImageIcon;
 import javax.swing.JFrame;
 import javax.swing.JOptionPane;
 
-public class frm_dashboard extends javax.swing.JFrame
-{
+public class frm_dashboard extends javax.swing.JFrame {
 
     KeyEvent ke;
 
-    public frm_dashboard()
-    {
+    public frm_dashboard() {
         initComponents();
         Toolkit tk = Toolkit.getDefaultToolkit();
         int x = (int) tk.getScreenSize().getWidth();
@@ -42,6 +40,7 @@ public class frm_dashboard extends javax.swing.JFrame
         jLabel2.grabFocus();
 
         // this.setExtendedState(JFrame.MAXIMIZED_BOTH);
+//        This is projct copy
     }
 
     @SuppressWarnings("unchecked")
@@ -1867,8 +1866,7 @@ public class frm_dashboard extends javax.swing.JFrame
 
     private void lbl_helpKeyPressed(java.awt.event.KeyEvent evt)//GEN-FIRST:event_lbl_helpKeyPressed
     {//GEN-HEADEREND:event_lbl_helpKeyPressed
-        if (evt.getKeyCode() == KeyEvent.VK_ENTER)
-        {
+        if (evt.getKeyCode() == KeyEvent.VK_ENTER) {
             panel_customer.setVisible(false);
             panel_employee.setVisible(false);
             panel_bill.setVisible(false);
@@ -1945,8 +1943,7 @@ public class frm_dashboard extends javax.swing.JFrame
 
     private void lbl_aboutKeyPressed(java.awt.event.KeyEvent evt)//GEN-FIRST:event_lbl_aboutKeyPressed
     {//GEN-HEADEREND:event_lbl_aboutKeyPressed
-        if (evt.getKeyCode() == KeyEvent.VK_ENTER)
-        {
+        if (evt.getKeyCode() == KeyEvent.VK_ENTER) {
             panel_customer.setVisible(false);
             panel_employee.setVisible(false);
             panel_bill.setVisible(false);
@@ -2025,8 +2022,7 @@ public class frm_dashboard extends javax.swing.JFrame
 
     private void lbl_accountKeyPressed(java.awt.event.KeyEvent evt)//GEN-FIRST:event_lbl_accountKeyPressed
     {//GEN-HEADEREND:event_lbl_accountKeyPressed
-        if (evt.getKeyCode() == KeyEvent.VK_ENTER)
-        {
+        if (evt.getKeyCode() == KeyEvent.VK_ENTER) {
             panel_customer.setVisible(false);
             panel_employee.setVisible(false);
             panel_bill.setVisible(false);
@@ -2105,8 +2101,7 @@ public class frm_dashboard extends javax.swing.JFrame
 
     private void lbl_billKeyPressed(java.awt.event.KeyEvent evt)//GEN-FIRST:event_lbl_billKeyPressed
     {//GEN-HEADEREND:event_lbl_billKeyPressed
-        if (evt.getKeyCode() == KeyEvent.VK_ENTER)
-        {
+        if (evt.getKeyCode() == KeyEvent.VK_ENTER) {
             panel_customer.setVisible(false);
             panel_employee.setVisible(false);
             panel_bill.setVisible(true);
@@ -2185,8 +2180,7 @@ public class frm_dashboard extends javax.swing.JFrame
 
     private void lbl_productKeyPressed(java.awt.event.KeyEvent evt)//GEN-FIRST:event_lbl_productKeyPressed
     {//GEN-HEADEREND:event_lbl_productKeyPressed
-        if (evt.getKeyCode() == KeyEvent.VK_ENTER)
-        {
+        if (evt.getKeyCode() == KeyEvent.VK_ENTER) {
             panel_customer.setVisible(false);
             panel_employee.setVisible(false);
             panel_bill.setVisible(false);
@@ -2265,8 +2259,7 @@ public class frm_dashboard extends javax.swing.JFrame
 
     private void lbl_employeeKeyPressed(java.awt.event.KeyEvent evt)//GEN-FIRST:event_lbl_employeeKeyPressed
     {//GEN-HEADEREND:event_lbl_employeeKeyPressed
-        if (evt.getKeyCode() == KeyEvent.VK_ENTER)
-        {
+        if (evt.getKeyCode() == KeyEvent.VK_ENTER) {
             panel_customer.setVisible(false);
             panel_employee.setVisible(true);
             panel_bill.setVisible(false);
@@ -2346,8 +2339,7 @@ public class frm_dashboard extends javax.swing.JFrame
 
     private void lbl_customerKeyPressed(java.awt.event.KeyEvent evt)//GEN-FIRST:event_lbl_customerKeyPressed
     {//GEN-HEADEREND:event_lbl_customerKeyPressed
-        if (evt.getKeyCode() == KeyEvent.VK_ENTER)
-        {
+        if (evt.getKeyCode() == KeyEvent.VK_ENTER) {
             panel_customer.setVisible(true);
             jTabbedPane1.grabFocus();
             panel_employee.setVisible(false);
@@ -2427,8 +2419,7 @@ public class frm_dashboard extends javax.swing.JFrame
 
     private void txt_custnmFocusGained(java.awt.event.FocusEvent evt)//GEN-FIRST:event_txt_custnmFocusGained
     {//GEN-HEADEREND:event_txt_custnmFocusGained
-        if (txt_custnm.getText().equals("CUSTOMER NAME"))
-        {
+        if (txt_custnm.getText().equals("CUSTOMER NAME")) {
             txt_custnm.setText("");
             txt_custnm.setForeground(new Color(68, 82, 121));
         }
@@ -2436,8 +2427,7 @@ public class frm_dashboard extends javax.swing.JFrame
 
     private void txt_custnmFocusLost(java.awt.event.FocusEvent evt)//GEN-FIRST:event_txt_custnmFocusLost
     {//GEN-HEADEREND:event_txt_custnmFocusLost
-        if (txt_custnm.getText().equals(""))
-        {
+        if (txt_custnm.getText().equals("")) {
             txt_custnm.setText("CUSTOMER NAME");
             txt_custnm.setForeground(new Color(228, 235, 246));
         }
@@ -2445,8 +2435,7 @@ public class frm_dashboard extends javax.swing.JFrame
 
     private void txt_custidFocusGained(java.awt.event.FocusEvent evt)//GEN-FIRST:event_txt_custidFocusGained
     {//GEN-HEADEREND:event_txt_custidFocusGained
-        if (txt_custid.getText().equals("CUSTOMER ID"))
-        {
+        if (txt_custid.getText().equals("CUSTOMER ID")) {
             txt_custid.setText("");
             txt_custid.setForeground(new Color(68, 82, 121));
         }
@@ -2454,8 +2443,7 @@ public class frm_dashboard extends javax.swing.JFrame
 
     private void txt_custidFocusLost(java.awt.event.FocusEvent evt)//GEN-FIRST:event_txt_custidFocusLost
     {//GEN-HEADEREND:event_txt_custidFocusLost
-        if (txt_custid.getText().equals(""))
-        {
+        if (txt_custid.getText().equals("")) {
             txt_custid.setText("CUSTOMER ID");
             txt_custid.setForeground(new Color(228, 235, 246));
         }
@@ -2463,8 +2451,7 @@ public class frm_dashboard extends javax.swing.JFrame
 
     private void txt_phoneFocusGained(java.awt.event.FocusEvent evt)//GEN-FIRST:event_txt_phoneFocusGained
     {//GEN-HEADEREND:event_txt_phoneFocusGained
-        if (txt_phone.getText().equals("PHONE NO."))
-        {
+        if (txt_phone.getText().equals("PHONE NO.")) {
             txt_phone.setText("");
             txt_phone.setForeground(new Color(68, 82, 121));
         }
@@ -2472,8 +2459,7 @@ public class frm_dashboard extends javax.swing.JFrame
 
     private void txt_phoneFocusLost(java.awt.event.FocusEvent evt)//GEN-FIRST:event_txt_phoneFocusLost
     {//GEN-HEADEREND:event_txt_phoneFocusLost
-        if (txt_phone.getText().equals(""))
-        {
+        if (txt_phone.getText().equals("")) {
             txt_phone.setText("PHONE NO.");
             txt_phone.setForeground(new Color(228, 235, 246));
         }
@@ -2481,8 +2467,7 @@ public class frm_dashboard extends javax.swing.JFrame
 
     private void txt_emailFocusGained(java.awt.event.FocusEvent evt)//GEN-FIRST:event_txt_emailFocusGained
     {//GEN-HEADEREND:event_txt_emailFocusGained
-        if (txt_email.getText().equals("EMAIL"))
-        {
+        if (txt_email.getText().equals("EMAIL")) {
             txt_email.setText("");
             txt_email.setForeground(new Color(68, 82, 121));
         }
@@ -2490,8 +2475,7 @@ public class frm_dashboard extends javax.swing.JFrame
 
     private void txt_emailFocusLost(java.awt.event.FocusEvent evt)//GEN-FIRST:event_txt_emailFocusLost
     {//GEN-HEADEREND:event_txt_emailFocusLost
-        if (txt_email.getText().equals(""))
-        {
+        if (txt_email.getText().equals("")) {
             txt_email.setText("EMAIL");
             txt_email.setForeground(new Color(228, 235, 246));
         }
@@ -2499,8 +2483,7 @@ public class frm_dashboard extends javax.swing.JFrame
 
     private void txt_snameFocusGained(java.awt.event.FocusEvent evt)//GEN-FIRST:event_txt_snameFocusGained
     {//GEN-HEADEREND:event_txt_snameFocusGained
-        if (txt_sname.getText().equals("SHOP NAME"))
-        {
+        if (txt_sname.getText().equals("SHOP NAME")) {
             txt_sname.setText("");
             txt_sname.setForeground(new Color(68, 82, 121));
         }
@@ -2508,8 +2491,7 @@ public class frm_dashboard extends javax.swing.JFrame
 
     private void txt_snameFocusLost(java.awt.event.FocusEvent evt)//GEN-FIRST:event_txt_snameFocusLost
     {//GEN-HEADEREND:event_txt_snameFocusLost
-        if (txt_sname.getText().equals(""))
-        {
+        if (txt_sname.getText().equals("")) {
             txt_sname.setText("SHOP NAME");
             txt_sname.setForeground(new Color(228, 235, 246));
         }
@@ -2517,8 +2499,7 @@ public class frm_dashboard extends javax.swing.JFrame
 
     private void txt_saddressFocusGained(java.awt.event.FocusEvent evt)//GEN-FIRST:event_txt_saddressFocusGained
     {//GEN-HEADEREND:event_txt_saddressFocusGained
-        if (txt_saddress.getText().equals("SHOP ADDRESS"))
-        {
+        if (txt_saddress.getText().equals("SHOP ADDRESS")) {
             txt_saddress.setText("");
             txt_saddress.setForeground(new Color(68, 82, 121));
         }
@@ -2526,8 +2507,7 @@ public class frm_dashboard extends javax.swing.JFrame
 
     private void txt_saddressFocusLost(java.awt.event.FocusEvent evt)//GEN-FIRST:event_txt_saddressFocusLost
     {//GEN-HEADEREND:event_txt_saddressFocusLost
-        if (txt_saddress.getText().equals(""))
-        {
+        if (txt_saddress.getText().equals("")) {
             txt_saddress.setText("SHOP ADDRESS");
             txt_saddress.setForeground(new Color(228, 235, 246));
         }
@@ -2554,8 +2534,7 @@ public class frm_dashboard extends javax.swing.JFrame
 
     private void jPanel1KeyPressed(java.awt.event.KeyEvent evt)//GEN-FIRST:event_jPanel1KeyPressed
     {//GEN-HEADEREND:event_jPanel1KeyPressed
-        if (evt.getKeyCode() == KeyEvent.VK_TAB)
-        {
+        if (evt.getKeyCode() == KeyEvent.VK_TAB) {
             panel_customer.setVisible(true);
             panel_employee.setVisible(false);
             panel_bill.setVisible(false);
@@ -2570,8 +2549,7 @@ public class frm_dashboard extends javax.swing.JFrame
 
     private void txt_rmvcustidFocusGained(java.awt.event.FocusEvent evt)//GEN-FIRST:event_txt_rmvcustidFocusGained
     {//GEN-HEADEREND:event_txt_rmvcustidFocusGained
-        if (txt_rmvcustid.getText().equals("CUSTOMER ID"))
-        {
+        if (txt_rmvcustid.getText().equals("CUSTOMER ID")) {
             txt_rmvcustid.setText("");
             txt_rmvcustid.setForeground(new Color(68, 82, 121));
         }
@@ -2579,8 +2557,7 @@ public class frm_dashboard extends javax.swing.JFrame
 
     private void txt_rmvcustidFocusLost(java.awt.event.FocusEvent evt)//GEN-FIRST:event_txt_rmvcustidFocusLost
     {//GEN-HEADEREND:event_txt_rmvcustidFocusLost
-        if (txt_rmvcustid.getText().equals(""))
-        {
+        if (txt_rmvcustid.getText().equals("")) {
             txt_rmvcustid.setText("CUSTOMER ID");
             txt_rmvcustid.setForeground(new Color(228, 235, 246));
         }
@@ -2588,8 +2565,7 @@ public class frm_dashboard extends javax.swing.JFrame
 
     private void txt_detailcustidFocusGained(java.awt.event.FocusEvent evt)//GEN-FIRST:event_txt_detailcustidFocusGained
     {//GEN-HEADEREND:event_txt_detailcustidFocusGained
-        if (txt_detailcustid.getText().equals("CUSTOMER ID"))
-        {
+        if (txt_detailcustid.getText().equals("CUSTOMER ID")) {
             txt_detailcustid.setText("");
             txt_detailcustid.setForeground(new Color(68, 82, 121));
         }
@@ -2597,8 +2573,7 @@ public class frm_dashboard extends javax.swing.JFrame
 
     private void txt_detailcustidFocusLost(java.awt.event.FocusEvent evt)//GEN-FIRST:event_txt_detailcustidFocusLost
     {//GEN-HEADEREND:event_txt_detailcustidFocusLost
-        if (txt_detailcustid.getText().equals(""))
-        {
+        if (txt_detailcustid.getText().equals("")) {
             txt_detailcustid.setText("CUSTOMER ID");
             txt_detailcustid.setForeground(new Color(228, 235, 246));
         }
@@ -2620,26 +2595,21 @@ public class frm_dashboard extends javax.swing.JFrame
 
     private void jTabbedPane1KeyPressed(java.awt.event.KeyEvent evt)//GEN-FIRST:event_jTabbedPane1KeyPressed
     {//GEN-HEADEREND:event_jTabbedPane1KeyPressed
-        if (evt.getKeyCode() == KeyEvent.VK_ESCAPE)
-        {
+        if (evt.getKeyCode() == KeyEvent.VK_ESCAPE) {
             lbl_customer.grabFocus();
         }
     }//GEN-LAST:event_jTabbedPane1KeyPressed
 
     private void pnl_addcustKeyPressed(java.awt.event.KeyEvent evt)//GEN-FIRST:event_pnl_addcustKeyPressed
     {//GEN-HEADEREND:event_pnl_addcustKeyPressed
-        if (evt.getKeyCode() == KeyEvent.VK_ESCAPE)
-        {
+        if (evt.getKeyCode() == KeyEvent.VK_ESCAPE) {
             lbl_customer.grabFocus();
         }
     }//GEN-LAST:event_pnl_addcustKeyPressed
 
-    public static void main(String args[])
-    {
-        java.awt.EventQueue.invokeLater(new Runnable()
-        {
-            public void run()
-            {
+    public static void main(String args[]) {
+        java.awt.EventQueue.invokeLater(new Runnable() {
+            public void run() {
                 new frm_dashboard().setVisible(true);
             }
         });
